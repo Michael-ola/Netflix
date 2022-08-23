@@ -25,9 +25,7 @@ export default function MembershipForm() {
 
   const onSubmit: SubmitHandler<IFormInput> = (data) =>{
      console.log(data);
-     const fdata= new FormData();
-     fdata.append('picture', data.email);
-     //console.log(fdata.getAll('picture'));
+
   }
 
   return (

@@ -1,0 +1,12 @@
+[
+    {
+        "userId": "",
+        "permissions":"owner",
+        "username":"Michael Olaitan",
+        "email-address":"michael303.mi@gmail.com",
+        "phone-number": "+2349021756664",
+        "avatar":"../assets/images/users/5.png",
+        "Movies-list":[],
+        "subscription-status":"active"
+    }
+]

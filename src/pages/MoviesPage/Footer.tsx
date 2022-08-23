@@ -1,7 +1,7 @@
 import React from 'react'
 import {Container,StyledFooterStructure,SocialsContainer,Icon,
         AppendContainer,ServiceCode,Copyright,AnchorTag} from './styles/Footer'
-const footerItems=require('../../fixtures/moviesPageFooter.json');
+const footerItems=require('../../data/moviesPageFooter.json');
 const facebookIcon=require('../../assets/images/icons/facebookIcon.png');
 const instagramIcon=require('../../assets/images/icons/instagramIcon.png');
 const youTubeIcon=require('../../assets/images/icons/youTubeIcon.png');

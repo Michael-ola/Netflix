@@ -1,7 +1,7 @@
 import React from 'react'
 import  FooterStructure from '../../components/Footer/Footer'
 import {AnchorTag,FooterTitle,CountryText} from './styles/Footer'
-const footerItems=require('../../fixtures/landingPageFooter.json');
+const footerItems=require('../../data/landingPageFooter.json');
 
 const Footer = () => {
     const footerTitle=( 

@@ -1,9 +1,10 @@
 import React,{useState,useEffect,useRef} from 'react'
+import ReactDom from 'react-dom'
 
 import { CarouselSliderContainer,
     MoviePoster,CarouselSliderInnerContainer,
     CarouselRightControl,CarouselLeftControl,MovieDetailContainer,MovieContainer,
-    MovieDetailImage,MovieMetaContainer,ActionBarContainer,
+    MovieDetailVideo,MovieMetaContainer,ActionBarContainer,
     RatingsContainer
 } from './style/CarouselSlider'
 
@@ -11,11 +12,11 @@ import MatchScore from '../../../components/MatchScore'
 import MaturityRating from '../../../components/MaturityRating'
 import PlayButton from '../../../components/PlayButton'
 import AddButton from '../../../components/AddButton'
-import ReactionButton from '../../../containers/ReactionButton'
+import ReactionButton from '../../../containers/ReactionButtons'
 import DropdownInfoButton from '../../../components/DropdownInfoButton'
 import Duration from '../../../components/Duration'
 import Season from '../../../components/Season'
-
+import MovieInfoModal from '../../../containers/MovieInfoModal'
 import useCategoriesData from '../hooks/useCategoriesData'
 
 interface CarouselSliderType{
@@ -98,9 +99,11 @@ const CarouselSliderInner=({children,sliderIndex,controlClicked}:CarouselSliderI
             const left=100*(child.getBoundingClientRect().left)/window.innerWidth;
             if(right<10 && right>0){
                 child.style.justifyContent='flex-end';
+                child.style.transformOrigin='right';
             }
             else if(left<6){
                 child.style.justifyContent='flex-start';
+                child.style.transformOrigin='left';
             }
         }
     }
@@ -141,30 +144,54 @@ const Movie= ({movieData})=>{
         <MovieContainer onMouseEnter={()=>setHoverState(true)}
           onMouseLeave={()=>setHoverState(false)}>
             <MoviePoster  src={movieData["small-image"]}/>
-            <MovieDetail movieData={movieData} hoverState={hoverState}/>
+            <MovieDetail movieData={movieData} hoverState={hoverState} setHoverState={setHoverState}/>
         </MovieContainer>
     )
 }
 
-export const MovieDetail=({movieData,hoverState}:{movieData:any,hoverState:boolean})=>{
+export const MovieDetail=({movieData,hoverState,setHoverState}:{movieData:any,hoverState:boolean,setHoverState:React.Dispatch<React.SetStateAction<boolean>>,})=>{
+    const [showMoreInfoState,setShowMoreInfoState]=useState(false)
+    const [transformOrigin,setTransformOrigin]=useState('')
+    const containerRef=useRef<HTMLDivElement>(null)
+
+    useEffect(() => {
+        const root=document.querySelector('#root') as HTMLElement;
+        if(showMoreInfoState){
+            root.style.overflow='hidden';
+        }
+
+        const right=100*(window.innerWidth - containerRef.current.getBoundingClientRect().right)/window.innerWidth;
+        const left=100*(containerRef.current.getBoundingClientRect().left)/window.innerWidth;
+        if(right<10 && right>0){
+            setTransformOrigin('right')
+        }
+        else if(left<6){
+            setTransformOrigin('left')
+        }
+        root.style.overflow='auto';
+    },[showMoreInfoState])
+
     
     return(
-        <MovieDetailContainer {...{hoverState}}>
-            <MovieDetailImage src={movieData['small-image']}/>
-            <MovieMetaContainer>
-                <ActionBar movieData={movieData}/>
-                <RatingsContainer>
-                    <MatchScore>{movieData['match-score']} Match</MatchScore>
-                    <MaturityRating>{movieData['maturity-rating']}</MaturityRating>
-                    {movieData.seasons && <Season>{movieData.seasons} {movieData.seasons>1?'seasons':'season'}</Season>}
-                    {movieData.duration && <Duration>{movieData.duration && movieData.duration}</Duration>}
-                </RatingsContainer>
-            </MovieMetaContainer>
+        <MovieDetailContainer ref={containerRef} {...{showMoreInfoState}} {...{hoverState}}>
+           {showMoreInfoState?null:
+           <><MovieDetailVideo autoPlay muted loop poster="" src={hoverState?movieData['video']:''} {...{image:movieData['small-image']}}/>
+                {hoverState && <MovieMetaContainer onClick={()=>setShowMoreInfoState(true)}>
+                    <ActionBar setShowMoreInfoState={setShowMoreInfoState} setHoverState={setHoverState} />
+                    <RatingsContainer>
+                        <MatchScore>{movieData['match-score']} Match</MatchScore>
+                        <MaturityRating>{movieData['maturity-rating']}</MaturityRating>
+                        {movieData.seasons && <Season>{movieData.seasons} {movieData.seasons>1?'seasons':'season'}</Season>}
+                        {movieData.duration && <Duration>{movieData.duration && movieData.duration}</Duration>}
+                    </RatingsContainer>
+                </MovieMetaContainer>}
+            </>}
+            {showMoreInfoState && ReactDom.createPortal(<MovieInfoModal transformOrigin={transformOrigin} info={movieData} setHoverState={setHoverState} showState={showMoreInfoState} setShowState={setShowMoreInfoState}/>,document.getElementById('moreInfo'))}
         </MovieDetailContainer>
     )
 }
 
-const ActionBar=({movieData})=>{
+const ActionBar=({setShowMoreInfoState,setHoverState})=>{
     const playButtonClickedHandler=()=>{
 
     }
@@ -172,8 +199,8 @@ const ActionBar=({movieData})=>{
         <ActionBarContainer>
             <PlayButton onClick={playButtonClickedHandler} round/>
             <AddButton/>
-            <ReactionButton/>
-            <DropdownInfoButton movieData={movieData}/>
+            <ReactionButton setMovieHoverState={setHoverState}/>
+            <DropdownInfoButton setShowMoreInfoState={setShowMoreInfoState}/>
         </ActionBarContainer>
     )
 }

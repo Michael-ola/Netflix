@@ -1,25 +1,20 @@
 import React,{useState,useEffect} from 'react'
+import ReactDom from 'react-dom'
 import {Container,MovieVideo,MoviePoster,
     MovieTitle,Controls,MovieDataContainer,MovieDescription,AgeRating
 } from './styles/MoviePreview'
 
 import PlayButton from '../../components/PlayButton'
 import InfoButton from '../../components/InfoButton'
-
-const poster=`https://occ-0-299-1490.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/
-AAAABVNvs3SwzsjtPbsgZRpm7fEVv-Zs342G4v_tF3XsN9n245PUAMue7uwnKJBulwiSrgOtNkTovuI4SaNBklKX
-JMEKmIEEyqVwz6CV.webp?r=153`
-const title = `https://occ-0-299-1490.1.nflxso.net/dnm/api/v6/0jxQXg4biAHes0_WdLiCw28fDpg/
-AAAABZRiSilkgeMz3B3mxWMOTpXo4e7Iz1Aldv_kpM0VmQ9ciBETbe3ROgxrdMPOdVhUiHLTSQKo4WUevUCxsXJ-
-fLeLjZC7I8SibE8PZyik7hR59S-AbCFqxn-uNgyS0PYpubQuGrws1s7xLKad0iRfsHXVeNYEz1vj7MDJqpxUAeYh6P38lyc
-qKgQfAcZ3BwVwSVqQV5Or76e-cCkWeGV8JcsTIeaPqV7957JOm1wyJ2Q9fBmM333kwY4e0PZS1R0Iizp-Q6mZyM0AWFbPRE2U
-ROOfdUR8dNuyW3SgzZgCazK4ghY6yRyrepb7_2ZPN0MVWbtd40SkhNnksxTDkwYu9D4.webp?r=ebb`
+import MovieInfoModal from '../../containers/MovieInfoModal'
+import useMoviesPageData from './hooks/useMoviesPageData'
 
 const MoviePreview = () => {
     const [showVideo,setShowVideo]=useState(true)
+    const [showMovieInfoModal,setShowMovieInfoModal]=useState(false)
+    const movieData =useMoviesPageData().moviesData[0].Movies[0];
 
     useEffect(() =>{
-        console.log('showVideo')
         const playTime=setTimeout(() =>{
             setShowVideo(false);
         },3000)
@@ -32,14 +27,16 @@ const MoviePreview = () => {
         
     }
     const infoButtonClicked =()=>{
-        
+        setShowMovieInfoModal(true)
     }
+
     return (
         <Container>
+        {showMovieInfoModal && ReactDom.createPortal(<MovieInfoModal info={movieData} showState={showMovieInfoModal} setShowState={setShowMovieInfoModal}/>,document.getElementById("moreInfo"))}
         <MovieDataContainer>
-            <MovieTitle src={title} alt='title'/>
-            <MovieDescription>In this sequel to "Vikings," a hundred years have passed and 
-            a new generation of legendary heroes arises to forge its own destiny —&nbsp;and make history.
+            <MovieTitle src={movieData["title-image"]} alt={movieData.name}/>
+            <MovieDescription>
+                {movieData.descriptions["more-info"].about}
             </MovieDescription>
             <Controls>
                 <PlayButton onClick={playClicked}/>
@@ -47,11 +44,11 @@ const MoviePreview = () => {
             </Controls> 
         </MovieDataContainer>
         <AgeRating>
-            18+
+            {movieData["maturity-rating"]}
         </AgeRating>
         {
             showVideo?<MovieVideo autoPlay/>
-            :<MoviePoster src={poster}/>
+            :<MoviePoster src={movieData["large-image"]}/>
         }</Container>
     )
 }

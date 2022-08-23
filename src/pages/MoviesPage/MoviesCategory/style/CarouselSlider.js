@@ -15,7 +15,9 @@ box-sizing: border-box;
 width:90%;
 margin-left:5%;
 transition:transform 0.7s ease-in-out;
-transform:translateX(${({sliderIndex})=>sliderIndex?sliderIndex*-100:0}%);
+${({sliderIndex,controlClicked})=>controlClicked && sliderIndex?`transform:translateX(${sliderIndex*-100}%)`
+:
+`translateX(0)`};
 `
 export const CarouselRightControl=styled.button`
 --font:clamp(0.8em,2vw,1.7em);
@@ -93,32 +95,37 @@ display:flex;
 flex-direction:column;
 width:150%;
 margin:auto;
+border-radius:8px;
 overflow:visible;
-visibility:hidden;
-transform:scale(0.6);
 color:#fff;
 aspect-ratio:6/6;
 position:absolute;
 top:-50%;
 z-index:10;
+transform-origin:inherit;
 transition:all 0.2s 0.8s linear;
 box-shadow:rgba(0,0,0,0.75) 0px 3px 10px;
-${({hoverState})=>hoverState ?`
+${({hoverState,showMoreInfoState})=>hoverState ?`
 transform:scale(1);
 visibility:visible;
-`:`
+`:!showMoreInfoState &&`
+visibility:hidden;
+transform:scale(0.6);
 transition:all 0.2s linear;
 `}
 `
-export const MovieDetailImage=styled.img`
+export const MovieDetailVideo=styled.video`
 position:relative;
 display:block;
 background-size: cover;
 background-repeat: no-repeat;
 width:100%;
 height:60%;
+object-fit:cover;
 border-top-left-radius:8px;
 border-top-right-radius:8px;
+background-color:transparent;
+background-image:${({image})=>`url(${image})`};
 &::before{
     display:block;
     content:'';
@@ -131,7 +138,7 @@ border-top-right-radius:8px;
 `
 export const MovieMetaContainer=styled.div`
 width:100%;
-height:40%;
+flex-grow:1;
 border-bottom-left-radius:8px;
 border-bottom-right-radius:8px;
 background:#181818;

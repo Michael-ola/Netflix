@@ -1,8 +1,8 @@
 import React,{useState,useEffect} from 'react'
 import {Container,TextHeader,QuestionContainer,QuestionHeader,QuestionBody,Span,Icon,Overlay}  from './styles/FaqSection'
-import Questions from '../../fixtures/faqs.json'
-import closeIcon from '../../assets/images/icons/close-slim.png'
-import addIcon from '../../assets/images/icons/add.png'
+const Questions= require('../../data/faqs.json')
+const closeIcon= require('../../assets/images/icons/close-slim.png')
+const addIcon = require('../../assets/images/icons/add.png')
 
 interface QuestionProps{
     id:number,

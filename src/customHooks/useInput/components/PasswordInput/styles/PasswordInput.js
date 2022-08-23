@@ -14,6 +14,8 @@ z-index:6;
 color:#9b8c8c;
 background:inherit;
 border:none;
+border-bottom-right-radius:inherit;
+border-top-right-radius:inherit;
 font-size:clamp(12px,1.6vw,18px);
 line-height:1.1;
 user-select:none;

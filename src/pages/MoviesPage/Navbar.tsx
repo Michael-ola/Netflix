@@ -7,9 +7,11 @@ import {StyledNav,NavbarLink,
     User,UserAvatar,Caret,ManageProfiles,Account,HelpCenter,StyledSignOut
 } from './styles/Navbar'
 import SearchComponent from '../../containers/Search/Search';
-const list=require('../../fixtures/faqs.json');
+
+
+const list=require('../../data/faqs.json');
 const bellIcon=require('../../assets/images/icons/bell.png');
-const avatar=require('../../assets/images/users/3.png');
+const users=require('../../data/users.json');
 
 interface StateObjType{
     showNavLinks:boolean;
@@ -122,7 +124,7 @@ const Users= ({showState,showHandler,changeNavTab}:NavTabType) => {
 
     useEffect(() => {
         //make API request
-        setUsersList(list)
+        setUsersList(users)
     },[])
 
     const mouseEnterHandler = () => {
@@ -136,17 +138,17 @@ const Users= ({showState,showHandler,changeNavTab}:NavTabType) => {
     return(
         <>
             <UsersTab onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}>
-                <UserAvatar src={avatar}/>
+                <UserAvatar src={usersList[0]?.avatar}/>
                 <Caret style={{}} {...showState}/>
             </UsersTab >
             {changeNavTab('showUsers')? null:
             <UsersContainer {...showState} onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}>
               {
                 usersList.length>0?
-                    usersList.map((user,index) =>
-                    <User key={user.id}>
-                        <UserAvatar src={avatar}/>
-                        <span>{user.header.length>15 ? user.header.slice(0,15)+'...': user.header}</span>
+                    usersList.map((user) =>
+                    <User key={user.userId}>
+                        <UserAvatar src={user.avatar}/>
+                        <span>{user.username.length>15 ? user.username.slice(0,15)+'...': user.username}</span>
                     </User>)
                 :<User>No Users</User>
               }

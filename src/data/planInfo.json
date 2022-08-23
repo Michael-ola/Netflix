@@ -1,0 +1,49 @@
+{
+    "property-categories": [
+        "monthly price","video quality","resolution","devices you can use to watch"
+    ],
+    "device-image":{
+        "phone":"phone.png",
+        "tablet":"tablet.png",
+        "computer":"computer.png",
+        "tv":"tv.png"
+    },
+    "plans":[
+        {
+            "type": "mobile",
+            "properties":{
+                "monthly-price":"#1,200",
+                "video-quality": "good",
+                "resolution": "480p",
+                "devices": ["phone","tablet"]
+            }
+        },
+        {
+            "type": "basic",
+            "properties":{
+                "monthly-price":"#2,900",
+                "video-quality": "good",
+                "resolution": "480p",
+                "devices": ["phone","tablet","computer","tv"]
+            }
+        },
+        {
+            "type": "standard",
+            "properties":{
+                "monthly-price":"#3,600",
+                "video-quality": "better",
+                "resolution": "1080p",
+                "devices": ["phone","tablet","computer","tv"]
+            }
+        },
+        {
+            "type": "premium",
+            "properties":{
+                "monthly-price":"#4,400",
+                "video-quality": "best",
+                "resolution": "4K+HDR",
+                "devices": ["phone","tablet","computer","tv"]
+            }
+        }
+    ]
+}

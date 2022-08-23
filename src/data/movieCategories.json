@@ -7,11 +7,37 @@
         },
         "Movies":[
             {
+                "id":"0",
+                "name":"Vikings",
+                "small-image":"../assets/images/films/children/hotel-transylvania/small.jpg",
+                "large-image":"https://occ-0-299-1490.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVNvs3SwzsjtPbsgZRpm7fEVv-Zs342G4v_tF3XsN9n245PUAMue7uwnKJBulwiSrgOtNkTovuI4SaNBklKXJMEKmIEEyqVwz6CV.webp?r=153",
+                "title-image":"https://occ-0-299-1490.1.nflxso.net/dnm/api/v6/0jxQXg4biAHes0_WdLiCw28fDpg/AAAABZRiSilkgeMz3B3mxWMOTpXo4e7Iz1Aldv_kpM0VmQ9ciBETbe3ROgxrdMPOdVhUiHLTSQKo4WUevUCxsXJ-fLeLjZC7I8SibE8PZyik7hR59S-AbCFqxn-uNgyS0PYpubQuGrws1s7xLKad0iRfsHXVeNYEz1vj7MDJqpxUAeYh6P38lycqKgQfAcZ3BwVwSVqQV5Or76e-cCkWeGV8JcsTIeaPqV7957JOm1wyJ2Q9fBmM333kwY4e0PZS1R0Iizp-Q6mZyM0AWFbPRE2UROOfdUR8dNuyW3SgzZgCazK4ghY6yRyrepb7_2ZPN0MVWbtd40SkhNnksxTDkwYu9D4.webp?r=ebb",
+                "video":"../../assets/videos/bunny.mp4",
+                "match-score":"98%",
+                "maturity-rating":"18+",
+                "seasons":"7",
+                "date":{"year":"20016","month":"june","day":"5"},
+                "episodes":"",
+                "duration":"2h",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"In this sequel to \"Vikings,\" a hundred years have passed and a new generation of legendary heroes arises to forge its own destiny and make history.",
+                        "cast":["Michael Ola","Josh Sylvia","keiran Palmer","Joe Bullivan","Ryan Travis"],
+                        "genres":["Action","Dramas","Romance"],
+                        "feelings":["War","Sentimental","Pain"],
+                        "writer":["Michael Ola","Peter Dart","Sam Drucker"],
+                        "director":["Michael Ibitoye"]
+                    }
+                }
+            },
+            {
                 "id":"1",
                 "name":"Hotel Transylvania",
                 "small-image":"../assets/images/films/children/hotel-transylvania/small.jpg",
                 "large-image":"../assets/images/films/children/hotel-transylvania/large.jpg",
-                "trailer":"",
+                "title-image":"",
+                "video":"../../assets/videos/bunny.mp4",
                 "match-score":"98%",
                 "maturity-rating":"13+",
                 "seasons":"",

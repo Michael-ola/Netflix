@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState,useEffect,useRef} from 'react'
 import {
     Container
 } from './style/MoviesCarousel'
@@ -11,6 +11,7 @@ const Carousel = () => {
     const [totalPages,setTotalPages]=useState<number>(null)
     const [totalMovies,setTotalMovies]=useState<number>(null)
     const [hovered,setHovered] = useState(false)
+    
     const data=useCategoriesData();
 
     useEffect(() => {
@@ -45,14 +46,16 @@ const Carousel = () => {
             setTotalPages(Math.ceil(totalMovies/2))
         }
     }
+
     const mouseEnterHandler=()=>{
         setHovered(true)
     }
     const mouseLeaveHandler=()=>{
-        setHovered(false)
+       setHovered(false)
     }
+  
     return (
-        <Container onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}>
+        <Container {...{hovered}} onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}>
             <MenuBar parentHovered={hovered} pageNumber={pageNumber} totalPages={totalPages}/>
             <CarouselSlider parentHovered={hovered} setPageNumber={setPageNumber}/>
         </Container>

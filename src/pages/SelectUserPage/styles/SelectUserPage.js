@@ -53,7 +53,7 @@ export const StyledProfilesButton=styled.button`
     }
 `
 
-export const StyledUserPicture=styled.img.attrs(props=>({
+export const Picture=styled.img.attrs(props=>({
     src:props.src
 }))`
     --size:clamp(90px,10vw,140px);
@@ -62,12 +62,12 @@ export const StyledUserPicture=styled.img.attrs(props=>({
     background-size:cover;
     background-repeat:no-repeat;
     margin:0 auto;
-    box-sizing:border-box;
+    border:3px solid transparent;
     border-radius:5px;
     &:hover {
-        border:3px solid #fff;
+        border-color:#fff;
     }
 `
-export const StyledName=styled.h3`
+export const Username=styled.h3`
     text-align:center;
 `

@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import { useForm, SubmitHandler } from "react-hook-form";
 import {Container,Title,StyledForm,SubmitButton,CheckBoxContainer,
         CheckBox,CheckboxAndHelpContainer,Help,SignUpLink,MetaTextContainer,LearnMoreLink} from './style/SignInForm'
@@ -25,6 +25,9 @@ const Form=()=>{
     const buttonClickedHandler=()=>{
       setSubmitButtonClicked((prevState)=>!prevState)
     }
+    useEffect(() => {
+        console.log('render form')
+    },[])
   
     const onSubmit: SubmitHandler<IFormInput> = (data) =>{
        console.log(data);
@@ -34,7 +37,7 @@ const Form=()=>{
     }
     
     return(
-        <StyledForm onSubmit={handleSubmit(onSubmit)}>
+        <StyledForm autoComplete='off' onSubmit={handleSubmit(onSubmit)}>
             <ContactInput control={control} errors={errors} register={register} getValues={getValues} 
              submitButtonClicked={submitButtonClicked}/>
             

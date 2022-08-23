@@ -1,28 +1,58 @@
 import styled from 'styled-components/macro'
+import Play from '../../../components/PlayButton'
+
+export const VideoControlsContainer=styled.div`
+display:flex;
+align-items:center;
+gap:0.4em;
+width:100%;
+position:absolute;
+bottom:10%;
+padding-left:5%;
+padding-right:5%;
+z-index:4;
+button:last-child{
+    margin-left:auto;
+}
+`
+export const PlayButton=styled(Play)`
+&:hover {
+    outline:none;
+}
+`
+
 
 export const Container=styled.div`
-display:none;
-position:fixed;
-padding-top:5%;
-z-index:12;
-overflow-y:scroll;
 width:100vw;
 height:100vh;
-background:rgba(0,0,0,0.5);
-${({showModal})=>showModal &&`
-display:block;
+transform:scale(0.4);
+${({mount})=>mount?`
+transform:scale(1);
+transition:transform 0.7s ease;
+`:`
+transform:scale(0.6);
+transition:transform 0.3s linear;
+`}
+${({transformOrigin})=>transformOrigin && `
+transform-origin: ${transformOrigin};
 `}
 `
 export const InnerContainer=styled.div`
 position:relative;
-width:80%;
+width:60%;
 margin:0 auto;
 border-radius:8px;
 background:#181818;
+padding-bottom:5%;
 `
 export const Video=styled.video`
 display:block;
-object-fit:contain;
+background-repeat:no-repeat;
+background-size:cover;
+background-color:transparent;
+background-image:${({image})=>`url(${image})`};
+border-top-left-radius:8px;
+border-top-right-radius:8px;
 width:100%;
 height:100%;
 `
@@ -46,8 +76,9 @@ export const TitleText=styled.h2`
 font-weight:900;
 color:#fff;
 `
-export const InfoText=styled.h5`
+export const InfoText=styled.div`
 padding-top:1em;
+font-size:0.9em;
 color:#fff;
 `
 export const InfoTextTitle=styled(InfoText)`
@@ -61,11 +92,10 @@ overflow:hidden;
 export const VideoSectionContainer=styled.div`
 position:relative;
 width:100%;
-height:80vh;
 &::before{
     content:'';
     display:block;
-    height:100%;
+    height:102%;
     width:100%;
     position:absolute;
     top:0;
@@ -78,7 +108,7 @@ height:80vh;
 export const FirstSectionContainer=styled.section`
 width:100%;
 display:flex;
-padding:0 7%;
+padding:4% 7% 0 7%;
 `
 
 export const FirstSectionInner1=styled.div`

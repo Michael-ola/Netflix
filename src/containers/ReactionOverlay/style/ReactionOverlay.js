@@ -13,7 +13,7 @@ right:0;
 z-index:30;
 background:linear-gradient(to right,rgba(0,0,0,0.6) 10%,rgba(0,0,0,0.8) 65%,rgba(0,0,0,0.6) 100%);
 backdrop-filter:blur(7px);
-${({showState})=>showState &&`
+${({showOverlayState})=>showOverlayState &&`
 display:flex;
 `}
 `

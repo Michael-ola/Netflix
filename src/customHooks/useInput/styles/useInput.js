@@ -49,6 +49,7 @@ border:${(args)=>(args.labelClicked &&((args.customStyle && args.customStyle.bor
 box-sizing:border-box;
 background:${(args)=>((args.customStyle && args.customStyle.background) || '#fff')};
 border-radius:inherit;
+overflow:hidden;
 
 &:after {
     content:'';

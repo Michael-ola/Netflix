@@ -2,7 +2,7 @@ import React from 'react'
 import {Container, Title, Subtitle,Image,
          TextContainer
         } from './styles/Jumbotron'
-import jumbotronData from '../../fixtures/jumbotron.json'
+const jumbotronData=require('../../data/jumbotron.json')
 
 interface jumbotronProps{
     id:number,

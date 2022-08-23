@@ -1,92 +1,98 @@
 import React,{useState,useEffect} from 'react'
 import {Container,InnerContainer,Video,CloseButton,CloseIcon,FirstSectionContainer,InfoText,
     TitleText,InfoTextTitle,VideoSectionContainer,FirstSectionInner1,FirstSectionInner2,
-    MovieFiguresContainer,ThirdSectionInner
+    MovieFiguresContainer,ThirdSectionInner,VideoControlsContainer,PlayButton
 } from './style/MovieInfoModal.style'
-import useMoviesPageData from '../../pages/MoviesPage/hooks/useMoviesPageData'
 
 import MatchScore from '../../components/MatchScore'
 import Duration from '../../components/Duration'
 import MaturityRating from '../../components/MaturityRating'
 import Season from '../../components/Season'
+import ReactionButton from '../../containers/ReactionButtons'
+import AddButton from '../../components/AddButton'
+import SoundControlButton from '../../containers/SoundControlButton'
+
 const New=MatchScore
 const Year =Duration
 const closeIcon=require('../../assets/images/icons/close-slim.png')
 
-interface infoIdListType{
-    movieID:string,
-    categoryID:string
+interface MovieModalType{
+    info:any,
+    showState:boolean,
+    setShowState:React.Dispatch<React.SetStateAction<boolean>>,
+    setHoverState?:React.Dispatch<React.SetStateAction<boolean>>,
+    transformOrigin?:string
 }
 
-const MovieInfoModal = ({infoIdList}:{infoIdList:infoIdListType}) => {
-    const [showModal,setShowModal]=useState(false)
-    const {moviesData}=useMoviesPageData();
-    const [info,setInfo]=useState({});
+const MovieInfoModal = ({info,showState,setShowState,setHoverState,transformOrigin}:MovieModalType) => {
+    const [mount,setMount]=useState(false)
 
     useEffect(() => {
-        console.log(showModal)
         const body=document.querySelector('body');
-        if(showModal){
-            body.style.overflow='hidden';
-        }
-        else{
+        body.style.overflow='hidden';
+        setMount(true)
+        console.log(transformOrigin)
+        return(()=>{
             body.style.overflow='auto';
-        }
-    },[showModal])
+        })
+    },[showState])
 
-    useEffect(() => {
-        
-        if(infoIdList){
-            setShowModal(true);
-            setInfo(getInfoFunc());
-        }
-    },[infoIdList])
-
-    const getInfoFunc=()=>{
-        let movieInfo={};
-        moviesData.map((data)=>{
-            if(data.category.id===infoIdList.categoryID){
-                data.Movies.map((info,id)=>{
-                    if(info.id===infoIdList.movieID){
-                        movieInfo=info
-                    }
-                })
-            }
-         })
-         return movieInfo
-    }
+    
 
     return (
-        <Container {...{showModal}}>{
-           info &&
-               <InnerContainer>
-                   <CloseComponent setShowModal={setShowModal}/>
+        <Container {...{transformOrigin}} {...{mount}} {...{showState}}>
+            <InnerContainer>
+                   <CloseComponent setMount={setMount}  showComponent={setShowState} setHoverState={setHoverState} />
                    <VideoSection info={info}/>
                    <FirstSection info={info}/>
                    <ThirdSection info={info}/>
-               </InnerContainer>
-        }</Container>
+            </InnerContainer>
+        </Container>
     )
 }
 
-const CloseComponent=({setShowModal}:{setShowModal:React.Dispatch<React.SetStateAction<boolean>>})=>{
+const CloseComponent=({setMount,showComponent,setHoverState}:{setMount:React.Dispatch<React.SetStateAction<boolean>>,showComponent:(state:boolean)=>void,setHoverState:React.Dispatch<React.SetStateAction<boolean>>})=>{
+    
+    let timeoutId;
+    useEffect(() =>{
+        return()=>{
+            clearTimeout(timeoutId);
+        }
+    },[])
+    const clickHandler=()=>{
+        setMount(false);
+        timeoutId=setTimeout(()=>{
+            showComponent(false)
+        },100)
+        setHoverState?.(false)
+    }
+
     return (
-        <CloseButton onClick={()=>setShowModal(false)}>
+        <CloseButton onClick={clickHandler}>
             <CloseIcon src={closeIcon}/>
         </CloseButton>
     )
 }
 
 const VideoSection=({info})=>{
+    const [sound,setSound]=useState(true);
+    const soundButtonClicked=()=>{
+        setSound(prevSound=>!prevSound);
+    }
     return(
         <VideoSectionContainer>
-            <Video poster={`${info["large-image"]}`}/>
+            <Video poster={''} src={info["video"]} muted={sound}  autoPlay loop {...{image:info["small-image"]}}/>
+            <VideoControlsContainer>
+                <PlayButton/>
+                <AddButton/>
+                <ReactionButton/>
+                <SoundControlButton onClick={soundButtonClicked}/>
+            </VideoControlsContainer>
         </VideoSectionContainer>
     )
 }
 
 const FirstSection=({info})=>{
-    console.log(info)
     return(
         <FirstSectionContainer>
             <FirstSectionInner1 style={{width:'60%'}}>

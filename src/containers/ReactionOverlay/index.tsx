@@ -1,31 +1,51 @@
-import React from 'react'
+import React,{useEffect,useState} from 'react'
 import {Container,CloseButton,CloseIcon,TitleText,Subtext,
     ThumbsSemanticsContainer,ThumbIcon,ThumbText,ThumbContainer,
     GotItButton
 } from './style/ReactionOverlay'
-import useMoviesPageData from '../../pages/MoviesPage/hooks/useMoviesPageData'
+
 const closeIcon=require('../../assets/images/icons/close-slim.png')
 const thumbsUp=require('../../assets/images/icons/thumbsUp-w.png')
 const thumbsDown=require('../../assets/images/icons/thumbsDown-w.png')
 const doubleThumbsUp=require('../../assets/images/icons/doubleThumbsUp.png')
 
-const ReactionOverlay = () => {
-    const {reactionOverlayData}=useMoviesPageData()
+interface ReactionOverlayType{
+    showOverlayState:boolean,
+    setShowOverlayState:(state:boolean)=>void,
+    setMovieHoverState:(state:boolean)=>void}
+
+const ReactionOverlay = ({showOverlayState,setShowOverlayState,setMovieHoverState}:ReactionOverlayType) => {
+    
+    useEffect(()=>{
+        const body=document.querySelector('body');
+        body.style.overflow='hidden';
+        
+        return(()=>{
+            body.style.overflow='auto';
+        })
+    },[])
+    const gotItClicked=()=>{
+        setShowOverlayState(false);
+        setMovieHoverState && setMovieHoverState(false)
+    }
 
     return (
-        <Container {...{showState:reactionOverlayData.showOverlay}}>
-            <Close/>
+        <Container {...{showOverlayState}}>
+            <Close setShowOverlayState={setShowOverlayState} setMovieHoverState={setMovieHoverState}/>
             <Text/>
             <ThumbsSemantics/>
-            <GotItButton onClick={reactionOverlayData.closeOverlay}>Got it!</GotItButton>
+            <GotItButton onClick={gotItClicked}>Got it!</GotItButton>
         </Container>
     )
 }
 
-export const Close=() => {
-    const {reactionOverlayData}=useMoviesPageData()
+export const Close=({setShowOverlayState,setMovieHoverState}) => {
+    const clickHandler=() => {
+        setShowOverlayState(false);
+        setMovieHoverState && setMovieHoverState(false)
+    }
     return(
-        <CloseButton  onClick={reactionOverlayData.closeOverlay}>
+        <CloseButton  onClick={clickHandler}>
             <CloseIcon src={closeIcon}/>
         </CloseButton>
     )

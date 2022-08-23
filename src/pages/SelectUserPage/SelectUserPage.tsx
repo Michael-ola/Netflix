@@ -1,9 +1,12 @@
 import React,{useState,useEffect} from 'react'
 import {Container,Heading,UsersListContainer,Logo,
         Navbar,StyledProfilesButton,StyledUser,
-        StyledUserPicture,StyledName
+        Picture,Username
     } from './styles/SelectUserPage'
-import picture from '../../assets/images/users/2.png'
+
+
+const users=require('../../data/users.json')
+const picture=require('../../assets/images/users/2.png')
 
 const SelectUserPage = () => {
     return (
@@ -20,44 +23,20 @@ const SelectUserPage = () => {
 
 const UsersList=()=>{
     return(
-        <UsersListContainer>
-            <User/>
-            <User/>
-            <User/>
-            <User/>
-            <User/>
-        </UsersListContainer>
+        <UsersListContainer>{
+           users.map((userData)=>{
+            return <User key={userData.userId} userData={userData}/>
+           })
+        }</UsersListContainer>
     )
 }
 
-const User=()=>{
+const User=({userData})=>{
     return(
         <StyledUser>
-            <UserPicture/>
-            <UserName/>
+            <Picture src={userData.avatar}/> 
+            <Username>{userData.username}</Username>
         </StyledUser>
-    )
-}
-
-const UserPicture=()=>{
-    const [image,setImage]=useState('')
-    useEffect(() => {
-        //get image with axios on component mount
-    },[])
-
-    return(
-        <StyledUserPicture src={picture}/>
-    )
-}
-
-const UserName=()=>{
-    const [name,setName]=useState('')
-    useEffect(() => {
-        //get name with axios on component mount
-    },[])
-
-    return(
-        <StyledName>ali</StyledName>
     )
 }
 
