@@ -8,7 +8,7 @@ import {StyledNav,NavbarLink,
 } from './styles/Navbar'
 import SearchComponent from '../../containers/Search/Search';
 
-
+const NetflixLogo=require('../../assets/images/icons/logo.png')
 const list=require('../../data/faqs.json');
 const bellIcon=require('../../assets/images/icons/bell.png');
 const users=require('../../data/users.json');
@@ -64,7 +64,7 @@ const Navbar = () => {
     
     return (
         <StyledNav {...{changeBackground}}>
-            <NavLogo src="https://www.freepnglogos.com/uploads/netflix-logo-history-png-33.png"/>
+            <NavLogo src={NetflixLogo}/>
             <BrowseButton onMouseEnter={()=>showHandler({showNavLinks:true})}
                 onMouseLeave={()=>showHandler({showNavLinks:false})}
             ><span>Browse</span><BrowseCaret/></BrowseButton>
@@ -107,7 +107,7 @@ const Notifications = ({showState,showHandler,changeNavTab}:NavTabType) => {
     }
     
     return(
-        <>
+        <div style={{display:'flex',position:'relative',flexDirection: 'column',overflow:'visible'}}>
             <NotificationIcon src={bellIcon} onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}/>
             {changeNavTab('showNotifications')? null:
             <NotificationsContainer {...showState} onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}>{
@@ -115,7 +115,7 @@ const Notifications = ({showState,showHandler,changeNavTab}:NavTabType) => {
                     notificationsList.map((notification,index) =><Notification key={notification.id}>{notification.header}</Notification>)
                 :<Notification>No notifications</Notification>
             }</NotificationsContainer>}
-        </>
+        </div>
     )
 }
 
@@ -136,7 +136,7 @@ const Users= ({showState,showHandler,changeNavTab}:NavTabType) => {
     }
     
     return(
-        <>
+        <div style={{display:'flex',position:'relative',flexDirection: 'column',overflow:'visible'}}>
             <UsersTab onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}>
                 <UserAvatar src={usersList[0]?.avatar}/>
                 <Caret style={{}} {...showState}/>
@@ -158,7 +158,7 @@ const Users= ({showState,showHandler,changeNavTab}:NavTabType) => {
                 <HelpCenter><span>Help Center</span></HelpCenter>
                 <StyledSignOut><span>Sign out of Netflix</span></StyledSignOut>
             </UsersContainer>}
-        </>
+        </div>
     )
 }
 

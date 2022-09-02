@@ -4,8 +4,7 @@ import Footer from '../../../../../components/Footer/Footer'
 export const StyledFooter=styled(Footer)`
 background:#f3f3f3;
 border-top: 1px solid #e6e6e6;
-position:relative;
-bottom:0;
+margin-top:auto;
 `
 
 export const  StyledLink=styled.a`

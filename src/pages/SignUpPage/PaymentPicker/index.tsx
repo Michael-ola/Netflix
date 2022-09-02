@@ -1,5 +1,8 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import {Container,LockImage,ButtonContainer,Button} from './style/PaymentPicker.style'
+
+
 const verveLogo=require('../../../assets/images/icons/icon_verve.png')
 const mastercardLogo=require('../../../assets/images/icons/mastercard-v2.png')
 const visaLogo=require('../../../assets/images/icons/visa-v3.png')
@@ -19,18 +22,18 @@ const PaymentPicker = () => {
             </p>
             <p style={{fontWeight: 'bold',maxWidth:'18ch'}}>Secure for peace of <br/>mind.<br/>Cancel easily online.</p>
             <ButtonContainer>
-                <p><span>End-to-end encrypted</span><img src={secureIcon}/></p>
-                <Button>
+                <p><span>End-to-end encrypted</span><img src={secureIcon} alt="secure"/></p>
+                <Link to="/sign-up/creditoption"><Button>
                     <div>
                         <span>Credit or Debit Card</span>
                         <span>
-                            <img src={visaLogo}/>
-                            <img src={mastercardLogo}/>
-                            <img src={verveLogo}/>
+                            <img src={visaLogo} alt='visa card'/>
+                            <img src={mastercardLogo} alt='mastercard'/>
+                            <img src={verveLogo} alt='verve card'/>
                         </span>
                     </div>
-                    <img src={chevronRight}/>
-                </Button>
+                    <div><img src={chevronRight} alt='chevron right'/></div>
+                </Button></Link>
             </ButtonContainer>
         </Container>
     )

@@ -18,10 +18,3 @@ export default createGlobalStyle`
        height:100%;
    }
 `
-
-
-export const Logo=styled.img`
-  width:clamp(40px,10vw,100px);
-  height:clamp(10px,5vw,70px);
-  overflow:hidden;
-`

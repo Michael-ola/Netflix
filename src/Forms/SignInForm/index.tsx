@@ -3,9 +3,12 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import {Container,Title,StyledForm,SubmitButton,CheckBoxContainer,
         CheckBox,CheckboxAndHelpContainer,Help,SignUpLink,MetaTextContainer,LearnMoreLink} from './style/SignInForm'
 import  useInput from '../../customHooks/useInput/useInput'
+import {useDispatch} from 'react-redux'
+import {auth} from '../../redux-store/Actions/auth'
+
 
 interface IFormInput {
-    nameOrNumber: string,
+    signInContact: string,
     password: string
 }
 
@@ -21,19 +24,20 @@ export default function SignInForm(){
 const Form=()=>{
     const [submitButtonClicked,setSubmitButtonClicked]=useState<boolean|null>(null)
     const { register,control,formState: { errors }, handleSubmit,getValues } = useForm<IFormInput>();
-
+    const dispatch = useDispatch();
+    
     const buttonClickedHandler=()=>{
       setSubmitButtonClicked((prevState)=>!prevState)
     }
-    useEffect(() => {
-        console.log('render form')
-    },[])
   
     const onSubmit: SubmitHandler<IFormInput> = (data) =>{
-       console.log(data);
-       const fdata= new FormData();
-       //fdata.append('picture', data.email);
-       //console.log(fdata.getAll('picture'));
+        const contact=data.signInContact.trim();
+        const password=data.password.trim();
+        console.log(data);
+        if(contact && password){
+            //navigate('/sign-up/planform')
+            dispatch(auth(contact,password,false));
+        }
     }
     
     return(

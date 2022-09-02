@@ -1,5 +1,4 @@
 import styled from 'styled-components/macro'
-export {Logo} from '../../../GlobalStyle'
 
 export const Container=styled.div`
     position:relative;
@@ -22,6 +21,7 @@ background:linear-gradient(to bottom,rgba(0,0,0,.7) 10%,rgba(0,0,0,0));
 `
 export const Heading=styled.h1`
   text-align: center;
+  font-size:clamp(1.5rem,10vw,3rem);
 ` 
 export const UsersListContainer=styled.div`
     width:100%;
@@ -42,11 +42,11 @@ export const StyledUser=styled.div`
 `
 export const StyledProfilesButton=styled.button`
     padding:0.3em 1.5em;
-    margin: 0 auto;
+    margin: 2.5em auto 2.5em auto;
+    font-size:1.1rem;
     color:grey;
     background:inherit;
     border:1px solid grey;
-    margin:1.3rem;
     &:hover {
         color:#fff;
         border-color:#fff;
@@ -70,4 +70,12 @@ export const Picture=styled.img.attrs(props=>({
 `
 export const Username=styled.h3`
     text-align:center;
+`
+
+export const Logo=styled.img`
+margin:2% 5%;
+filter:invert(16%) sepia(93%) saturate(6440%) hue-rotate(352deg) brightness(88%) contrast(104%);
+width:clamp(64px,10vw,98px);
+height:clamp(20px,3vw,30px);
+overflow:hidden;
 `

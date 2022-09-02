@@ -4,7 +4,7 @@ export const Container = styled.div`
 display:flex;
 flex-direction:column;
 width:100%;
-margin-top:1.5em;
+margin:1.5em 0 16% 0;
 padding:0 17%;
 @media only screen and (max-width:600px){
     padding:0 3%;
@@ -36,7 +36,8 @@ justify-content:flex-end;
 position:sticky;
 top:0;
 background:#fff; 
-padding-top:1.2em;
+padding-top:0;
+user-select: none;
 & div{
     width:60%;
     display:flex;
@@ -113,6 +114,7 @@ width:40%;
 padding:1.5em 0 1.5em 1em;
 color:#333;
 fill:#333;
+user-select: none;
 font-weight:500;
 &:first-letter{
     text-transform:uppercase;
@@ -143,6 +145,7 @@ align-self:center;
 export const PropertyItem=styled.p`
 width:25%;
 padding:1.5em 0 1.5em 0;
+user-select: none;
 &:first-letter{
     text-transform:uppercase;
 }
@@ -163,6 +166,7 @@ color:#e50914;
 `
 export const DeviceItem=styled.div`
 width:100%;
+user-select: none;
 padding-top:1em;
 display:flex;
 flex-direction:column;

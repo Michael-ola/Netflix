@@ -1,20 +1,21 @@
-import React,{useState,useEffect} from 'react'
+import React from 'react'
 import {Container,Heading,UsersListContainer,Logo,
         Navbar,StyledProfilesButton,StyledUser,
         Picture,Username
     } from './styles/SelectUserPage'
-
+import {useNavigate} from 'react-router-dom'
 
 const users=require('../../data/users.json')
-const picture=require('../../assets/images/users/2.png')
+const NetflixLogo = require('../../assets/images/icons/logo.png')
+
 
 const SelectUserPage = () => {
     return (
         <Container>
             <Navbar>
-                <Logo src="https://www.freepnglogos.com/uploads/netflix-logo-history-png-33.png"/>
+                <Logo src={NetflixLogo}/>
             </Navbar>
-            <Heading>Who's Watching?</Heading>
+            <Heading>Who's watching?</Heading>
             <UsersList/>
             <ProfilesButton/>
         </Container>
@@ -32,9 +33,13 @@ const UsersList=()=>{
 }
 
 const User=({userData})=>{
+    const navigate=useNavigate()
+    const userClickedHandler=() => {
+        navigate('/browse')
+    }
     return(
         <StyledUser>
-            <Picture src={userData.avatar}/> 
+            <Picture src={userData.avatar} onClick={userClickedHandler}/> 
             <Username>{userData.username}</Username>
         </StyledUser>
     )

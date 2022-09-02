@@ -1,9 +1,12 @@
 import React, {useState} from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import{Submit,StyledForm,Img,Text} from './style/MembershipForm'
-import chevronLogo from '../../assets/images/icons/chevron-right.png'
 import  useInput from '../../customHooks/useInput/useInput'
+import {useNavigate} from 'react-router-dom'
+import {useDispatch} from 'react-redux'
+import {storeEmail} from '../../redux-store/Actions/membershipForm'
 
+const chevronLogo= require('../../assets/images/icons/chevron-right.png')
 
 interface IFormInput {
   email: string
@@ -11,21 +14,24 @@ interface IFormInput {
 
 
 export default function MembershipForm() {
+  const navigate=useNavigate();
+  const dispatch = useDispatch();
+
   const [submitButtonClicked,setSubmitButtonClicked]=useState<boolean|null>(null)
   const { register,formState: { errors }, handleSubmit,getValues } = useForm<IFormInput>();
 
   const Input= useInput({errors, getValues, register, 
-    submitButtonState:submitButtonClicked,type:'email',name:'email1',placeholder:'Email address',
+    submitButtonState:submitButtonClicked,type:'email',name:'email',placeholder:'Email address',
     required:'Email is Required!'
   })
 
   const buttonClickedHandler=()=>{
-    setSubmitButtonClicked((prevState)=>!prevState)
+    setSubmitButtonClicked(true);
   }
 
   const onSubmit: SubmitHandler<IFormInput> = (data) =>{
-     console.log(data);
-
+     dispatch(storeEmail(data.email.trim()))
+     navigate('/sign-up')
   }
 
   return (

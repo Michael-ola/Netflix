@@ -14,8 +14,8 @@ margin:4px 0.3em 4px 0.21em;
 box-sizing:border-box;
 &:hover {
     background:rgba(255,255,255,0.7);
-    outline:0.15em solid #fff;
-    outline-offset:0.15em;
+    // outline:0.15em solid #fff;
+    // outline-offset:0.15em;
 }
 ${({round})=>round &&`
 width:1cm;

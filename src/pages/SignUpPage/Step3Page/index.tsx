@@ -19,7 +19,7 @@ const Step3Page = () => {
                 <Card image={checkImage} text="Everything on Netflix for one low price."/>
                 <Card image={checkImage} text="No ads and no extra fees. Ever."/>
             </CardsContainer>
-            <Link style={{width: '100%'}} to="/sign-up/planform"><Button>Next</Button></Link>
+            <Link to="/sign-up/planform"><Button>Next</Button></Link>
         </Container>
     )
 }

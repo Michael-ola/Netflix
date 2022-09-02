@@ -3,7 +3,7 @@ import {Button} from './style/NextPrevButton.style'
 
 interface ButtonType{
     className?: string,
-    onClick?:() => void,
+    onClick?:(event:React.MouseEvent<HTMLButtonElement>) => void,
     children: string
 }
 

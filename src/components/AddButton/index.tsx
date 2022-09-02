@@ -10,8 +10,11 @@ const AddButton = () => {
     const mouseLeaveHandler = () => {
         setHoverState(false)
     }
+    const clickHandler = (event:React.MouseEvent<HTMLButtonElement>) => {
+        event.stopPropagation()
+    }
     return (
-        <Button onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}>
+        <Button onClick={clickHandler} onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}>
             <AddIcon src={addIcon}/>
             {hoverState && <ButtonText>Add To My List</ButtonText>}
         </Button>

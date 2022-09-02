@@ -5,7 +5,8 @@ display:flex;
 flex-direction:column;
 margin-top:1em;
 overflow:visible;
+z-index:4;
 &:hover {
-    z-index:4;
+    z-index:5;
 }
 `

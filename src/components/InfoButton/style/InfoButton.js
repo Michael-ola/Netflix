@@ -14,8 +14,8 @@ margin:4px 0.3em 4px 0.21em;
 box-sizing:border-box;
 &:hover {
     background:rgba(109,109,110,0.4);
-    outline:0.15em solid #fff;
-    outline-offset:0.15em;
+    // outline:0.15em solid #fff;
+    // outline-offset:0.15em;
 }
 `
 

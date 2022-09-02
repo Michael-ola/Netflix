@@ -1,14 +1,13 @@
 import styled from 'styled-components/macro'
 import caret from '../../../assets/images/icons/carettt.png'
 
-import {Logo} from '../../../GlobalStyle'
 export const StyledNav=styled.div`
 position:fixed;
 z-index:5;
 width:100%;
 display:flex;
 align-items:center;
-overflow:hidden;
+overflow:visible;
 background:${({changeBackground})=>changeBackground?'rgb(20, 20, 20)':
  ''};
 color:#e5e5e5;
@@ -27,9 +26,6 @@ transition: all 0.4s ease;
 
 @media only screen and (max-width:950px){
     padding:0.3em;
-}
-@media only screen and (max-width:885px){
-    justify-content: flex-end;
 }
 `
 const userListStyle=`
@@ -50,21 +46,20 @@ width:100%;
 }
 `
 
-export const NavLogo=styled(Logo)`
+export const NavLogo=styled.img`
+margin:20px 0 20px 3%;
+filter:invert(16%) sepia(93%) saturate(6440%) hue-rotate(352deg) brightness(88%) contrast(104%);
+width:clamp(45px,9vw,93px);
+height:clamp(13px,3vw,25px);
+overflow:hidden;
+align-self:flex-start;
 @media only screen and (max-width:885px){
-    position:absolute;
-    margin:auto;
-    top:0;
-    bottom:0;
-    left:0;
-}
-@media only screen and (max-width:400px){
-    margin:0;
+    margin:8px auto 8px 1%;
 }
 `
 export const BrowseButton=styled.div`
 position:absolute;
-margin:auto 0;
+margin:auto;
 top:0;
 bottom:0;
 left:7em;
@@ -167,13 +162,13 @@ display:flex;
 flex-direction:column;
 justify-content:center;
 padding:1em 0;
-position:fixed;
+position:absolute;
+align-self:flex-end;
 width:400px;
 min-height:100px;
 border:1px solid rgba(255,255,255,0.2);
 border-top:3px solid #e5e5e5;
-top:73px;
-right:97px;
+top:43px;
 z-index:2;
 visibility:hidden;
 background:rgba(0,0,0,0.8);
@@ -191,20 +186,12 @@ transition:visibility 0.5s linear;
     content:'';
     display:block;
     width:0px;
-    position:fixed;
-    top:56.5px;
-    right:109px;
+    position:absolute;
+    top:-19px;
+    right:2%;
     height:0px;
     border:8px solid transparent;
     border-bottom-color:#e5e5e5;
-    @media only screen and (max-width:950px){
-        right:75px;
-        top:28.5px;
-    }
-}
-@media only screen and (max-width:950px){
-    right:57px;
-    top:45px;
 }
 `
 
@@ -223,14 +210,15 @@ color:#fff;
 `
 
 export const UsersTab=styled.div`
+width:100%;
 display:flex;
-margin-right:clamp(0.3em,2vw,3em);
+padding-right:clamp(0.3em,2vw,3em);
 `
 export const UsersContainer=styled.ul`
-position:fixed;
+position:absolute;
 z-index:3;
-top:77px;
-right:clamp(1em,5vw,3em);
+right:50%;
+top:51px;
 width:180px;
 padding-top:1em;
 display:flex;
@@ -247,20 +235,15 @@ transition:visibility 0.5s linear;
     content:'';
     display:block;
     width:0px;
-    position:fixed;
-    top:59px;
-    right:clamp(1.5em,5vw,3.5em);
+    position:absolute;
+    top:-16px;
+    right:5%;
     height:0px;
     border:8px solid transparent;
     border-bottom-color:#e5e5e5;
-    @media only screen and (max-width:950px){
-        top:43px;
-        right:clamp(1em,4vw,2.4em);
-    }
 }
 @media only screen and (max-width:950px){
-top:60px;
-right:clamp(0.6em,3vw,2em);
+    right:30%;
 }
 `
 

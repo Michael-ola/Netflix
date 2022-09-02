@@ -3,6 +3,7 @@ import styled from 'styled-components/macro'
 export const Container = styled.div`
 position:relative;
 height:clamp(20vh,50vw,105vh);
+margin-bottom:-10%;
 overflow:visible;
 &::before{
     content:'';
@@ -10,7 +11,7 @@ overflow:visible;
     position:absolute;
     top:0;
     left:0;
-    width:100%;
+    width:60%;
     height:100%;
     background:linear-gradient(77deg,rgba(0,0,0,.6),transparent 85%);
 }
@@ -33,22 +34,24 @@ export const MovieDataContainer= styled.div`
 position:absolute;
 margin:auto;
 left:clamp(1px,5vw,70px);
-top:0;
+top:-12%;
 bottom:0;
 display:flex;
 flex-direction:column;
 justify-content:center;
 background:transparent;
+user-select:none;
 `
 
 export const MovieTitle=styled.img`
-width:clamp(60px,25vw,330px);
-height:clamp(40px,15vw,180px);
+display:block;
+width:clamp(60px,40vw,94%);
+height:clamp(40px,15vw,200px);
 background-repeat:no-repeat;
 background-size:cover;
 background-position:center;
 display:block;
-margin-bottom:5%;
+margin-bottom:4%;
 `
 
 export const Controls= styled.div`
@@ -59,10 +62,12 @@ margin:clamp(3px,2vw,20px) 0;
 
 export const MovieDescription=styled.p`
 color:#fff;
-font-size:clamp(0em,2vw,16px);
+font-size:clamp(0.1rem,1.6vw,1rem);
 font-weight:900;
-max-width:51ch;
+max-width:45ch;
 text-align:justify;
+margin-top:4%;
+background:rgba(0,0,0,0.25);
 `
 export const AgeRating= styled.div`
 position:absolute;
@@ -71,7 +76,7 @@ right:0;
 padding:0.2em 2.5em 0.2em 1em;
 color:#fff;
 background:rgba(51,51,51,.6);
-font-size:clamp(0.3em,1.5vw,1.1em);
+font-size:clamp(0.5em,1.5vw,1.1em);
 &::before{
     content:'';
     display:block;

@@ -1,11 +1,14 @@
 import styled from 'styled-components/macro'
 
 export const Container = styled.div`
-margin:7em auto 8em auto;
+margin:7em auto 14% auto;
 width:350px;
 display:flex;
 flex-direction:column;
 align-items:center;
+& a{
+    width:100%;
+}
 @media only screen and (max-width:500px){
     align-items:flex-start;
     margin-right:8%;

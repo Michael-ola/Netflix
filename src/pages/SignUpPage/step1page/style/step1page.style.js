@@ -4,6 +4,7 @@ export const Container = styled.div`
 width:100%;
 display:flex;
 justify-content:center;
+margin-bottom:13%;
 `
 export const InnerContainer = styled.div`
 box-sizing: border-box;

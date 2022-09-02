@@ -3,6 +3,7 @@ import styled from 'styled-components/macro'
 export const Container = styled.div`
 width:100%;
 padding:3em 5%;
+margin-bottom:16%;
 display:flex;
 flex-direction:column;
 align-items:center;
@@ -26,8 +27,12 @@ margin-bottom:3em;
 `
 
 export const ButtonContainer= styled.div`
+min-width:270px;
 margin-top:2em;
 font-size:0.8em;
+& a{
+    text-decoration:none;
+}
 & img{
     width:16px;
     height:16px;
@@ -38,6 +43,9 @@ font-size:0.8em;
     align-items:flex-end;
     justify-content:flex-end;
 }
+@media only screen and (max-width:450px){
+    width:100%;
+}
 `
 export const Button = styled.button`
 width:100%;
@@ -45,9 +53,9 @@ border: 2px solid #ccc;
 border-radius:5px;
 background:#fff;
 display:flex;
-padding:1em;
+padding:1.5em 0.7em;
 align-items:center;
-& div{
+& div:nth-of-type(1){
     display:flex;
     &  span{
         display:flex;
@@ -61,17 +69,20 @@ align-items:center;
             margin:0 3px;
         }
         &:last-of-type{
-            margin:0 4em 0 1em;
+            margin:0 clamp(3em,15vw,10em) 0 1em;
         }
     }
     @media only screen and (max-width:450px){
         flex-direction:column;
     }
 }
-
-&  img: nth-of-type(4){
-    margin-left:auto;
-    width:19px;
-    height:19px;
+& div:nth-of-type(2){
+    flex-grow: 1;
+    &  img{
+        display:block;
+        margin-left:auto;
+        width:19px;
+        height:19px;
+    }
 }
 `

@@ -48,7 +48,7 @@ export const Title=styled.div`
     vertical-align: bottom;
     color: #e5e5e5;
     display: inline-block;
-    font-size:clamp(0.7rem.1.6vw,1rem);
+    font-size:clamp(0.7rem.1.6vw,1.2rem);
     font-weight: 700;
     margin-right:6px;
 `

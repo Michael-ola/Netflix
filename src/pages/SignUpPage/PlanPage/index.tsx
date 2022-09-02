@@ -5,19 +5,27 @@ import {Container,CardsContainer,PlanButtonsContainer,PlanButton,PropertiesWrapp
     DeviceItemsContainer,DeviceItem,DeviceImage,TermsText} from './style/PlanPage.style'
 import Card from '../../../components/checkCard'
 import NextPrevButton from '../../../components/NextPrevButton'
+import {useDispatch} from 'react-redux'
+import {storePlanInfo} from '../../../redux-store/Actions/planInfo'
 
 const checkImage=require('../../../assets/images/icons/check.png');
 const planInfo=require('../../../data/planInfo.json');
-const phone=require('../../../assets/images/icons/computer.png')
 
 const PlanPage = () => {
+    const dispatch=useDispatch();
     const [selectedPlan,setSelectedPlan]=useState('premium');
     const navigate=useNavigate()
     const setSelectedPlanState=(plan:string)=>{
         setSelectedPlan(plan);
     }
     const buttonClickedHandler =()=>{
-        navigate('/sign-up/paymentPicker')
+        planInfo.plans.forEach((plan)=>{
+            if(plan.type===selectedPlan){
+                const price=plan.properties['monthly-price'];
+                dispatch(storePlanInfo(selectedPlan,price))
+                navigate('/sign-up/paymentPicker')
+            }
+        })
     }
     return (
         <Container>
