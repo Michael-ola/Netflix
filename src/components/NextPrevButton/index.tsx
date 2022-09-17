@@ -1,15 +1,21 @@
 import React from 'react'
-import {Button} from './style/NextPrevButton.style'
+import {Button,Spinner,SpinnerImg} from './style/NextPrevButton.style'
+
+const spinImg=require('assets/images/misc/spinner.png')
 
 interface ButtonType{
     className?: string,
     onClick?:(event:React.MouseEvent<HTMLButtonElement>) => void,
-    children: string
+    children: string,
+    spinner?:boolean
 }
 
-const NextPrevButton = ({className,onClick,children}:ButtonType) => {
+const NextPrevButton = ({className,onClick,children,spinner}:ButtonType) => {
     return (
-       <Button className={className} onClick={onClick}>{children}</Button>
+       <Button className={className} onClick={onClick}>
+            {spinner &&<Spinner><SpinnerImg src={spinImg}/></Spinner>}
+            {!spinner && children}
+       </Button>
     )
 }
 

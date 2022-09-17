@@ -1,11 +1,15 @@
-import React,{useState,useEffect,useMemo} from 'react'
+import React,{useMemo} from 'react'
 import {Container,MoreInfo} from './styles/index.style'
-import Navbar from './Navbar'
-import MoviePreview from './MoviePreview'
-import MoviesCategory from './MoviesCategory/MoviesCategory'
-import Footer from './Footer'
-import {MoviesPageContextProvider} from './context/MoviesPageContext'
-const moviesData=require('../../data/movieCategories.json');
+import Navbar from 'features/moviesPage/layout/Navbar'
+import MoviePreview from 'features/moviesPage/displayMoviePreview'
+import MoviesCategory from 'features/moviesPage/displayMoviesCategories/components'
+import Footer from 'features/moviesPage/layout/Footer'
+import {MoviesPageContextProvider} from 'features/moviesPage/context/MoviesPageContext'
+import withErrorIndicator from 'HOC/withErrorIndicator'
+import axios  from 'axios'
+import DisplayPage from 'features/Search/components/ResultsDisplayPage/Page'
+
+const moviesData=require('data/movieCategories.json');
 
 const MoviesPage = () => {
 
@@ -17,7 +21,9 @@ const MoviesPage = () => {
 
     return (
         <MoviesPageContextProvider data={contextData}>
+        <DisplayPage/>
         <Container>
+            <div id="searchDisplay"></div>
             <div id="reactionOverlay"></div>
             <MoreInfo id="moreInfo"></MoreInfo>
             <Navbar/>
@@ -28,4 +34,4 @@ const MoviesPage = () => {
         </MoviesPageContextProvider>
     )
 }
-export default MoviesPage
+export default withErrorIndicator(MoviesPage,axios)

@@ -20,10 +20,9 @@ export const PlayButton=styled(Play)`
     outline:none;
 }
 `
-
-
 export const Container=styled.div`
-width:100vw;
+max-width:100%;
+width:180vw;
 height:100vh;
 transform:scale(0.4);
 ${({mount})=>mount?`
@@ -40,17 +39,23 @@ transform-origin: ${transformOrigin};
 export const InnerContainer=styled.div`
 position:relative;
 width:60%;
+min-height:100vh;
 margin:0 auto;
 border-radius:8px;
 background:#181818;
 padding-bottom:5%;
+margin-top:2%;
+@media only screen and (max-width:900px){
+    width:100%;
+    margin-top:0;
+}
 `
 export const Video=styled.video`
 display:block;
 background-repeat:no-repeat;
 background-size:cover;
-background-color:transparent;
-background-image:${({image})=>`url(${image})`};
+background-color:blue;
+background-image:${({image})=>`url(${require('../../../assets/images/netflix/smallImages/'+image)})`};
 border-top-left-radius:8px;
 border-top-right-radius:8px;
 width:100%;
@@ -92,6 +97,7 @@ overflow:hidden;
 export const VideoSectionContainer=styled.div`
 position:relative;
 width:100%;
+min-height:60%;
 &::before{
     content:'';
     display:block;
@@ -115,6 +121,7 @@ export const FirstSectionInner1=styled.div`
 display:flex;
 flex-direction:column;
 width:60%;
+padding-right:5%;
 `
 export const FirstSectionInner2=styled(FirstSectionInner1)`
 width:40%;
@@ -131,6 +138,6 @@ export const ThirdSectionInner=styled.div`
 width:100%;
 display:flex;
 flex-direction:column;
-margin-top:2em;
+margin-top:4em;
 padding:0 7%;
 `

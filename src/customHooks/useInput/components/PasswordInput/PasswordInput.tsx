@@ -11,12 +11,13 @@ const PasswordInput=()=>{
     const buttonClickedHandler=(event:React.MouseEvent<HTMLButtonElement>) =>{
         event.preventDefault()
         setClickState(!clickState)
-        context.labelClickedHandler()
+        context?.labelClickedHandler()
     }
     return(
     <>
         <TextOrEmailField type={clickState?'text':'password'} />
-        <ShowHideButton onClick={(event)=>buttonClickedHandler(event)} {...{labelClicked:context.labelClickState,error:context.errors?true:false}}>
+        <ShowHideButton onClick={(event)=>buttonClickedHandler(event)} 
+            {...{labelClicked:context?.labelClickState,error:context?.errors?true:false}}>
             <Span>{clickState?'HIDE':'SHOW'}</Span>
         </ShowHideButton>
     </>

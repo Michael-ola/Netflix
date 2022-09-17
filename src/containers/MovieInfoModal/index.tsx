@@ -4,17 +4,18 @@ import {Container,InnerContainer,Video,CloseButton,CloseIcon,FirstSectionContain
     MovieFiguresContainer,ThirdSectionInner,VideoControlsContainer,PlayButton
 } from './style/MovieInfoModal.style'
 
-import MatchScore from '../../components/MatchScore'
-import Duration from '../../components/Duration'
-import MaturityRating from '../../components/MaturityRating'
-import Season from '../../components/Season'
-import ReactionButton from '../../containers/ReactionButtons'
-import AddButton from '../../components/AddButton'
-import SoundControlButton from '../../containers/SoundControlButton'
+import MatchScore from 'components/MatchScore'
+import Duration from 'components/Duration'
+import MaturityRating from 'components/MaturityRating'
+import Season from 'components/Season'
+import ReactionButton from 'containers/ReactionButtons'
+import AddButton from 'components/AddButton'
+import SoundControlButton from 'containers/SoundControlButton'
+import {MovieType} from 'types/moviesDataType'
 
 const New=MatchScore
 const Year =Duration
-const closeIcon=require('../../assets/images/icons/close-slim.png')
+const closeIcon=require('assets/images/icons/close-slim.png')
 
 interface MovieModalType{
     info:any,
@@ -28,21 +29,21 @@ const MovieInfoModal = ({info,showState,setShowState,setHoverState,transformOrig
     const [mount,setMount]=useState(false)
 
     useEffect(() => {
-        const body=document.querySelector('body');
+        const body=document.querySelector('body') as HTMLElement;
         body.style.overflow='hidden';
         setMount(true)
         console.log(transformOrigin)
         return(()=>{
             body.style.overflow='auto';
         })
-    },[showState])
+    },[showState, transformOrigin])
 
     
 
     return (
         <Container {...{transformOrigin}} {...{mount}} {...{showState}}>
             <InnerContainer>
-                   <CloseComponent setMount={setMount}  showComponent={setShowState} setHoverState={setHoverState} />
+                   <CloseComponent setMount={setMount}  showComponent={setShowState} setHoverState={setHoverState!} />
                    <VideoSection info={info}/>
                    <FirstSection info={info}/>
                    <ThirdSection info={info}/>
@@ -52,16 +53,10 @@ const MovieInfoModal = ({info,showState,setShowState,setHoverState,transformOrig
 }
 
 const CloseComponent=({setMount,showComponent,setHoverState}:{setMount:React.Dispatch<React.SetStateAction<boolean>>,showComponent:(state:boolean)=>void,setHoverState:React.Dispatch<React.SetStateAction<boolean>>})=>{
-    
-    let timeoutId;
-    useEffect(() =>{
-        return()=>{
-            clearTimeout(timeoutId);
-        }
-    },[])
+
     const clickHandler=()=>{
         setMount(false);
-        timeoutId=setTimeout(()=>{
+        setTimeout(()=>{
             showComponent(false)
         },100)
         setHoverState?.(false)
@@ -74,14 +69,16 @@ const CloseComponent=({setMount,showComponent,setHoverState}:{setMount:React.Dis
     )
 }
 
-const VideoSection=({info})=>{
+const VideoSection=({info}:{info:MovieType})=>{
     const [sound,setSound]=useState(true);
     const soundButtonClicked=()=>{
         setSound(prevSound=>!prevSound);
     }
     return(
         <VideoSectionContainer>
-            <Video poster={''} src={info["video"]} muted={sound}  autoPlay loop {...{image:info["small-image"]}}/>
+            <Video poster={''} muted={sound}  autoPlay loop {...{image:info["small-image"]}}>
+            <source src={"https://drive.google.com/uc?export=download&id="+info["trailer"]} type='video/mp4'></source>
+            </Video>
             <VideoControlsContainer>
                 <PlayButton/>
                 <AddButton/>
@@ -92,7 +89,8 @@ const VideoSection=({info})=>{
     )
 }
 
-const FirstSection=({info})=>{
+const FirstSection=({info}:{info:MovieType})=>{
+    const infoValue=info.descriptions["more-info"];
     return(
         <FirstSectionContainer>
             <FirstSectionInner1 style={{width:'60%'}}>
@@ -100,40 +98,41 @@ const FirstSection=({info})=>{
                 <InfoText>{info.descriptions["more-info"]?.about}</InfoText>
             </FirstSectionInner1>
             <FirstSectionInner2 style={{width:'40%'}}>
-                <InfoText><InfoTextTitle>Cast:&nbsp;</InfoTextTitle>{info.descriptions["more-info"]?.cast.join(', ')}</InfoText>
-                <InfoText><InfoTextTitle>Genres:&nbsp;</InfoTextTitle>{info.descriptions["more-info"]?.genres.join(', ')}</InfoText>
-                <InfoText><InfoTextTitle>This Movie is:&nbsp;</InfoTextTitle>{info.descriptions["more-info"]?.feelings.join(', ')}</InfoText>
+                {infoValue?.cast[0] && <InfoText><InfoTextTitle>Cast:&nbsp;</InfoTextTitle>{infoValue?.cast.join(', ')}</InfoText>}
+                {infoValue?.genres[0] && <InfoText><InfoTextTitle>Genres:&nbsp;</InfoTextTitle>{infoValue?.genres.join(', ')}</InfoText>}
+                {infoValue?.feelings[0] && <InfoText><InfoTextTitle>This movie is:&nbsp;</InfoTextTitle>{infoValue?.feelings.join(', ')}</InfoText>}
             </FirstSectionInner2>
         </FirstSectionContainer>
     )
 }
 
-const MovieFigures=({info})=>{
+const MovieFigures=({info}:{info:MovieType})=>{
     const months=["january","feburary","march","april","may","june","july","august","september","october","november","december"]
     const year= new Date().getFullYear();
     const month= new Date().getMonth();
     
     return(
         <MovieFiguresContainer>
-            {info.date && (info.date.year==year && info.date.month.toLowerCase()==month || info.date.month===months[month]) && <New>New</New>}
-            <Year>{info.date && info.date.year}</Year>
-            <MaturityRating>{info["maturity-rating"]}</MaturityRating>
-            {info.seasons && <Season>{info.seasons} {info.seasons>1?'seasons':'season'}</Season>}
-            {info.duration && <Duration>{info.duration}</Duration>}
+            {info.date && ((+info.date.year===year && +info.date.month.toLowerCase()===month) || info.date.month===months[month]) && <New><>New</></New>}
+            {info['match-score'] && <MatchScore><>{info['match-score']} Match</></MatchScore>}
+            <Year><>{info.date && info.date.year}</></Year>
+            <MaturityRating><>{info["maturity-rating"]}</></MaturityRating>
+            {info.seasons && <Season><>{info.seasons} {+info.seasons>1?'seasons':'season'}</></Season>}
+            {info.duration && <Duration><>{info.duration}</></Duration>}
         </MovieFiguresContainer>
     )
 }
 
 
-const ThirdSection =({info})=>{
+const ThirdSection =({info}:{info:MovieType})=>{
+    const infoValue=info.descriptions["more-info"];
     return(
         <ThirdSectionInner>
             <TitleText>{'About '+ info.name}</TitleText>
-            <InfoText><InfoTextTitle>Cast:&nbsp;</InfoTextTitle>{info.descriptions["more-info"]?.cast.join(', ')}</InfoText>
-            <InfoText><InfoTextTitle>Writer:&nbsp;</InfoTextTitle>{info.descriptions["more-info"]?.writer.join(', ')}</InfoText>
-            <InfoText><InfoTextTitle>Genres:&nbsp;</InfoTextTitle>{info.descriptions["more-info"]?.genres.join(', ')}</InfoText>
-            <InfoText><InfoTextTitle>This movie is:&nbsp;</InfoTextTitle>{info.descriptions["more-info"]?.feelings.join(', ')}</InfoText>
-            <InfoText><InfoTextTitle>Genres:&nbsp;</InfoTextTitle>{info.descriptions["more-info"]?.genres.join(', ')}</InfoText>
+            {infoValue?.cast[0] && <InfoText><InfoTextTitle>Cast:&nbsp;</InfoTextTitle>{infoValue?.cast.join(', ')}</InfoText>}
+            {infoValue?.writer[0] && <InfoText><InfoTextTitle>Writer:&nbsp;</InfoTextTitle>{infoValue?.writer.join(', ')}</InfoText>}
+            {infoValue?.genres[0] && <InfoText><InfoTextTitle>Genres:&nbsp;</InfoTextTitle>{infoValue?.genres.join(', ')}</InfoText>}
+            {infoValue?.feelings[0] && <InfoText><InfoTextTitle>This movie is:&nbsp;</InfoTextTitle>{infoValue?.feelings.join(', ')}</InfoText>}
             
         </ThirdSectionInner>
     )

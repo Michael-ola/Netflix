@@ -1,10 +1,10 @@
 import React from 'react'
 import {StyledMaturityRating} from './style/MaturityRating.style'
 
-const MaturityRating = (props) => {
+const MaturityRating = ({children}:{children:JSX.Element}) => {
     return (
         <StyledMaturityRating>
-            {props.children}
+            {children}
         </StyledMaturityRating>
     )
 }

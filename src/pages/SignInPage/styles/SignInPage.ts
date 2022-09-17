@@ -1,5 +1,5 @@
 import styled  from 'styled-components/macro'
-import Footer from '../../../components/Footer/Footer'
+import Footer from 'Layout/Footer/Footer'
 
 export const Container= styled.div`
     position:relative;

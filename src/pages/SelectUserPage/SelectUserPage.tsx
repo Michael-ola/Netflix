@@ -4,9 +4,10 @@ import {Container,Heading,UsersListContainer,Logo,
         Picture,Username
     } from './styles/SelectUserPage'
 import {useNavigate} from 'react-router-dom'
+import userType from 'types/usersDataType'
 
-const users=require('../../data/users.json')
-const NetflixLogo = require('../../assets/images/icons/logo.png')
+const users=require('data/users.json') as userType[];
+const NetflixLogo = require('assets/images/icons/logo.png')
 
 
 const SelectUserPage = () => {
@@ -32,7 +33,7 @@ const UsersList=()=>{
     )
 }
 
-const User=({userData})=>{
+const User=({userData}:{userData:userType})=>{
     const navigate=useNavigate()
     const userClickedHandler=() => {
         navigate('/browse')

@@ -67,6 +67,7 @@ export const ThumbIcon=styled.img`
 display:block;
 width:var(--size);
 height:var(--size);
+filter:brightness(0) invert(1);
 `
 export const ThumbContainer=styled.div`
 display:flex;

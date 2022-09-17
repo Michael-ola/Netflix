@@ -5,9 +5,9 @@ import {Container,StyledLikeButton,StyledLoveButton,StyledDislikeButton,
 
 import ReactionOverlay from '../ReactionOverlay'
 
-const thumbsUp=require('../../assets/images/icons/thumbsUp.png');
-const thumbsDown=require('../../assets/images/icons/thumbsDown.png');
-const doubleThumbsUp=require('../../assets/images/icons/doubleThumbsUp.png');
+const thumbsUp=require('assets/images/icons/thumbsUp.png');
+const thumbsDown=require('assets/images/icons/thumbsDown.png');
+const doubleThumbsUp=require('assets/images/icons/doubleThumbsUp.png');
 
 interface LikeButtonType{
     placeHolder?:boolean,
@@ -26,7 +26,7 @@ const ReactionButtons = ({setMovieHoverState}:{setMovieHoverState?:React.Dispatc
     const mouseActionHandler = (state:boolean) => {
         setHoverState(state)
     }
-    const clickHandler = (event) => {
+    const clickHandler = (event:React.MouseEvent) => {
         event.stopPropagation()
     }
     return (
@@ -42,7 +42,9 @@ const CombinedReactions = ({show,setShow,setMovieHoverState}:CombinedReactionsTy
     const setShowOverlayState=(state:boolean)=>{
         setShowOverlay(state)
     }
-    
+    const setHoverState=(state:boolean)=>{
+        setMovieHoverState?.(state)
+    }
     return(
         <>
         <CombinedReactionsContainer onMouseLeave={()=>setShow(false)} {...{show}}>
@@ -52,7 +54,7 @@ const CombinedReactions = ({show,setShow,setMovieHoverState}:CombinedReactionsTy
         </CombinedReactionsContainer>
         
         {showOverlay ?
-            ReactDom.createPortal(<ReactionOverlay setMovieHoverState={setMovieHoverState} showOverlayState={showOverlay} setShowOverlayState={setShowOverlayState}/>,document.getElementById("reactionOverlay")):null}
+            ReactDom.createPortal(<ReactionOverlay setMovieHoverState={setHoverState} showOverlayState={showOverlay} setShowOverlayState={setShowOverlayState}/>,document.getElementById("reactionOverlay") as HTMLElement):null}
         </>
     )
 }
@@ -68,7 +70,7 @@ const LikeButton = ({placeHolder,onMouseEnter,showOverlayState,setShowOverlaySta
         setHoverState(false)
     }
     const onClickHandler = () => {
-        setShowOverlayState(true)
+        setShowOverlayState?.(true)
     }
     return(
         <StyledLikeButton onClick={onClickHandler} {...{placeHolder}} onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}>

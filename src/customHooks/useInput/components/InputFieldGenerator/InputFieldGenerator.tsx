@@ -4,7 +4,7 @@ import PasswordInput from '../PasswordInput/PasswordInput'
 import EmailOrTelephoneInput from '../EmailOrTelephoneInput/EmailOrTelephoneInput'
 import TextOrEmailField from '../TextOrEmailField/TextOrEmailField'
 
-const InputField=({type})=>{
+const InputField=({type}:{type:string})=>{
   
     const generateInput=(type:string):JSX.Element=>{
         switch(type){

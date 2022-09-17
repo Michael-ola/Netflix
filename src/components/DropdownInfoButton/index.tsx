@@ -1,9 +1,9 @@
 import React,{useState} from 'react'
 import {StyledButton,StyledIcon,ButtonText} from './style/DropdownInfoButton'
 
-const dropDownIcon=require('../../assets/images/icons/chevron-right.png');
+const dropDownIcon=require('assets/images/icons/chevron-right.png');
 
-const DropdownInfoButton =({setShowMoreInfoState}) => {
+const DropdownInfoButton =({setShowMoreInfoState}:{setShowMoreInfoState:(state:boolean)=>void}) => {
 
     const [hoverState,setHoverState]=useState(false)
    
@@ -13,7 +13,7 @@ const DropdownInfoButton =({setShowMoreInfoState}) => {
     const mouseLeaveHandler = () => {
         setHoverState(false)
     }
-    const onClickHandler = (event) => {
+    const onClickHandler = (event:React.MouseEvent) => {
         event.stopPropagation()
         setShowMoreInfoState(true)
     }

@@ -1,4 +1,10 @@
 import {authActionTypes} from '../Actions/actionTypes'
+import  {authDataType} from '../types'
+
+interface actionType{
+    type: string,
+    payload:authDataType
+}
 
 const initialState={
     loading:false,
@@ -7,7 +13,7 @@ const initialState={
     error:null
 }
 
-const authStartHandler=(state) => {
+const authStartHandler=(state:authDataType) => {
     return{
         ...state,
         loading:true,
@@ -17,7 +23,7 @@ const authStartHandler=(state) => {
     }
 }
 
-const authSuccessHandler=(state,token,userId) => {
+const authSuccessHandler=(state:authDataType,token:string | null,userId:string | null) => {
     return{
         ...state,
         loading:false,
@@ -27,7 +33,7 @@ const authSuccessHandler=(state,token,userId) => {
     }
 }
 
-const  authFailHandler=(state,error) => {
+const  authFailHandler=(state:authDataType,error:string | null) => {
     return{
         ...state,
         error:error,
@@ -37,7 +43,15 @@ const  authFailHandler=(state,error) => {
     }
 }
 
-const authReducer=(state=initialState,action)=>{
+const authLogoutHandler=(state:authDataType)=>{
+    return{
+        ...state,
+        token:null,
+        userId:null
+    }
+}
+
+const authReducer=(state=initialState,action:actionType)=>{
     switch(action.type){
         case authActionTypes.AUTH_START:
             return authStartHandler(state);
@@ -45,6 +59,8 @@ const authReducer=(state=initialState,action)=>{
             return authSuccessHandler(state,action.payload.token,action.payload.userId);
         case authActionTypes.AUTH_FAIL:
             return authFailHandler(state,action.payload.error);
+        case authActionTypes.AUTH_LOGOUT:
+            return authLogoutHandler(state);
         default:
             return state
     }

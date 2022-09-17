@@ -101,12 +101,12 @@ export default function useInput({errors,getValues,register,control,submitButton
 const  Input=()=>{
   const context=useContext(InputContext)
   return(
-    <InputWrapper {...(context.customStyle && {customStyle:context.customStyle})} >
-      <FieldWrapper {...{error:context.errors?true:false} } {...{labelClicked:context.labelClickState}}
-      {...(context.customStyle && {customStyle:context.customStyle})}>
+    <InputWrapper {...(context?.customStyle && {customStyle:context.customStyle})} >
+      <FieldWrapper {...{error:context?.errors?true:false} } {...{labelClicked:context?.labelClickState}}
+      {...(context?.customStyle && {customStyle:context?.customStyle})}>
 
         <Label/>
-        <InputField type={context.type}/> 
+        <InputField type={context?.type as string}/> 
       </FieldWrapper>
       
       <ErrorMessage/>

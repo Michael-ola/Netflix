@@ -12,7 +12,7 @@ const PlayButton = (props:PlayButtonType) => {
     return (
         <PlayButtonContainer className={props.className} {...{round:props.round}} onClick={props.onClick}>
             <PlayIcon {...{round:props.round}} src={playIcon}/>
-            <span style={{display:props.round && 'none'}}>Play</span>
+            <span style={props?.round ?{display: 'none'}:{}}>Play</span>
         </PlayButtonContainer>
     )
 }

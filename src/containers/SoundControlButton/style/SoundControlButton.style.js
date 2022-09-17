@@ -10,11 +10,11 @@ overflow:visible;
 flex-shrink:0;
 width:1cm; 
 height:1cm;
-border:2px solid grey;
+border:1px solid rgba(255,255,255,0.7);
 border-radius:50%;
 background:transparent;
 &:hover {
-    background:#363636;
+    background:rgba(255,255,255,0.2);
     border-color:#fff;
 }
 `
@@ -22,7 +22,7 @@ background:transparent;
 export const StyledIcon =styled.img`
 box-sizing: border-box;
 display:block;
-width:40%;
-height:40%;
+width:50%;
+height:50%;
 filter:brightness(0) invert(1);
 `

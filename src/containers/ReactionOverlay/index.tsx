@@ -1,23 +1,24 @@
-import React,{useEffect,useState} from 'react'
+import React,{useEffect} from 'react'
 import {Container,CloseButton,CloseIcon,TitleText,Subtext,
     ThumbsSemanticsContainer,ThumbIcon,ThumbText,ThumbContainer,
     GotItButton
 } from './style/ReactionOverlay'
 
-const closeIcon=require('../../assets/images/icons/close-slim.png')
-const thumbsUp=require('../../assets/images/icons/thumbsUp-w.png')
-const thumbsDown=require('../../assets/images/icons/thumbsDown-w.png')
-const doubleThumbsUp=require('../../assets/images/icons/doubleThumbsUp.png')
+const closeIcon=require('assets/images/icons/close-slim.png')
+const thumbsUp=require('assets/images/icons/thumbs-up.png')
+const thumbsDown=require('assets/images/icons/thumbs-down.png')
+const doubleThumbsUp=require('assets/images/icons/db-thumbs-up.png')
 
 interface ReactionOverlayType{
     showOverlayState:boolean,
     setShowOverlayState:(state:boolean)=>void,
-    setMovieHoverState:(state:boolean)=>void}
+    setMovieHoverState:(state:boolean)=>void
+}
 
 const ReactionOverlay = ({showOverlayState,setShowOverlayState,setMovieHoverState}:ReactionOverlayType) => {
     
     useEffect(()=>{
-        const body=document.querySelector('body');
+        const body=document.querySelector('body') as HTMLElement;
         body.style.overflow='hidden';
         
         return(()=>{
@@ -39,7 +40,7 @@ const ReactionOverlay = ({showOverlayState,setShowOverlayState,setMovieHoverStat
     )
 }
 
-export const Close=({setShowOverlayState,setMovieHoverState}) => {
+export const Close=({setShowOverlayState,setMovieHoverState}:{setShowOverlayState:(state:boolean)=>void,setMovieHoverState:(state:boolean)=>void}) => {
     const clickHandler=() => {
         setShowOverlayState(false);
         setMovieHoverState && setMovieHoverState(false)

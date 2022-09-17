@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState,useEffect,useCallback} from 'react'
 import {CheckBoxContainer,Error} from './style/checkBox.style'
 
 
@@ -14,14 +14,7 @@ export default function CheckBox({errorMessage,setFormData,submitButtonClicked,l
     const [value,setValue]=useState(false);
     const [error,setError] = useState('');
 
-    useEffect(() => {
-        if(submitButtonClicked){
-            errorValidator(value);
-        }
-    },[submitButtonClicked,value,required]);
-
-
-    function errorValidator(value:boolean){
+    const errorValidator=useCallback((value:boolean)=>{
         if(required) {
             if(value){
                 setFormData('checkBox',true);
@@ -36,7 +29,13 @@ export default function CheckBox({errorMessage,setFormData,submitButtonClicked,l
             setFormData('checkBox',value);
             setError('')
         }
-    }
+    },[errorMessage, required, setFormData])
+
+    useEffect(() => {
+        if(submitButtonClicked){
+            errorValidator(value);
+        }
+    },[submitButtonClicked, value, required, errorValidator]);
     
     const changeHandler=(event:React.ChangeEvent<HTMLInputElement>) => {
         setValue(event.target.checked);

@@ -8,6 +8,7 @@ import thunk from 'redux-thunk'
 import membershipFormReducer from './redux-store/Reducers/membershipForm'
 import planInfoReducer from './redux-store/Reducers/planInfo'
 import authReducer from './redux-store/Reducers/auth'
+import {composeWithDevTools} from 'redux-devtools-extension'
 
 const rootReducer=combineReducers({
   emailStore:membershipFormReducer,
@@ -15,7 +16,7 @@ const rootReducer=combineReducers({
   auth:authReducer
 });
 
-const composeEnhancers=window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const composeEnhancers=composeWithDevTools || compose;
 const store=createStore(rootReducer,composeEnhancers(applyMiddleware(thunk)))
 
 const root = ReactDOM.createRoot(

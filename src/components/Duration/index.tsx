@@ -1,10 +1,10 @@
 import React from 'react'
 import {StyledDuration} from './style/Duration.style'
 
-const Duration = (props) => {
+const Duration = ({children}:{children:JSX.Element}) => {
     return (
         <StyledDuration>
-            {props.children}
+            {children}
         </StyledDuration>
     )
 }

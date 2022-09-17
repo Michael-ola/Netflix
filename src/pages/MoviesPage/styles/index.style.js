@@ -17,6 +17,5 @@ overflow-y:auto;
 overflow-x:hidden;
 height:100vh;
 max-width:100vw;
-padding-top:2%;
 background:rgba(0,0,0,0.7);
 `

@@ -11,11 +11,11 @@ overflow:visible;
 flex-shrink:0;
 width:1cm; 
 height:1cm;
-border:2px solid grey;
+border:1px solid rgba(255,255,255,0.7);
 border-radius:50%;
 background:transparent;
 &:hover {
-    background:#363636;
+    background:rgba(255,255,255,0.2);
     border-color:#fff;
 }
 `

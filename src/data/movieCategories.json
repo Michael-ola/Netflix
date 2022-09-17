@@ -2,144 +2,224 @@
     {
         "category":{
             "id":"1",
-            "title":"Ensemble TV Shows",
+            "title":"Recently Added",
             "link":"https://help.netflix.com/"
         },
         "Movies":[
             {
                 "id":"0",
-                "name":"Vikings",
-                "small-image":"../assets/images/films/children/hotel-transylvania/small.jpg",
-                "large-image":"https://occ-0-1490-1489.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABY39Xk2x_eYAAEx6nfAS3Y6BGJpzKdJ534Cy_3Ya6ON9ZURUG4UlyD4wuhCJ0dD9es5XjVLoTGqex7_Q1vXTJ6Q9zMkrliiU0Q4T.webp?r=f40",
-                "title-image":"https://occ-0-1490-1489.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABWgA3w5aQwWCD32fKksb2hk-pGH6WDgy40j_EZ57ZXwoJyau04dL9G0wenzed8Xn-NS54g2wnUck5t3bE_Kcn6jpc9092zWk80loLkpXxZ3d.webp?r=4bd",
-                "video":"../../assets/videos/bunny.mp4",
+                "name":"collision course",
+                "small-image":"collision-course-small.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1vFC0E4G1kX3VVttmXXWuWNxzwbY4UrTV",
+                "trailer-duration":"95",
+                "video":" ",
                 "match-score":"98%",
-                "maturity-rating":"18+",
-                "seasons":"7",
-                "date":{"year":"20016","month":"june","day":"5"},
+                "maturity-rating":"16+",
+                "seasons":"",
+                "date":{"year":"2022","month":"9","day":"2"},
                 "episodes":"",
-                "duration":"2h",
+                "duration":"1h 12m",
                 "descriptions":{
                     "episodes":[],
                     "more-info":{
-                        "about":"In this absorbing crime drama, a successful and well-liked nightclub owner moonlights as a drug dealer to New York City's A-list users.",
-                        "cast":["Michael Ola","Josh Sylvia","keiran Palmer","Joe Bullivan","Ryan Travis"],
-                        "genres":["Action","Dramas","Romance"],
-                        "feelings":["War","Sentimental","Pain"],
-                        "writer":["Michael Ola","Peter Dart","Sam Drucker"],
-                        "director":["Michael Ibitoye"]
+                        "about":"A law enforcement officer tries to make ends meet by soliciting bribes. But a tense run-in with a wealthy young musician changes his life forever.",
+                        "cast":["Daniel Etim Effiong","Kelechi Udegbe","Ade Laoye","more"],
+                        "genres":["Social Issues Drama","Nollywood","African Movies"],
+                        "feelings":["Ominous","emotional"],
+                        "writer":["James Amuta"],
+                        "director":["Bolanle Austin-Peters"]
                     }
                 }
             },
             {
                 "id":"1",
-                "name":"Hotel Transylvania",
-                "small-image":"../assets/images/films/children/hotel-transylvania/small.jpg",
-                "large-image":"../assets/images/films/children/hotel-transylvania/large.jpg",
-                "title-image":"",
-                "video":"../../assets/videos/bunny.mp4",
-                "match-score":"98%",
-                "maturity-rating":"13+",
+                "name":"me time",
+                "small-image":"me-time-small.png",
+                "large-image":"https://occ-0-1490-1489.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABQhQOZ7zvsEIzP6Z3yYq1n5CufxaeU2CHUICq315CUPl-ePtKnMOQEDJV3BjGyAGlfBIZguMbr0XhazviTnArxQV9SJIqc-GdKhk.webp?r=860",
+                "title-image":"https://occ-0-1490-1489.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABRzi3u6MADht4vqxoJ7HJ8gD1JH-gf7S4eoTF7w1eHaPJ18cADbReDOyaWabusEtxDzf6c-pviI3ZX-eFL8hZUIBNW7D3noyjL1u1Xq4ZhkjvSU9HDTNwFpaQjL_l9ZtqKIbI_bBPPhnbD8PfDEuOAKb0LHPmHVyqIamkq6proDm-4gfi2Zq.webp?r=8a2",
+                "trailer":"1RWc8NnpISQsBvT-crbZgCoe4CNZLw7lr",
+                "trailer-duration":"102",
+                "video":" ",
+                "match-score":"99%",
+                "maturity-rating":"16+",
                 "seasons":"",
-                "date":{"year":"2022","month":"august","day":"1"},
+                "date":{"year":"2022","month":"8","day":"26"},
                 "episodes":"",
-                "duration":"2h",
+                "duration":"1h 44m",
                 "descriptions":{
                     "episodes":[],
                     "more-info":{
-                        "about":"A musician agrees to a marriage of convinience to a soon-to-\ndeploy marine,but tragedy soon turns their fake relationship all too real",
-                        "cast":["Michael Ola","Josh Sylvia","keiran Palmer","Joe Bullivan","Ryan Travis"],
-                        "genres":["Music","Dramas","Romance"],
-                        "feelings":["Emotional","Sentimental","Romantic"],
-                        "writer":["Michael Ola","Peter Dart","Sam Drucker"],
-                        "director":["Michael Ibitoye"]
+                        "about":"With his family away, a devoted stay-at-home dad enjoys his first me time in years by joining his hard-partying old friend on a wild birthday adventure.",
+                        "cast":["Kevin Hart", "Mark Wahlberg", "Regina Hall", "Luis Gerardo Méndez","Jimmy O. Yang..."],
+                        "genres":["Comedies"],
+                        "feelings":["Raunchy","Irreverent","Feel-good"],
+                        "writer":["John Hamburg"],
+                        "director":["John Hamburg"]
                     }
                 }
             },
             {
                 "id":"2",
-                "small-image":"../assets/images/series/comedies/family-guy/small.jpg",
-                "large-image":"../assets/images/series/comedies/family-guy/large.jpg",
-                "preview-video":"",
-                "match-score":"98%",
-                "maturity-rating":"18+",
-                "seasons":8,
-                "episodes":80,
+                "name":"love in the villa",
+                "small-image":"love-in-the-villa.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1YLFV34TH5tPxFzYD4pg6hqIk0_IwHBaL",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"",
+                "maturity-rating":"13+",
+                "seasons":"",
+                "date":{"year":"2022","month":"9","day":"1"},
+                "episodes":"",
+                "duration":"1h 55m",
                 "descriptions":{
                     "episodes":[],
-                    "info":""
+                    "more-info":{
+                        "about":"Julie's dream trip to Verona, Italy, turns star-crossed when she discovers her rented villa is already occupied by an annoyingly attractive stranger.",
+                        "cast":["Kat Graham",  "Tom Hopper", "Laura Hopper","more"],
+                        "genres":["Romantic Comedies","Comedies","Romantic Movies"],
+                        "feelings":["swoon-worthy","charming","feel-good"],
+                        "writer":["Mark Steven Johnson"],
+                        "director":["Mark Steven Johnson"]
+                    }
                 }
             },
             {
                 "id":"3",
-                "small-image":"../assets/images/films/suspense/zodiac/small.jpg",
-                "large-image":"../assets/images/films/suspense/zodiac/large.jpg",
-                "preview-video":"",
+                "name":"power",
+                "small-image":"power-small.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1Z2O7AHQc2FOxCzA3p69J2_QzlkNjC-HA",
+                "trailer-duration":"95",
+                "video":" ",
                 "match-score":"98%",
                 "maturity-rating":"18+",
-                "seasons":"",
+                "seasons":"6",
+                "date":{"year":"2019","month":"9","day":"2"},
                 "episodes":"",
-                "duration":"2h",
+                "duration":"",
                 "descriptions":{
                     "episodes":[],
-                    "info":""
+                    "more-info":{
+                        "about":"In this absorbing crime drama, a successful and well-liked nightclub owner moonlights as a drug dealer to New York City's A-list users.",
+                        "cast":["Omari Hardwick","Lela Louren","Natori Naughton","50 Cent","more"],
+                        "genres":["crime TVshows","TV Dramas","US TV Shows"],
+                        "feelings":["violent"],
+                        "writer":["Courtney Kemp Agboh"],
+                        "director":["50 Cent"]
+                    }
                 }
             },
             {
                 "id":"4",
-                "small-image":"../assets/images/films/romance/a-star-is-born/small.jpg",
-                "large-image":"../assets/images/films/romance/a-star-is-born/large.jpg",
-                "preview-video":"",
-                "match-score":"98%",
+                "name":"dated and related",
+                "small-image":"dated-and-related.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"18ux-xxhCxTyopr-0R9UxnU1-LdzxX6Pd",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"",
                 "maturity-rating":"18+",
-                "seasons":"",
-                "episodes":"",
-                "duration":"2h",
+                "seasons":"1",
+                "date":{"year":"2022","month":"9","day":"2"},
+                "episodes":"10",
+                "duration":"",
                 "descriptions":{
                     "episodes":[],
-                    "info":""
+                    "more-info":{
+                        "about":"Single siblings help each other search for their soulmates, hoping to find love (and maybe win $100,000) while living at a luxurious villa.",
+                        "cast":[""],
+                        "genres":["British","Competition Reality TV","Reality TV"],
+                        "feelings":["Scandalous","Intimate"],
+                        "writer":[""],
+                        "director":[""]
+                    }
                 }
             },
             {
                 "id":"5",
-                "small-image":"../assets/images/series/crime/the-confession-killer/small.jpg",
-                "large-image":"../assets/images/series/crime/the-confession-killer/large.jpg",
-                "preview-video":"",
-                "match-score":"98%",
-                "maturity-rating":"18+",
-                "seasons":1,
-                "episodes":16,
+                "name":"i came by",
+                "small-image":"i-came-by.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1yxxMsOCQ2kQbpILyV0jidqaHrZx7cMOD",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"97%",
+                "maturity-rating":"15+",
+                "seasons":"",
+                "date":{"year":"2022","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"1h 50m",
                 "descriptions":{
                     "episodes":[],
-                    "info":""
+                    "more-info":{
+                        "about":"A graffiti artist who targets homes of the elite uncovers a twisted secret in a hidden basement — triggering events that put his loved ones in danger.",
+                        "cast":["GeorgeMacKay","Kelly Macdonald","Hugh Boneville","more"],
+                        "genres":["British","Crime Movies","Thriller Movies"],
+                        "feelings":["Suspenseful"],
+                        "writer":["Babak Anvari","Namsi Khan"],
+                        "director":["Babak Anvari"]
+                    }
                 }
             },
             {
                 "id":"6",
-                "small-image":"../assets/images/films/thriller/joker/small.jpg",
-                "large-image":"../assets/images/films/thriller/joker/large.jpg",
-                "preview-video":"",
-                "match-score":"98%",
-                "maturity-rating":"18+",
+                "name":"purple hearts",
+                "small-image":"purple-hearts.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1J5zy6_JRB0qFomn1Hf1PdRQpOTVIfa_9",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"88%",
+                "maturity-rating":"16+",
                 "seasons":"",
+                "date":{"year":"2022","month":"9","day":"2"},
                 "episodes":"",
+                "duration":"2h 2m",
                 "descriptions":{
                     "episodes":[],
-                    "info":""
+                    "more-info":{
+                        "about":"An aspiring musician agrees to a marriage of convenience with a soon-to-deploy Marine, but a tragedy soon turns their fake relationship all too real.",
+                        "cast":["Sofia Carson","Nicholas Galitzine","Chosen Jacobs","more"],
+                        "genres":["Music","Dramas","Romance"],
+                        "feelings":["Sentimental","Emotional","Romantic Movies"],
+                        "writer":["Kyle Jarrow","Liz .W. Garcia"],
+                        "director":["Elizabeth Allen Rosenbaum"]
+                    }
                 }
             },
             {
                 "id":"7",
-                "small-image":"../assets/images/series/documentaries/citizenfour/small.jpg",
-                "large-image":"../assets/images/series/documentaries/citizenfour/large.jpg",
-                "preview-video":"",
-                "match-score":"98%",
+                "name":"day shift",
+                "small-image":"day-shift.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1bME7drkkT6F15QJv8bsZPQXF6jvnCnDm",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"96%",
                 "maturity-rating":"18+",
-                "seasons":3,
-                "episodes":45,
+                "seasons":"",
+                "date":{"year":"2022","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"1h 53m",
                 "descriptions":{
                     "episodes":[],
-                    "info":""
+                    "more-info":{
+                        "about":"An LA vampire hunter has a week to come up with the cash to pay for his kid's tuition and braces. Trying to make a living these days just might kill him.",
+                        "cast":["Jamie Foxx","Dave Franco","Natasha Liu Bordizzo","more"],
+                        "genres":["Action & Adventure","Comedies","Horror Movies"],
+                        "feelings":["Exciting"],
+                        "writer":["Tyler Tice","Shay Hatton"],
+                        "director":["JJ Perry"]
+                    }
                 }
             }
         ]
@@ -147,329 +227,701 @@
     {
         "category":{
             "id":"2",
-            "title":"Ensemble TV Shows",
+            "title":"Trending Now",
             "link":"https://help.netflix.com/"
         },
         "Movies":[
             {
-                "id":"1",
-                "small-image":"../assets/images/films/children/hotel-transylvania/small.jpg",
-                "large-image":"../assets/images/films/children/hotel-transylvania/large.jpg",
-                "preview-video":"",
+                "id":"0",
+                "name":"lockdown",
+                "small-image":"lockdown.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"18mVqZJytPsxAPfWtIt9WB_VryclaSTmt",
+                "trailer-duration":"95",
+                "video":" ",
                 "match-score":"98%",
                 "maturity-rating":"13+",
                 "seasons":"",
+                "date":{"year":"2021","month":"9","day":"2"},
                 "episodes":"",
-                "duration":"2h",
+                "duration":"2h 23m",
                 "descriptions":{
                     "episodes":[],
-                    "info":""
+                    "more-info":{
+                        "about":"At the onset of a pandemic, six strangers are thrown into forced isolation together at a Nigerian hospital. As tensions rise, their stories intertwine.",
+                        "cast":["Omotola Jalade-Ekeinde","Sola Sobowale","Chioma Chukwuka Akpotha","more"],
+                        "genres":["Nollywood","African Movies","Dramas"],
+                        "feelings":["Suspenseful","Emotional"],
+                        "writer":["Moses Inwang","Melanie Oghene","Musa Jeffrey David"],
+                        "director":["Moses Inwang"]
+                    }
+                }
+            },
+            {
+                "id":"1",
+                "name":"loving adults",
+                "small-image":"loving-adults.png",
+                "large-image":"https://occ-0-1490-1489.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABQhQOZ7zvsEIzP6Z3yYq1n5CufxaeU2CHUICq315CUPl-ePtKnMOQEDJV3BjGyAGlfBIZguMbr0XhazviTnArxQV9SJIqc-GdKhk.webp?r=860",
+                "title-image":"https://occ-0-1490-1489.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABRzi3u6MADht4vqxoJ7HJ8gD1JH-gf7S4eoTF7w1eHaPJ18cADbReDOyaWabusEtxDzf6c-pviI3ZX-eFL8hZUIBNW7D3noyjL1u1Xq4ZhkjvSU9HDTNwFpaQjL_l9ZtqKIbI_bBPPhnbD8PfDEuOAKb0LHPmHVyqIamkq6proDm-4gfi2Zq.webp?r=8a2",
+                "trailer":"122X0FUKb2lqyF4hI1K7uZaD8vie9qRyc",
+                "trailer-duration":"102",
+                "video":" ",
+                "match-score":"97%",
+                "maturity-rating":"18+",
+                "seasons":"",
+                "date":{"year":"2022","month":"8","day":"26"},
+                "episodes":"",
+                "duration":"1h 45m",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"The thin line between love and hate turns deadly when a wife discovers her husband’s affair — and they both take extreme measures to get what they want.",
+                        "cast":["Dar Salim", "Sonja Richter","Sus Wilkins","more"],
+                        "genres":["Danish","Movies Based on Books","Crime Movies"],
+                        "feelings":["Dark","Suspenseful"],
+                        "writer":["Anders Rønnow Klarlund", "Jacob Weinreich"],
+                        "director":["Barbara Rothenborg"]
+                    }
                 }
             },
             {
                 "id":"2",
-                "small-image":"../assets/images/series/comedies/family-guy/small.jpg",
-                "large-image":"../assets/images/series/comedies/family-guy/large.jpg",
-                "preview-video":"",
+                "name":"my village people",
+                "small-image":"my-village-people.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1Z7-B9AXO_l3df8PhmhIZ5eBcUWkkO-dO",
+                "trailer-duration":"95",
+                "video":" ",
                 "match-score":"98%",
-                "maturity-rating":"18+",
-                "seasons":8,
-                "episodes":80,
+                "maturity-rating":"16+",
+                "seasons":"",
+                "date":{"year":"2021","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"2h 14m",
                 "descriptions":{
                     "episodes":[],
-                    "info":""
+                    "more-info":{
+                        "about":"A selfish womanizer finds himself in bubbling hot water after his reckless lifestyle accidentally attracts the attention of a coven of witches.",
+                        "cast":["Bovi Ugboma","Nkem Owoh","Theresa Edem","more"],
+                        "genres":["Nollywood","African Movies","Comedies"],
+                        "feelings":["Suspenseful"],
+                        "writer":["Bovi Ugboma"],
+                        "director":["Niyi Akinmolayan"]
+                    }
                 }
             },
             {
                 "id":"3",
-                "small-image":"../assets/images/films/suspense/zodiac/small.jpg",
-                "large-image":"../assets/images/films/suspense/zodiac/large.jpg",
-                "preview-video":"",
-                "match-score":"98%",
+                "name":"day shift",
+                "small-image":"day-shift.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1bME7drkkT6F15QJv8bsZPQXF6jvnCnDm",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"96%",
                 "maturity-rating":"18+",
                 "seasons":"",
+                "date":{"year":"2022","month":"9","day":"2"},
                 "episodes":"",
-                "duration":"2h",
+                "duration":"1h 53m",
                 "descriptions":{
                     "episodes":[],
-                    "info":""
+                    "more-info":{
+                        "about":"An LA vampire hunter has a week to come up with the cash to pay for his kid's tuition and braces. Trying to make a living these days just might kill him.",
+                        "cast":["Jamie Foxx","Dave Franco","Natasha Liu Bordizzo","more"],
+                        "genres":["Action & Adventure","Comedies","Horror Movies"],
+                        "feelings":["Exciting"],
+                        "writer":["Tyler Tice","Shay Hatton"],
+                        "director":["JJ Perry"]
+                    }
                 }
             },
             {
                 "id":"4",
-                "small-image":"../assets/images/films/romance/a-star-is-born/small.jpg",
-                "large-image":"../assets/images/films/romance/a-star-is-born/large.jpg",
-                "preview-video":"",
-                "match-score":"98%",
-                "maturity-rating":"18+",
-                "seasons":"",
-                "episodes":"",
-                "duration":"2h",
+                "name":"alchemy of souls",
+                "small-image":"alchemy-of-souls.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1avZ55y1Q7trVxcTSjZKqpHeIHkPDLTB9",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"97%",
+                "maturity-rating":"16+",
+                "seasons":"1",
+                "date":{"year":"2022","month":"9","day":"2"},
+                "episodes":"20",
+                "duration":"",
                 "descriptions":{
                     "episodes":[],
-                    "info":""
+                    "more-info":{
+                        "about":"A powerful sorceress in a blind woman's body encounters a man from a prestigious family, who wants her help to change his destiny.",
+                        "cast":["Lee Jae-wook","Jung So-min","Hwang Min-hyun","more"],
+                        "genres":["Korean","Fantasy TV Shows","Romantic TV Dramas"],
+                        "feelings":["Intimate","Romantic"],
+                        "writer":["Park Joon-hwa","Hong Jung-eun","Hong Mi-ran"],
+                        "director":["Park Joon-hwa","Hong Jung-eun","Hong Mi-ran"]
+                    }
                 }
             },
             {
                 "id":"5",
-                "small-image":"../assets/images/series/crime/the-confession-killer/small.jpg",
-                "large-image":"../assets/images/series/crime/the-confession-killer/large.jpg",
-                "preview-video":"",
-                "match-score":"98%",
-                "maturity-rating":"18+",
-                "seasons":1,
-                "episodes":16,
+                "name":"the gray man",
+                "small-image":"gray-man.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1HQ3tZ_UyCj2JNSR-E4IWcVjrP1FO989Z",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"96%",
+                "maturity-rating":"16+",
+                "seasons":"",
+                "date":{"year":"2022","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"2h 9m",
                 "descriptions":{
                     "episodes":[],
-                    "info":""
+                    "more-info":{
+                        "about":"When a shadowy CIA agent uncovers damning agency secrets, he’s hunted across the globe by a sociopathic rogue operative who’s put a bounty on his head.",
+                        "cast":["Ryan Gosling","Chris Evans","Anna de Armas","more"],
+                        "genres":["Movies Based on Books","Action & Adventure"],
+                        "feelings":["Hollywood","Action"],
+                        "writer":["Joe Russo","Christopher Markus","Stephen McFeely"],
+                        "director":["Anthony Russo","Joe Russo"]
+                    }
                 }
             },
             {
                 "id":"6",
-                "small-image":"../assets/images/films/thriller/joker/small.jpg",
-                "large-image":"../assets/images/films/thriller/joker/large.jpg",
-                "preview-video":"",
-                "match-score":"98%",
-                "maturity-rating":"18+",
-                "seasons":"",
-                "episodes":"",
+                "name":"the smart money woman",
+                "small-image":"smart-money-woman.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1TGdoKbv0CUHnIK1cz0sOuBK7Fj0T9AP2",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"95%",
+                "maturity-rating":"16+",
+                "seasons":"1",
+                "date":{"year":"2020","month":"9","day":"2"},
+                "episodes":"7",
+                "duration":"",
                 "descriptions":{
                     "episodes":[],
-                    "info":""
+                    "more-info":{
+                        "about":"Five glamorous millennials strive for success as they juggle careers, finances, love and friendships. Based on Arese Ugwu's 2016 best-selling novel.",
+                        "cast":["Osas Ighodaro","Ini Dima-Okojie","kemi Lala Akindoju","more"],
+                        "genres":["Nollywood","Romantic TV Dramas","Romantic TV Comedies"],
+                        "feelings":["Intimate","Emotional"],
+                        "writer":["Bunmi Ajakaiye"],
+                        "director":["Bunmi Ajakaiye"]
+                    }
                 }
             },
             {
                 "id":"7",
-                "small-image":"../assets/images/series/documentaries/citizenfour/small.jpg",
-                "large-image":"../assets/images/series/documentaries/citizenfour/large.jpg",
-                "preview-video":"",
-                "match-score":"98%",
+                "name":"true story",
+                "small-image":"true-story.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1puiLmbS-l0efeGxTdf12PmqaSY-zYnM6",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"91%",
                 "maturity-rating":"18+",
-                "seasons":3,
-                "episodes":45,
+                "seasons":"1",
+                "date":{"year":"2021","month":"9","day":"2"},
+                "episodes":"7",
+                "duration":"",
                 "descriptions":{
                     "episodes":[],
-                    "info":""
+                    "more-info":{
+                        "about":"A world-famous comedian desperately searches for a way out after a night in Philadelphia with his brother threatens to sabotage more than his success.",
+                        "cast":["Kevin Hart","Wesley Snipes","Tawny Newsome","more"],
+                        "genres":["Crime TV Shows","TV Thrillers","TV Dramas"],
+                        "feelings":["Provocative","offbeat","dark"],
+                        "writer":["Eric Newman"],
+                        "director":["Michael Ibitoye"]
+                    }
                 }
-            }
+            }              
         ]
     },
     {
         "category":{
             "id":"3",
-            "title":"Ensemble TV Shows",
+            "title":"Comedies",
             "link":"https://help.netflix.com/"
         },
         "Movies":[
             {
-                "id":"1",
-                "small-image":"../assets/images/films/children/hotel-transylvania/small.jpg",
-                "large-image":"../assets/images/films/children/hotel-transylvania/large.jpg",
-                "preview-video":"",
-                "match-score":"98%",
-                "maturity-rating":"13+",
+                "id":"0",
+                "name":"tamborine chris rock",
+                "small-image":"tamborine-chris-rock.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1XnS-R2sOlp1h99hMYyoP5aUajRrcL5Gd",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"94%",
+                "maturity-rating":"18+",
                 "seasons":"",
+                "date":{"year":"2022","month":"9","day":"2"},
                 "episodes":"",
-                "duration":"2h",
+                "duration":"1h 4m",
                 "descriptions":{
                     "episodes":[],
-                    "info":""
+                    "more-info":{
+                        "about":"Chris Rock takes the stage in Brooklyn for a comedy special filled with searing observations on fatherhood, infidelity and American politics.",
+                        "cast":["Chris Rock"],
+                        "genres":["Stand-Up Comedies","Comedies"],
+                        "feelings":["witty","irreverent"],
+                        "writer":["Chris Rock"],
+                        "director":["Bo Burnham"]
+                    }
+                }
+            },
+            {
+                "id":"1",
+                "name":"naked",
+                "small-image":"naked.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1v_ZxqnfNfeAKktsl8UUnJyjNzmlTYPNt",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"81%",
+                "maturity-rating":"13+",
+                "seasons":"",
+                "date":{"year":"2017","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"1h 36m",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"Rob's madly in love and about to be married. Unfortunately, he's also naked, stuck in an elevator and caught in a time loop.",
+                        "cast":["Marlon Wayans","Regina Hall","Dennis Haysbert","more"],
+                        "genres":["Romantic Comedies","Comedies","Romantic Movies"],
+                        "feelings":["goofy","Romantic"],
+                        "writer":["Torkel Knutsson","Mårten Knutsson","Cory Koller","Marlon Wayans","Rick Alvarez"],
+                        "director":["Michael Tiddes"]
+                    }
                 }
             },
             {
                 "id":"2",
-                "small-image":"../assets/images/series/comedies/family-guy/small.jpg",
-                "large-image":"../assets/images/series/comedies/family-guy/large.jpg",
-                "preview-video":"",
-                "match-score":"98%",
-                "maturity-rating":"18+",
-                "seasons":8,
-                "episodes":80,
+                "name":"sextuplets",
+                "small-image":"sextuplets.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1mvp8zuxWbRJHYZjcDywbBifn6O7P8bvM",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"70%",
+                "maturity-rating":"13+",
+                "seasons":"",
+                "date":{"year":"2019","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"1h 39m",
                 "descriptions":{
                     "episodes":[],
-                    "info":""
+                    "more-info":{
+                        "about":"When a dad-to-be learns he's actually a sextuplet, he sets off on a wild journey to meet his long-lost family. Marlon Wayans stars as all six siblings.",
+                        "cast":["Marlon Wayans","Bresha Webb","Michael Ian Black","more"],
+                        "genres":["Comedies"],
+                        "feelings":["Raunchy","goofy"],
+                        "writer":["Mike Glock","Rick Alvarez","Marlon Wayans"],
+                        "director":["Michael Tiddes"]
+                    }
                 }
             },
             {
                 "id":"3",
-                "small-image":"../assets/images/films/suspense/zodiac/small.jpg",
-                "large-image":"../assets/images/films/suspense/zodiac/large.jpg",
-                "preview-video":"",
-                "match-score":"98%",
-                "maturity-rating":"18+",
+                "name":"afraid of the dark trevor noah",
+                "small-image":"afraid-of-the-dark-trevor.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1Ac9YQRDuDeVMudq76JQRn5l406yVBK8E",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"",
+                "maturity-rating":"16+",
                 "seasons":"",
+                "date":{"year":"2017","month":"9","day":"2"},
                 "episodes":"",
-                "duration":"2h",
+                "duration":"1h 17m",
                 "descriptions":{
                     "episodes":[],
-                    "info":""
+                    "more-info":{
+                        "about":"The \"Daily Show\" host ponders the perils of naming countries, how traffic lights turn New Yorkers invincible and why you shouldn't drink in Scotland.",
+                        "cast":["Trevor Noah"],
+                        "genres":["Stand-Up Comedies","Comedies"],
+                        "feelings":["witty","irreverent"],
+                        "writer":["Trevor Noah"],
+                        "director":["David Paul Meyer"]
+                    }
                 }
             },
             {
                 "id":"4",
-                "small-image":"../assets/images/films/romance/a-star-is-born/small.jpg",
-                "large-image":"../assets/images/films/romance/a-star-is-born/large.jpg",
-                "preview-video":"",
-                "match-score":"98%",
-                "maturity-rating":"18+",
+                "name":"a madea homecoming",
+                "small-image":"madea-homecoming.png",
+                "large-image":"https://occ-0-1490-1489.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABQhQOZ7zvsEIzP6Z3yYq1n5CufxaeU2CHUICq315CUPl-ePtKnMOQEDJV3BjGyAGlfBIZguMbr0XhazviTnArxQV9SJIqc-GdKhk.webp?r=860",
+                "title-image":"https://occ-0-1490-1489.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABRzi3u6MADht4vqxoJ7HJ8gD1JH-gf7S4eoTF7w1eHaPJ18cADbReDOyaWabusEtxDzf6c-pviI3ZX-eFL8hZUIBNW7D3noyjL1u1Xq4ZhkjvSU9HDTNwFpaQjL_l9ZtqKIbI_bBPPhnbD8PfDEuOAKb0LHPmHVyqIamkq6proDm-4gfi2Zq.webp?r=8a2",
+                "trailer":"1qHvc-fqtoep8fpt1AWL1IMQoAb4vkZtM",
+                "trailer-duration":"102",
+                "video":" ",
+                "match-score":"85%",
+                "maturity-rating":"16+",
                 "seasons":"",
+                "date":{"year":"2022","month":"8","day":"26"},
                 "episodes":"",
-                "duration":"2h",
+                "duration":"1h 47m",
                 "descriptions":{
                     "episodes":[],
-                    "info":""
+                    "more-info":{
+                        "about":"Madea's back — hallelujer! And she's not putting up with any nonsense as family drama erupts at her great-grandson's college graduation celebration.",
+                        "cast":["Tyler Perry", "Cassi Davis-Patton", "David Mann", "more"],
+                        "genres":["Comedies"],
+                        "feelings":["Irreverent","Feel-good","goofy"],
+                        "writer":["Tyler Perry"],
+                        "director":["Tyler Perry"]
+                    }
                 }
             },
             {
                 "id":"5",
-                "small-image":"../assets/images/series/crime/the-confession-killer/small.jpg",
-                "large-image":"../assets/images/series/crime/the-confession-killer/large.jpg",
-                "preview-video":"",
-                "match-score":"98%",
+                "name":"the change up",
+                "small-image":"change-up.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"10orDGicF3n261g5e0DeLtmThVtZpJR_h",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"74%",
                 "maturity-rating":"18+",
-                "seasons":1,
-                "episodes":16,
+                "seasons":"",
+                "date":{"year":"2011","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"1h 52m",
                 "descriptions":{
                     "episodes":[],
-                    "info":""
+                    "more-info":{
+                        "about":"A playboy and a family man are best buddies who want each other's life -- and they get the chance when they swap bodies after a night of partying.",
+                        "cast":["Ryan Reynolds","Jason Bateman","Leslie Mann","more"],
+                        "genres":["Comedies"],
+                        "feelings":["Raunchy","irreverent","goofy"],
+                        "writer":["Jon Lucas","Scott Moore"],
+                        "director":["David Dobkin"]
+                    }
                 }
             },
             {
                 "id":"6",
-                "small-image":"../assets/images/films/thriller/joker/small.jpg",
-                "large-image":"../assets/images/films/thriller/joker/large.jpg",
-                "preview-video":"",
+                "name":"moms at war",
+                "small-image":"moms-at-war.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1-zuUnD-LApHdYWgqgmFxLp5o4lmhSo_D",
+                "trailer-duration":"95",
+                "video":" ",
                 "match-score":"98%",
-                "maturity-rating":"18+",
+                "maturity-rating":"16+",
                 "seasons":"",
+                "date":{"year":"2018","month":"9","day":"2"},
                 "episodes":"",
+                "duration":"1h 31m",
                 "descriptions":{
                     "episodes":[],
-                    "info":""
+                    "more-info":{
+                        "about":"Two fierce mothers become rivals when a school contest forces their kids, both model students, to compete against one another to be the best in class.",
+                        "cast":["Omoni Oboli","Funke AKindele-Bello","Yul Edochie","more"],
+                        "genres":["Nollywood Movies","African Movies","Comedies"],
+                        "feelings":["goofy"],
+                        "writer":["Chinaza Onuzo"],
+                        "director":["Omoni Oboli"]
+                    }
                 }
             },
             {
                 "id":"7",
-                "small-image":"../assets/images/series/documentaries/citizenfour/small.jpg",
-                "large-image":"../assets/images/series/documentaries/citizenfour/large.jpg",
-                "preview-video":"",
-                "match-score":"98%",
-                "maturity-rating":"18+",
-                "seasons":3,
-                "episodes":45,
+                "name":"a naija christmas",
+                "small-image":"a-naija-christmas.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1Hho3TlYgv2GLzQz3JKzXLOzfEuPb88wu",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"93%",
+                "maturity-rating":"13+",
+                "seasons":"",
+                "date":{"year":"2021","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"2h 1m",
                 "descriptions":{
                     "episodes":[],
-                    "info":""
+                    "more-info":{
+                        "about":"A mother's Christmas wish — and the grand prize that comes with it — sets off a fierce competition between her sons.",
+                        "cast":["Rachel Oniga","Kunle Remi","Segilola Onigan","Joe Bullivan","Ryan Travis"],
+                        "genres":["Romantic Comedies","Nollywood","African Movies"],
+                        "feelings":["Charming","Romantic"],
+                        "writer":["Kemi Adesoye"],
+                        "director":["Kunle Afolayan"]
+                    }
                 }
-            }
+            },
+            {
+                "id":"8",
+                "name":"national security",
+                "small-image":"national-security.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1a8YWftP7-o_OtstVOCdRbjer4Pk0Tkm4",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"72%",
+                "maturity-rating":"13+",
+                "seasons":"",
+                "date":{"year":"2003","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"1h 28m",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"Two mismatched security guards -- a former cop and a police academy washout -- find themselves working together to bust a smuggling ring.",
+                        "cast":["Martin Lawrence","Steve Zahn","Colm Feore","more"],
+                        "genres":["Action & Adventure","Comedies","Crime Movies"],
+                        "feelings":["Exciting"],
+                        "writer":["Jay Scherick","David Ronn"],
+                        "director":["Dennis Dugan"]
+                    }
+                }
+            },
+            {
+                "id":"9",
+                "name":"the brothers",
+                "small-image":"the-brothers.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1Ozbk2pgAZ9gBgrAj-Q0rMe2jRY64t_p4",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"81%",
+                "maturity-rating":"18+",
+                "seasons":"",
+                "date":{"year":"2001","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"1h 42m",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"Four close-knit friends test the limits of honesty and commitment as they barhop, climb the career ladder and incessantly fall in and out of love.",
+                        "cast":["Morris Chesnut","D.L. Hughley","Bill Bellamy","more"],
+                        "genres":["Romantic Comedies","Comedies","Romantic Movies"],
+                        "feelings":["Raunchy","Romantic"],
+                        "writer":["Gary Hardwick"],
+                        "director":["Gary Hardwick"]
+                    }
+                }
+            }            
         ]
     },
     {
         "category":{
             "id":"4",
-            "title":"Ensemble TV Shows",
+            "title":"Bingeworthy Tv Shows",
             "link":"https://help.netflix.com/"
         },
         "Movies":[
             {
-                "id":"1",
-                "small-image":"../assets/images/films/children/hotel-transylvania/small.jpg",
-                "large-image":"../assets/images/films/children/hotel-transylvania/large.jpg",
-                "preview-video":"",
-                "match-score":"98%",
-                "maturity-rating":"13+",
-                "seasons":"",
+                "id":"0",
+                "name":"lupin",
+                "small-image":"lupin.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1wDpaqekkHdYDpY0gfmY6jT7lf3hZaN1w",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"89%",
+                "maturity-rating":"16+",
+                "seasons":"2",
+                "date":{"year":"2021","month":"9","day":"2"},
                 "episodes":"",
-                "duration":"2h",
+                "duration":"",
                 "descriptions":{
                     "episodes":[],
-                    "info":""
+                    "more-info":{
+                        "about":"Inspired by the adventures of Arsène Lupin, gentleman thief Assane Diop sets out to avenge his father for an injustice inflicted by a wealthy family.",
+                        "cast":["Omar Sy","Ludivine Sagnier","Clotilde Helsme","more"],
+                        "genres":["TV mysteries","Crime TV Shows","TV Shows Based on Books"],
+                        "feelings":["Witty","Exciting"],
+                        "writer":["George Kay"],
+                        "director":["George Kay"]
+                    }
+                }
+            },
+            {
+                "id":"1",
+                "name":"dynasty",
+                "small-image":"dynasty.png",
+                "large-image":"https://occ-0-1490-1489.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABQhQOZ7zvsEIzP6Z3yYq1n5CufxaeU2CHUICq315CUPl-ePtKnMOQEDJV3BjGyAGlfBIZguMbr0XhazviTnArxQV9SJIqc-GdKhk.webp?r=860",
+                "title-image":"https://occ-0-1490-1489.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABRzi3u6MADht4vqxoJ7HJ8gD1JH-gf7S4eoTF7w1eHaPJ18cADbReDOyaWabusEtxDzf6c-pviI3ZX-eFL8hZUIBNW7D3noyjL1u1Xq4ZhkjvSU9HDTNwFpaQjL_l9ZtqKIbI_bBPPhnbD8PfDEuOAKb0LHPmHVyqIamkq6proDm-4gfi2Zq.webp?r=8a2",
+                "trailer":"1AOgP9jRXA74DXjpCab9rCJJfDtWmn4zc",
+                "trailer-duration":"102",
+                "video":" ",
+                "match-score":"90%",
+                "maturity-rating":"16+",
+                "seasons":"4",
+                "date":{"year":"2021","month":"8","day":"26"},
+                "episodes":"",
+                "duration":"",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"The Carringtons and the Colbys feud for control over their fortune -- and their children -- in this updated reboot of the classic prime-time soap.",
+                        "cast":["Elizabeth Gillies", "Grant Show", "Rafael De La Fuente", "more"],
+                        "genres":["Social Issues TV Dramas","TV Dramas","US TV Shows"],
+                        "feelings":["Raunchy","Irreverent","Feel-good"],
+                        "writer":["Sallie Patrick","Josh Schwartz","Stephanie Savage"],
+                        "director":["Sallie Patrick","Josh Schwartz","Stephanie Savage"]
+                    }
                 }
             },
             {
                 "id":"2",
-                "small-image":"../assets/images/series/comedies/family-guy/small.jpg",
-                "big-image":"../assets/images/series/comedies/family-guy/large.jpg",
-                "preview-video":"",
-                "match-score":"98%",
+                "name":"squid game",
+                "small-image":"squid-games.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1aGZ7ifWHiyVLqdpS-m3FSsWgB_94WLkF",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"95%",
                 "maturity-rating":"18+",
-                "seasons":8,
-                "episodes":80,
+                "seasons":"1",
+                "date":{"year":"2021","month":"9","day":"2"},
+                "episodes":"9",
+                "duration":"",
                 "descriptions":{
                     "episodes":[],
-                    "info":""
+                    "more-info":{
+                        "about":"Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits — with deadly high stakes.",
+                        "cast":["Lee Jung-Jae","Park Hae-Soo","Wi Ha-jun","more"],
+                        "genres":["Korean","TV Thrillers","TV Dramas"],
+                        "feelings":["Suspenseful"],
+                        "writer":["Hwang Dong-hyuk"],
+                        "director":["Hwang Dong-hyuk"]
+                    }
                 }
             },
             {
                 "id":"3",
-                "small-image":"../assets/images/films/suspense/zodiac/small.jpg",
-                "large-image":"../assets/images/films/suspense/zodiac/large.jpg",
-                "preview-video":"",
+                "name":"how to become a tyrant",
+                "small-image":"how-to-become-a-tyrant.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"14RO21YZAib8AwL0GoZI2fylHtyuA1HTR",
+                "trailer-duration":"95",
+                "video":" ",
                 "match-score":"98%",
-                "maturity-rating":"18+",
+                "maturity-rating":"16+",
                 "seasons":"",
-                "episodes":"",
-                "duration":"2h",
+                "date":{"year":"2021","month":"9","day":"2"},
+                "episodes":"6",
+                "duration":"",
                 "descriptions":{
                     "episodes":[],
-                    "info":""
+                    "more-info":{
+                        "about":"Ruling with an iron fist requires an aspiring dictator to know the playbook for absolute power, as history's despots prove in this sardonic docuseries.",
+                        "cast":["Peter Dinklage"],
+                        "genres":["Docuseries","Political Documentaries","Military Documentaries"],
+                        "feelings":["Dark"],
+                        "writer":[],
+                        "director":[]
+                    }
                 }
             },
             {
                 "id":"4",
-                "small-image":"../assets/images/films/romance/a-star-is-born/small.jpg",
-                "large-image":"../assets/images/films/romance/a-star-is-born/large.jpg",
-                "preview-video":"",
-                "match-score":"98%",
+                "name":"the sand man",
+                "small-image":"the-sand-man.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1Dih1OP72vxRBWfbL8V91Y4d9FVohMOTg",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"96%",
                 "maturity-rating":"18+",
-                "seasons":"",
-                "episodes":"",
-                "duration":"2h",
+                "seasons":"1",
+                "date":{"year":"2022","month":"9","day":"2"},
+                "episodes":"11",
+                "duration":"",
                 "descriptions":{
                     "episodes":[],
-                    "info":""
+                    "more-info":{
+                        "about":"After years of imprisonment, Morpheus — the King of Dreams — embarks on a journey across worlds to find what was stolen from him and restore his power.",
+                        "cast":["Tom Storridge","Boyd Holbrook","Patton Oswalt","more"],
+                        "genres":["Fantasy TV Shows","TV Dramas","US TV Shows"],
+                        "feelings":["Dark"],
+                        "writer":[],
+                        "director":[]
+                    }
                 }
             },
             {
                 "id":"5",
-                "small-image":"../assets/images/series/crime/the-confession-killer/small.jpg",
-                "large-image":"../assets/images/series/crime/the-confession-killer/large.jpg",
-                "preview-video":"",
-                "match-score":"98%",
-                "maturity-rating":"18+",
-                "seasons":1,
-                "episodes":16,
+                "name":"how to get away with murder",
+                "small-image":"how-to-get-away-with-murder.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"100drA5dH57Y2ohvdciTVH1WJoSVfY0kC",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"90%",
+                "maturity-rating":"16+",
+                "seasons":"6",
+                "date":{"year":"2020","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"",
                 "descriptions":{
                     "episodes":[],
-                    "info":""
+                    "more-info":{
+                        "about":"Brilliant criminal defense attorney and law professor Annalise Keating, plus five of her students, become involved in a twisted murder case.",
+                        "cast":["Viola Davis","Billy Brown","Alfred Enoch","more"],
+                        "genres":["TV Mysteries","Crime TV Shows","Courtroom TV Shows"],
+                        "feelings":["Suspenseful"],
+                        "writer":["Peter Nowalk"],
+                        "director":["Peter Nowalk"]
+                    }
                 }
             },
             {
                 "id":"6",
-                "small-image":"../assets/images/films/thriller/joker/small.jpg",
-                "large-image":"../assets/images/films/thriller/joker/large.jpg",
-                "preview-video":"",
-                "match-score":"98%",
+                "name":"jane the virgin",
+                "small-image":"jane-the-virgin.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1YFL-azgBu0B-bqSMUtr89O-pDZMLuPoP",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"83%",
                 "maturity-rating":"18+",
-                "seasons":"",
+                "seasons":"5",
+                "date":{"year":"2019","month":"9","day":"2"},
                 "episodes":"",
+                "duration":"",
                 "descriptions":{
                     "episodes":[],
-                    "info":""
-                }
-            },
-            {
-                "id":"7",
-                "small-image":"../assets/images/series/documentaries/citizenfour/small.jpg",
-                "large-image":"../assets/images/series/documentaries/citizenfour/large.jpg",
-                "preview-video":"",
-                "match-score":"98%",
-                "maturity-rating":"18+",
-                "seasons":3,
-                "episodes":45,
-                "descriptions":{
-                    "episodes":[],
-                    "info":""
+                    "more-info":{
+                        "about":"After vowing to remain chaste until marriage, Jane Villanueva learns she's pregnant due to a medical slip-up and has to rethink her future.",
+                        "cast":["Michael Ola","Josh Sylvia","keiran Palmer","Joe Bullivan","Ryan Travis"],
+                        "genres":["Romantic TV Dramas","Romantic TV Comedies","TV Dramas"],
+                        "feelings":["Campy","Quirky"],
+                        "writer":["Jennie Snyder Urman"],
+                        "director":["Jennie Snyder Urman"]
+                    }
                 }
             }
         ]
@@ -477,109 +929,1242 @@
     {
         "category":{
             "id":"5",
-            "title":"Ensemble TV Shows",
+            "title":"Casual Viewing",
             "link":"https://help.netflix.com/"
         },
         "Movies":[
             {
-                "id":"1",
-                "small-image":"../assets/images/films/children/hotel-transylvania/small.jpg",
-                "large-image":"../assets/images/films/children/hotel-transylvania/large.jpg",
-                "preview-video":"",
-                "match-score":"98%",
+                "id":"0",
+                "name":"kims convenience",
+                "small-image":"kims-convenience.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"123xsGf-G0SINGP80UmTahqFOAlkw6jmZ",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"94%",
                 "maturity-rating":"13+",
-                "seasons":"",
+                "seasons":"5",
+                "date":{"year":"2021","month":"9","day":"2"},
                 "episodes":"",
-                "duration":"2h",
+                "duration":"",
                 "descriptions":{
                     "episodes":[],
-                    "info":""
+                    "more-info":{
+                        "about":"While running a convenience store in Toronto, members of a Korean-Canadian family deal with customers, each other and the evolving world around them.",
+                        "cast":["Paul Sun-Hyung Lee","Jean Yoon","Andrea Bang","more"],
+                        "genres":["Canadian","Sitcoms","TV Comedies"],
+                        "feelings":[""],
+                        "writer":["Ins Choi","Kevin White"],
+                        "director":["Ins Choi","Kevin White"]
+                    }
+                }
+            },
+            {
+                "id":"1",
+                "name":"family feud Steve Harvey",
+                "small-image":"family-feud-harvey.png",
+                "large-image":"https://occ-0-1490-1489.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABQhQOZ7zvsEIzP6Z3yYq1n5CufxaeU2CHUICq315CUPl-ePtKnMOQEDJV3BjGyAGlfBIZguMbr0XhazviTnArxQV9SJIqc-GdKhk.webp?r=860",
+                "title-image":"https://occ-0-1490-1489.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABRzi3u6MADht4vqxoJ7HJ8gD1JH-gf7S4eoTF7w1eHaPJ18cADbReDOyaWabusEtxDzf6c-pviI3ZX-eFL8hZUIBNW7D3noyjL1u1Xq4ZhkjvSU9HDTNwFpaQjL_l9ZtqKIbI_bBPPhnbD8PfDEuOAKb0LHPmHVyqIamkq6proDm-4gfi2Zq.webp?r=8a2",
+                "trailer":"1guwhQWJbPSY3xOvmaM8zr5hmjL2Nyj3J",
+                "trailer-duration":"102",
+                "video":" ",
+                "match-score":"89%",
+                "maturity-rating":"13+",
+                "seasons":"2",
+                "date":{"year":"2022","month":"8","day":"26"},
+                "episodes":"",
+                "duration":"",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"The long-running game show heads to South Africa as two families compete to name the most popular answers to survey questions. Hosted by Steve Harvey.",
+                        "cast":["Steve Harvey"],
+                        "genres":["South African","Competition Reality TV","Family Watch Together TV"],
+                        "feelings":["Witty"],
+                        "writer":[""],
+                        "director":[""]
+                    }
                 }
             },
             {
                 "id":"2",
-                "small-image":"../assets/images/series/comedies/family-guy/small.jpg",
-                "big-image":"../assets/images/series/comedies/family-guy/large.jpg",
-                "preview-video":"",
-                "match-score":"98%",
-                "maturity-rating":"18+",
-                "seasons":8,
-                "episodes":80,
+                "name":"marlon",
+                "small-image":"marlon.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1VlUHPlYiJIFvlTm3wpvcrqbtCg43gK5i",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"71%",
+                "maturity-rating":"13+",
+                "seasons":"2",
+                "date":{"year":"2018","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"",
                 "descriptions":{
                     "episodes":[],
-                    "info":""
+                    "more-info":{
+                        "about":"After the friendliest divorce ever, a carefree but devoted father navigates post-split parenting life with his levelheaded ex-wife and two kids.",
+                        "cast":["Marlon Wayans","Essence Atkins","Bresha Webb","more"],
+                        "genres":["Sitcom","Family Watch Together TV","TV Comedies"],
+                        "feelings":["hearth-felt","feel-good","goofy"],
+                        "writer":["Christopher Moynihan","marlon Wayans"],
+                        "director":["Christopher Moynihan","marlon Wayans"]
+                    }
                 }
             },
             {
                 "id":"3",
-                "small-image":"../assets/images/films/suspense/zodiac/small.jpg",
-                "large-image":"../assets/images/films/suspense/zodiac/large.jpg",
-                "preview-video":"",
-                "match-score":"98%",
-                "maturity-rating":"18+",
-                "seasons":"",
+                "name":"mr iglesias",
+                "small-image":"mr-iglesia.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"12wu1RrG3UPbX4aO5WGm9tavJvnhA5t--",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"",
+                "maturity-rating":"13+",
+                "seasons":"3",
+                "date":{"year":"2020","month":"9","day":"2"},
                 "episodes":"",
-                "duration":"2h",
+                "duration":"",
                 "descriptions":{
                     "episodes":[],
-                    "info":""
+                    "more-info":{
+                        "about":"Hilarious high school teacher Gabriel Iglesias tries to make a difference in the lives of some smart but underperforming students at his alma mater.",
+                        "cast":["Gabriel Iglesias","Sherri Shephard","Jacob Vargas","more"],
+                        "genres":["Sitcoms","Teen TV Shows","TV Comedies"],
+                        "feelings":["feel-good","goofy"],
+                        "writer":["Kevin Hunch"],
+                        "director":["Kevin Hunch"]
+                    }
                 }
             },
             {
                 "id":"4",
-                "small-image":"../assets/images/films/romance/a-star-is-born/small.jpg",
-                "large-image":"../assets/images/films/romance/a-star-is-born/large.jpg",
-                "preview-video":"",
-                "match-score":"98%",
+                "name":"chapelles show",
+                "small-image":"chapelles-show.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1qSVjpfLcGqHHmE40VfBmAzjHQV9egizH",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"75%",
                 "maturity-rating":"18+",
-                "seasons":"",
+                "seasons":"2",
+                "date":{"year":"2004","month":"9","day":"2"},
                 "episodes":"",
-                "duration":"2h",
+                "duration":"",
                 "descriptions":{
                     "episodes":[],
-                    "info":""
+                    "more-info":{
+                        "about":"The brilliant Dave Chappelle performs blistering stand-up, impressions and sketches that skewer topics like racism, politics, celebrities and sex.",
+                        "cast":["Dave Chappelle"],
+                        "genres":["TV Comedies","US TV Shows"],
+                        "feelings":["Raunchy","irreverent"],
+                        "writer":["Dave Chappelle","Neal Brennan"],
+                        "director":["Neal Brennan"]
+                    }
                 }
             },
             {
                 "id":"5",
-                "small-image":"../assets/images/series/crime/the-confession-killer/small.jpg",
-                "large-image":"../assets/images/series/crime/the-confession-killer/large.jpg",
-                "preview-video":"",
-                "match-score":"98%",
+                "name":"superstore",
+                "small-image":"superstore.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"10UZWav5H-ARUXqh1JTa0LJkAPTVSqQ8g",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"75%",
                 "maturity-rating":"18+",
-                "seasons":1,
-                "episodes":16,
+                "seasons":"6",
+                "date":{"year":"2020","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"",
                 "descriptions":{
                     "episodes":[],
-                    "info":""
+                    "more-info":{
+                        "about":"At a big-box megastore in St. Louis, a group of employees with larger-than-life personalities put up with customers, day-to-day duties and each other.",
+                        "cast":["America Ferrera","Ben Feldman","Mark Mckinney","more"],
+                        "genres":["Sitcoms","TV Comedies","US TV Shows"],
+                        "feelings":["Irreverent"],
+                        "writer":["Justin Spitzner"],
+                        "director":["Justin Spitzner"]
+                    }
                 }
             },
             {
                 "id":"6",
-                "small-image":"../assets/images/films/thriller/joker/small.jpg",
-                "large-image":"../assets/images/films/thriller/joker/large.jpg",
-                "preview-video":"",
-                "match-score":"98%",
-                "maturity-rating":"18+",
+                "name":"dad stop embarassing me",
+                "small-image":"dad-stop-embarassing-me.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1TUewW_NP8wv7OApEOVGMOa9WWSzTzmC_",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"91%",
+                "maturity-rating":"13+",
                 "seasons":"",
-                "episodes":"",
+                "date":{"year":"2021","month":"9","day":"2"},
+                "episodes":"8",
+                "duration":"",
                 "descriptions":{
                     "episodes":[],
-                    "info":""
+                    "more-info":{
+                        "about":"A single dad and cosmetics brand owner figures out fatherhood on the fly when his strong-minded teen daughter moves in with him.",
+                        "cast":["Jamie Foxx","David Alan Grier","Kyler Drew","more"],
+                        "genres":["Sitcoms","Family Watch Together TV","TV Comedies"],
+                        "feelings":["War","Sentimental","Pain"],
+                        "writer":["Jim Patterson,Jammie Foxx"],
+                        "director":["Jim Patterson"]
+                    }
                 }
             },
             {
                 "id":"7",
-                "small-image":"../assets/images/series/documentaries/citizenfour/small.jpg",
-                "large-image":"../assets/images/series/documentaries/citizenfour/large.jpg",
-                "preview-video":"",
-                "match-score":"98%",
-                "maturity-rating":"18+",
-                "seasons":3,
-                "episodes":45,
+                "name":"secrets of great british castles",
+                "small-image":"secrets-of-great-british-castles.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1RVvVQ2Wt90_F4Calaw6Bi4oiTEx5ltRy",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"",
+                "maturity-rating":"7+",
+                "seasons":"2",
+                "date":{"year":"2016","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"",
                 "descriptions":{
                     "episodes":[],
-                    "info":""
+                    "more-info":{
+                        "about":"Join historian Dan Jones on a journey back in time to the zenith of Britain's most iconic structures and their infamous inhabitants.",
+                        "cast":["Dan Jones"],
+                        "genres":["Docuseries","British","Historical Documentaries"],
+                        "feelings":["Investigative"],
+                        "writer":["Dan Jones"],
+                        "director":["Dan Jones"]
+                    }
+                }
+            }
+            
+        ]
+    },
+    {
+        "category":{
+            "id":"6",
+            "title":"New Releases",
+            "link":"https://help.netflix.com/"
+        },
+        "Movies":[
+            {
+                "id":"0",
+                "name":"rick and morty",
+                "small-image":"rick-and-morty.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1qeXA8nVoST4Cv58fL9I4iNgbNVvzAvt3",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"96%",
+                "maturity-rating":"18+",
+                "seasons":"6",
+                "date":{"year":"2022","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"Brilliant but boozy scientist Rick hijacks his fretful teenage grandson, Morty, for wild escapades in other worlds and alternate dimensions.",
+                        "cast":["Justin Roinald","Chris Pamell","Spencer Grammar","more"],
+                        "genres":["SCi-FI TV","Sitcoms","Adult Animations"],
+                        "feelings":["absurd","quirky","irreverent"],
+                        "writer":["Dan Harmon","Justin Roinald"],
+                        "director":["Dan Harmon","Justin Roinald"]
+                    }
+                }
+            },
+            {
+                "id":"1",
+                "name":"love in the villa",
+                "small-image":"love-in-the-villa.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1YLFV34TH5tPxFzYD4pg6hqIk0_IwHBaL",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"",
+                "maturity-rating":"13+",
+                "seasons":"",
+                "date":{"year":"2022","month":"9","day":"1"},
+                "episodes":"",
+                "duration":"1h 55m",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"Julie's dream trip to Verona, Italy, turns star-crossed when she discovers her rented villa is already occupied by an annoyingly attractive stranger.",
+                        "cast":["Kat Graham",  "Tom Hopper", "Laura Hopper","more"],
+                        "genres":["Romantic Comedies","Comedies","Romantic Movies"],
+                        "feelings":["swoon-worthy","charming","feel-good"],
+                        "writer":["Mark Steven Johnson"],
+                        "director":["Mark Steven Johnson"]
+                    }
+                }
+            },
+            {
+                "id":"2",
+                "name":"collision course",
+                "small-image":"collision-course-small.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1vFC0E4G1kX3VVttmXXWuWNxzwbY4UrTV",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"98%",
+                "maturity-rating":"16+",
+                "seasons":"",
+                "date":{"year":"2022","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"1h 12m",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"A law enforcement officer tries to make ends meet by soliciting bribes. But a tense run-in with a wealthy young musician changes his life forever.",
+                        "cast":["Daniel Etim Effiong","Kelechi Udegbe","Ade Laoye","more"],
+                        "genres":["Social Issues Drama","Nollywood","African Movies"],
+                        "feelings":["Ominous","emotional"],
+                        "writer":["James Amuta"],
+                        "director":["Bolanle Austin-Peters"]
+                    }
+                }
+            },
+            {
+                "id":"3",
+                "name":"i came by",
+                "small-image":"i-came-by.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1yxxMsOCQ2kQbpILyV0jidqaHrZx7cMOD",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"97%",
+                "maturity-rating":"15+",
+                "seasons":"",
+                "date":{"year":"2022","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"1h 50m",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"A graffiti artist who targets homes of the elite uncovers a twisted secret in a hidden basement — triggering events that put his loved ones in danger.",
+                        "cast":["GeorgeMacKay","Kelly Macdonald","Hugh Boneville","more"],
+                        "genres":["British","Crime Movies","Thriller Movies"],
+                        "feelings":["Suspenseful"],
+                        "writer":["Babak Anvari","Namsi Khan"],
+                        "director":["Babak Anvari"]
+                    }
+                }
+            },
+            {
+                "id":"4",
+                "name":"the kitchen",
+                "small-image":"the-kitchen.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1-Z7DfAFKpw1FoNwjsnIxUpm8mLjeKfV6",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"98%",
+                "maturity-rating":"18+",
+                "seasons":"",
+                "date":{"year":"2019","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"1h 42m",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"In 1978, a trio of mob wives steps up to run Hell’s Kitchen. But violent forces inside and outside the Irish mafia threaten to wrest control away.",
+                        "cast":["Melissa McCarthy","Tiffany Haddish","Elisabeth Moss","more"],
+                        "genres":["Crime Movies","Dramas"],
+                        "feelings":["Violent","gritty"],
+                        "writer":["Andrea Berloff"],
+                        "director":["Andrea Berloff"]
+                    }
+                }
+            },
+            {
+                "id":"5",
+                "name":"superstore",
+                "small-image":"superstore.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"10UZWav5H-ARUXqh1JTa0LJkAPTVSqQ8g",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"75%",
+                "maturity-rating":"18+",
+                "seasons":"6",
+                "date":{"year":"2020","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"At a big-box megastore in St. Louis, a group of employees with larger-than-life personalities put up with customers, day-to-day duties and each other.",
+                        "cast":["America Ferrera","Ben Feldman","Mark Mckinney","more"],
+                        "genres":["Sitcoms","TV Comedies","US TV Shows"],
+                        "feelings":["Irreverent"],
+                        "writer":["Justin Spitzner"],
+                        "director":["Justin Spitzner"]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "category":{
+            "id":"7",
+            "title":"Nollywood Movies & TV",
+            "link":"https://help.netflix.com/"
+        },
+        "Movies":[
+            {
+                "id":"0",
+                "name":"osuofia in london",
+                "small-image":"osuofia-in-london.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1gXnU9AbXXtmKSk2WJzMw9PV1S1wiERir",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"87%",
+                "maturity-rating":"13+",
+                "seasons":"",
+                "date":{"year":"2003","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"1h 23m",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"A villager in Nigeria becomes the sole beneficiary of his late brother's estate in England, which, according to custom, includes his brother's fiancée.",
+                        "cast":["Nkem Owoh","Mara Derwent","Francis Odega","more"],
+                        "genres":["Nollywood","African Movies","Comedies"],
+                        "feelings":["irreverent"],
+                        "writer":["Kingsley Ogoro","Emeka Obiankonwa"],
+                        "director":["Kingsley Ogoro"]
+                    }
+                }
+            },
+            {
+                "id":"1",
+                "name":"fate of alakada",
+                "small-image":"fate-of-alakada.png",
+                "large-image":"https://occ-0-1490-1489.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABQhQOZ7zvsEIzP6Z3yYq1n5CufxaeU2CHUICq315CUPl-ePtKnMOQEDJV3BjGyAGlfBIZguMbr0XhazviTnArxQV9SJIqc-GdKhk.webp?r=860",
+                "title-image":"https://occ-0-1490-1489.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABRzi3u6MADht4vqxoJ7HJ8gD1JH-gf7S4eoTF7w1eHaPJ18cADbReDOyaWabusEtxDzf6c-pviI3ZX-eFL8hZUIBNW7D3noyjL1u1Xq4ZhkjvSU9HDTNwFpaQjL_l9ZtqKIbI_bBPPhnbD8PfDEuOAKb0LHPmHVyqIamkq6proDm-4gfi2Zq.webp?r=8a2",
+                "trailer":"1Lq6Hzt3fKwrwqWlFQt5kbjgy6gGCV3lK",
+                "trailer-duration":"102",
+                "video":" ",
+                "match-score":"90%",
+                "maturity-rating":"16+",
+                "seasons":"",
+                "date":{"year":"2020","month":"8","day":"26"},
+                "episodes":"",
+                "duration":"1h 53m",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"Faking her way through any situation, a social media influencer poses as an event planner and is tasked with throwing an extravagant, star-studded bash.",
+                        "cast":["Toyin Abraham","Broda Shaggi","Calabar Chic","more"],
+                        "genres":["Nollywood","African Movies","Comedies"],
+                        "feelings":["goofy"],
+                        "writer":["Mimi Bartels","Ozioma Ogbaji","Moshood Yakubu Olowole"],
+                        "director":["Kayode Kasum"]
+                    }
+                }
+            },
+            {
+                "id":"2",
+                "name":"mama drama",
+                "small-image":"mama-drama.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1HOKp5dYkZdzarvZNh3caTXMUbjaF8j5h",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"84%",
+                "maturity-rating":"16+",
+                "seasons":"",
+                "date":{"year":"2020","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"1h 44m",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"After years of fertility issues and her mother-in-law's nagging, a woman hires her assistant as a surrogate. But things don’t go as smoothly as planned.",
+                        "cast":["Osas Ighodaro","Kunle Remi","Kehinde Bankole","more"],
+                        "genres":["Social Issues Dramas","Courtroom Movies","Nollywood"],
+                        "feelings":["Emotiional"],
+                        "writer":["Diche Enunwa","Temitope Bolade Akinbode"],
+                        "director":["Seyi Babatope"]
+                    }
+                }
+            },
+            {
+                "id":"3",
+                "name":"the setup",
+                "small-image":"the-setup.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"15dW9v03NuLBs0u85HrM1wQZeWsOpdfeT",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"85%",
+                "maturity-rating":"16+",
+                "seasons":"",
+                "date":{"year":"2019","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"1h 44m",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"Manipulation and personal vendettas collide when a con artist hires a young woman to assist with his scheme to marry a wealthy heiress.",
+                        "cast":["Adesua Etomi","Jim Iyke","Dakore Egbuson-Akande","more"],
+                        "genres":["Nollywood","African Movies","Crime Movies"],
+                        "feelings":["War","Sentimental","Pain"],
+                        "writer":["Michael Ola","Peter Dart","Sam Drucker"],
+                        "director":["Michael Ibitoye"]
+                    }
+                }
+            },
+            {
+                "id":"4",
+                "name":"lagos real fake life",
+                "small-image":"lagos-real-fake-life.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1jp-3frCoV9yuro3rnTPJdmxebuMO6Z3T",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"97%",
+                "maturity-rating":"13+",
+                "seasons":"",
+                "date":{"year":"2018","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"1h 57m",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"Two mooching friends vie for the attention of wealthy, beautiful women only to discover that their lavish lifestyles are bogus.",
+                        "cast":["Odunlade Adekola","Nonso Diobi","Mike Ezuruonye","more"],
+                        "genres":["Nollwood","African Movies","Comedies"],
+                        "feelings":["Irreverent"],
+                        "writer":["Michael Ola","Peter Dart","Sam Drucker"],
+                        "director":["Michael Ibitoye"]
+                    }
+                }
+            },
+            {
+                "id":"5",
+                "name":"merry men 2",
+                "small-image":"merry-men-2.PNG",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1UmMkCcsOUXtuTF2BeAfUZNtGZ0az9cZk",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"",
+                "maturity-rating":"16+",
+                "seasons":"",
+                "date":{"year":"2019","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"1h 54m",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"To save a kidnapped loved one, a pack of wealthy men must return to their vigilante past when they are blackmailed to pull off a treacherous heist.",
+                        "cast":["Ramsey Nouah","Jim Iyke","Ayo Makun","more"],
+                        "genres":["Nollwood","African Movies","Comedies"],
+                        "feelings":["Exciting"],
+                        "writer":["Kehinde Joseph"],
+                        "director":["Moses Inwang"]
+                    }
+                }
+            },
+            {
+                "id":"6",
+                "name":"prophetess",
+                "small-image":"prophetess.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1bFeX8YfQcEAxdjytgxRTQLQZF3Zbj_2H",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"96%",
+                "maturity-rating":"16+",
+                "seasons":"",
+                "date":{"year":"2021","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"2h 23m",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"After a bogus prediction about a football match comes true, a small-town prophetess finds herself entangled in the world of sports betting.",
+                        "cast":["Toyin Abraham","Lateef Adedimeji","Kehinde Bankole","more"],
+                        "genres":["Nollwood","African Movies","Comedies"],
+                        "feelings":["Emotional"],
+                        "writer":["Niyi Akinmolayan"],
+                        "director":["Niyi Akinmolayan"]
+                    }
+                }
+            },
+            {
+                "id":"7",
+                "name":"a naija christmas",
+                "small-image":"a-naija-christmas.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1Hho3TlYgv2GLzQz3JKzXLOzfEuPb88wu",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"93%",
+                "maturity-rating":"13+",
+                "seasons":"",
+                "date":{"year":"2021","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"2h 1m",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"A mother's Christmas wish — and the grand prize that comes with it — sets off a fierce competition between her sons.",
+                        "cast":["Rachel Oniga","Kunle Remi","Segilola Onigan","Joe Bullivan","Ryan Travis"],
+                        "genres":["Romantic Comedies","Nollywood","African Movies"],
+                        "feelings":["Charming","Romantic"],
+                        "writer":["Kemi Adesoye"],
+                        "director":["Kunle Afolayan"]
+                    }
+                }
+            }            
+        ]
+    },
+    {
+        "category":{
+            "id":"8",
+            "title":"Hollywood Movies",
+            "link":"https://help.netflix.com/"
+        },
+        "Movies":[
+            {
+                "id":"0",
+                "name":"baywatch",
+                "small-image":"baywatch.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1q08RPnge97cEs_D2FyWBVJif8QlhZwpm",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"72%",
+                "maturity-rating":"18+",
+                "seasons":"",
+                "date":{"year":"2017","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"1h 57m",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"To save their beach, elite lifeguard Mitch Buchannon and a former Olympian probe a criminal plot that threatens the future of the bay.",
+                        "cast":["Dwayne Johnson","Zac Efron","Priyanka Chopra Jonas","more"],
+                        "genres":["Action & Adventure","Comedies"],
+                        "feelings":["Absurd","Raunchy","Exciting"],
+                        "writer":["Jay Scherick","David Ronn","Thomas lennon","Robert Ben Garant","Mark Swift","Damian Shannon"],
+                        "director":["Seth Gordon"]
+                    }
+                }
+            },
+            {
+                "id":"1",
+                "name":"top gun",
+                "small-image":"top-gun.png",
+                "large-image":"https://occ-0-1490-1489.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABQhQOZ7zvsEIzP6Z3yYq1n5CufxaeU2CHUICq315CUPl-ePtKnMOQEDJV3BjGyAGlfBIZguMbr0XhazviTnArxQV9SJIqc-GdKhk.webp?r=860",
+                "title-image":"https://occ-0-1490-1489.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABRzi3u6MADht4vqxoJ7HJ8gD1JH-gf7S4eoTF7w1eHaPJ18cADbReDOyaWabusEtxDzf6c-pviI3ZX-eFL8hZUIBNW7D3noyjL1u1Xq4ZhkjvSU9HDTNwFpaQjL_l9ZtqKIbI_bBPPhnbD8PfDEuOAKb0LHPmHVyqIamkq6proDm-4gfi2Zq.webp?r=8a2",
+                "trailer":"1u5ef0oH6gup1sPLmM_XBneEAqsFxZpgq",
+                "trailer-duration":"102",
+                "video":" ",
+                "match-score":"98%",
+                "maturity-rating":"13+",
+                "seasons":"",
+                "date":{"year":"2022","month":"8","day":"26"},
+                "episodes":"",
+                "duration":"2h 10m",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"After thirty years, Maverick is still pushing the envelope as a top naval aviator, but must confront ghosts of his past when he leads TOP GUN's elite graduates on a mission that demands the ultimate sacrifice from those chosen to fly it.",
+                        "cast":["Tom Cruise", "Jennifer Connelly", "Miles Teller", "more"],
+                        "genres":["Action","Hollywood Movies"],
+                        "feelings":["Exciting","Inspiring"],
+                        "writer":["Jim Cash","Jack Epps Jr","Peter Craig"],
+                        "director":["Joseph Kosinski"]
+                    }
+                }
+            },
+            {
+                "id":"2",
+                "name":"safe house",
+                "small-image":"safe-house.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1qZfj1Cn8oAr6SOLaupmrkOkfjz55eH3e",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"73%",
+                "maturity-rating":"16+",
+                "seasons":"",
+                "date":{"year":"2012","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"1h 54m",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"CIA operative Matt Weston must get a dangerous criminal out of an agency safe house that's come under attack and get him to a more secure location.",
+                        "cast":["Denzel Washington","Ryan Reynolds","Verma fermiga","more"],
+                        "genres":["Spy Movies","Action & Adventure"],
+                        "feelings":["Suspenseful"],
+                        "writer":["David Guggenheim"],
+                        "director":["Daniel Espinosa"]
+                    }
+                }
+            },
+            {
+                "id":"3",
+                "name":"meet joe black",
+                "small-image":"meet-joe-black.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1COQkxgD0OIu4-DhVxWR7qvGEoM5UJdmb",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"",
+                "maturity-rating":"18+",
+                "seasons":"",
+                "date":{"year":"1998","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"3h",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"When the grim reaper comes for a megamogul, he offers a proposition: Host him for a \"vacation\" among the living in trade for a few more days of life.",
+                        "cast":["Brad Pitt","Anthony Hopkins","Claire Forlani","more"],
+                        "genres":["Dramas","Romantic Movies"],
+                        "feelings":["Understated","Emotional","Romantic"],
+                        "writer":["Ron Osborn","Jeff Reno","Kevin Wade","Bo Goldman"],
+                        "director":["Martin Brest"]
+                    }
+                }
+            },
+            {
+                "id":"4",
+                "name":"ted",
+                "small-image":"ted.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1kSs_MxqzuYTe7YcRFx0SJAJnkcTN8rGn",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"66%",
+                "maturity-rating":"18+",
+                "seasons":"",
+                "date":{"year":"2012","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"1h 46m",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"A hard-partying, foul-mouthed teddy bear come to life threatens to derail his human companion's attempts to enter adulthood and marry his girlfriend.",
+                        "cast":["Mark Wahlberg","Milia Kunis","Seth MacFarlane","more"],
+                        "genres":["Comedies"],
+                        "feelings":["Absurd","Raunchy","Goofy"],
+                        "writer":["Seth MacFarlane","Alec Sulkin","Wellesley Wild"],
+                        "director":["Seth MacFarlane"]
+                    }
+                }
+            },
+            {
+                "id":"5",
+                "name":"the man from toronto",
+                "small-image":"man-from-toronto.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1zKUwZ1fStCzxV585zqFVqWVlhSBVdRzj",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"98%",
+                "maturity-rating":"13+",
+                "seasons":"",
+                "date":{"year":"2022","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"1h 52m",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"A case of mistaken identity forces a bumbling entrepreneur to team up with a notorious assassin known as The Man from Toronto in hopes of staying alive.",
+                        "cast":["Kevin Hart","Woody Harrelson","kaley Cuoco","more"],
+                        "genres":["Action & Adventure","Comedies"],
+                        "feelings":["goofy","exciting"],
+                        "writer":["Robbie Fox","Chris Bremmer"],
+                        "director":["Patrick Hughes"]
+                    }
+                }
+            },
+            {
+                "id":"6",
+                "name":"good girls",
+                "small-image":"good-girls.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1PcUPPt1r9Ynzpy-4MdF4RGv87h54X39G",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"94%",
+                "maturity-rating":"16+",
+                "seasons":"4",
+                "date":{"year":"2021","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"Three suburban moms orchestrate a local grocery store heist to escape financial ruin and establish independence -- together.",
+                        "cast":["Christina Hendricks","Retta","Mae Whitman","more"],
+                        "genres":["Crime TV Shows","TV Dramas","TV Comedies"],
+                        "feelings":["Witty","Irreverent","Suspenseful"],
+                        "writer":["Jenna Bans"],
+                        "director":["Jenna Bans"]
+                    }
+                }
+            },
+            {
+                "id":"7",
+                "name":"ride along",
+                "small-image":"ride-along.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"12MA1NQYWhZdzakyq3SCertdLESikgjBC",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"88%",
+                "maturity-rating":"16+",
+                "seasons":"",
+                "date":{"year":"2014","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"1h 39m",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"When his motormouthed future brother-in-law enters the police academy, a veteran Atlanta cop takes him on a ride-along but soon comes to regret it.",
+                        "cast":["Ice Cube","Kevin Hart","John Leguizamo","more"],
+                        "genres":["Action & Adventure","Comedies"],
+                        "feelings":["goofy","Exciting"],
+                        "writer":["Greg Coolidge","Jason Mantzoukas","Phil Hay","Matt Manfredi"],
+                        "director":["Tim Story"]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "category":{
+            "id":"9",
+            "title":"Award-Winning Exciting TV Shows",
+            "link":"https://help.netflix.com/"
+        },
+        "Movies":[
+            {
+                "id":"0",
+                "name":"stranger things",
+                "small-image":"stranger-things.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1jfNKKn0uAsB3vaeskTK0BTnei9ivUgwS",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"93%",
+                "maturity-rating":"16+",
+                "seasons":"4",
+                "date":{"year":"2022","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.",
+                        "cast":["Winona Ryder","David Harbour","Millie Bobby Brown","more"],
+                        "genres":["Sci-FI TV","Teen TV Shows","TV Horror"],
+                        "feelings":["Ominous","Scary"],
+                        "writer":["The Duffer Brothers"],
+                        "director":["The Duffer Brothers"]
+                    }
+                }
+            },
+            {
+                "id":"1",
+                "name":"michael jordan last dance",
+                "small-image":"last-dance-mj.png",
+                "large-image":"https://occ-0-1490-1489.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABQhQOZ7zvsEIzP6Z3yYq1n5CufxaeU2CHUICq315CUPl-ePtKnMOQEDJV3BjGyAGlfBIZguMbr0XhazviTnArxQV9SJIqc-GdKhk.webp?r=860",
+                "title-image":"https://occ-0-1490-1489.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABRzi3u6MADht4vqxoJ7HJ8gD1JH-gf7S4eoTF7w1eHaPJ18cADbReDOyaWabusEtxDzf6c-pviI3ZX-eFL8hZUIBNW7D3noyjL1u1Xq4ZhkjvSU9HDTNwFpaQjL_l9ZtqKIbI_bBPPhnbD8PfDEuOAKb0LHPmHVyqIamkq6proDm-4gfi2Zq.webp?r=8a2",
+                "trailer":"1q9bQip3xSxbCWlbA3BtVOKwM3llt6lA1",
+                "trailer-duration":"102",
+                "video":" ",
+                "match-score":"98%",
+                "maturity-rating":"16+",
+                "seasons":"",
+                "date":{"year":"2020","month":"8","day":"26"},
+                "episodes":"10",
+                "duration":"",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"Scottie Pippen rises from obscurity to become one of the NBA's best players. An injury early in Michael's career sows distrust with Bulls management.",
+                        "cast":["Michael Jordan", "Scottie Pippen", "Dennis Rodman", "more"],
+                        "genres":["Social & Cultural Docs","Docuseries","US TV Shows"],
+                        "feelings":["Feel-good"],
+                        "writer":[""],
+                        "director":[""]
+                    }
+                }
+            },
+            {
+                "id":"2",
+                "name":"vikings",
+                "small-image":"vikings.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1eH1ceR7hUJRQa4gaMMYwkGyUxUFhEMeY",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"97%",
+                "maturity-rating":"18+",
+                "seasons":"6",
+                "date":{"year":"2019","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"This gritty drama charts the exploits of Viking hero Ragnar Lothbrok as he extends the Norse reach by challenging an unfit leader who lacks vision.",
+                        "cast":["Travis Fimmel","Katheryn Winnick","Clive Standen","more"],
+                        "genres":["Canadian","Political TV Shows","Period Pieces"],
+                        "feelings":["Violent","Exciting"],
+                        "writer":["Michael Hirst"],
+                        "director":["Michael Hirst"]
+                    }
+                }
+            },
+            {
+                "id":"3",
+                "name":"the blacklist",
+                "small-image":"blacklist.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1Xidxr1p83ow0PKt3DV83ELJcG27N7hXq",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"97%",
+                "maturity-rating":"16+",
+                "seasons":"7",
+                "date":{"year":"2022","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"After turning himself in, a brilliant fugitive offers to help the FBI bag other baddies, but only if rookie profiler Elizabeth Keen is his partner.",
+                        "cast":["James Spader","Megan Boone","Diego Klattenhoff","more"],
+                        "genres":["Crime TV Shows","TV Thrillers","TV Dramas"],
+                        "feelings":["Exciting"],
+                        "writer":["Jon Bokenkamp"],
+                        "director":["Jon Bokenkamp"]
+                    }
+                }
+            },
+            {
+                "id":"4",
+                "name":"kuroko's basketball",
+                "small-image":"kuroko-basket.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"14RNq6rrr6YXkgI-hLBcGTGebuG-xzoLB",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"75%",
+                "maturity-rating":"13+",
+                "seasons":"3",
+                "date":{"year":"2015","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"Five middle school basketball stars went to separate high schools, and now Tetsuya Kuroko and Seirin High are making their play for glory.",
+                        "cast":["Kensho Ono","Yuki Ono","Chiwa Saito","more"],
+                        "genres":["Japanese","TV Shows Based on Manga","Teen TV Shows"],
+                        "feelings":["Exciting"],
+                        "writer":[""],
+                        "director":[""]
+                    }
+                }
+            },
+            {
+                "id":"5",
+                "name":"power",
+                "small-image":"power-small.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1Z2O7AHQc2FOxCzA3p69J2_QzlkNjC-HA",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"98%",
+                "maturity-rating":"18+",
+                "seasons":"6",
+                "date":{"year":"2019","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"In this absorbing crime drama, a successful and well-liked nightclub owner moonlights as a drug dealer to New York City's A-list users.",
+                        "cast":["Omari Hardwick","Lela Louren","Natori Naughton","50 Cent","more"],
+                        "genres":["crime TVshows","TV Dramas","US TV Shows"],
+                        "feelings":["violent"],
+                        "writer":["Courtney Kemp Agboh"],
+                        "director":["50 Cent"]
+                    }
+                }
+            },
+            {
+                "id":"6",
+                "name":"merlin",
+                "small-image":"merlin.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1QiBiayvhI0GJkjL0KkqGVjnJRTT7939D",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"95%",
+                "maturity-rating":"16+",
+                "seasons":"5",
+                "date":{"year":"2012","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"This family-oriented retelling of the King Arthur legend finds Merlin arriving in Camelot, where he hones his magic skills with the help of his uncle.",
+                        "cast":["Colin Morgan","Bradley James","Katie McGrath","more"],
+                        "genres":["British","Fantasy TV Shows","TV Dramas"],
+                        "feelings":["Suspenseful","Exciting"],
+                        "writer":["Julian Jones","Jake Michie","Johnny Capps","Julian Murphy"],
+                        "director":["James Hawes"]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "category":{
+            "id":"10",
+            "title":"Children & Family TV",
+            "link":"https://help.netflix.com/"
+        },
+        "Movies":[
+            {
+                "id":"0",
+                "name":"the big show show",
+                "small-image":"the-big-show-show.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1rXFq6HFNvKKriOejlIRO8Efp7MYmSdeN",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"",
+                "maturity-rating":"7+",
+                "seasons":"",
+                "date":{"year":"2020","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"Former WWE wrestler the Big Show is out of the ring and ready for an even tougher challenge: raising three daughters with his wife in Florida.",
+                        "cast":["Paul Wight","Allison Munn","Reylynn Caster","more"],
+                        "genres":["Kids TV","Sitcoms","Family Watch Together TV"],
+                        "feelings":["Feel-Good","Goofy"],
+                        "writer":["Josh Bycel","Jason Berger"],
+                        "director":["Josh Bycel","Jason Berger"]
+                    }
+                }
+            },
+            {
+                "id":"1",
+                "name":"floor is lava",
+                "small-image":"floor-is-lava.png",
+                "large-image":"https://occ-0-1490-1489.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABQhQOZ7zvsEIzP6Z3yYq1n5CufxaeU2CHUICq315CUPl-ePtKnMOQEDJV3BjGyAGlfBIZguMbr0XhazviTnArxQV9SJIqc-GdKhk.webp?r=860",
+                "title-image":"https://occ-0-1490-1489.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABRzi3u6MADht4vqxoJ7HJ8gD1JH-gf7S4eoTF7w1eHaPJ18cADbReDOyaWabusEtxDzf6c-pviI3ZX-eFL8hZUIBNW7D3noyjL1u1Xq4ZhkjvSU9HDTNwFpaQjL_l9ZtqKIbI_bBPPhnbD8PfDEuOAKb0LHPmHVyqIamkq6proDm-4gfi2Zq.webp?r=8a2",
+                "trailer":"1yw-7zRhxnm0CmY3zz5BZkA_4fQ1waSFS",
+                "trailer-duration":"102",
+                "video":" ",
+                "match-score":"",
+                "maturity-rating":"7+",
+                "seasons":"2",
+                "date":{"year":"2022","month":"8","day":"26"},
+                "episodes":"",
+                "duration":"",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"Teams compete to navigate rooms flooded with lava by leaping from chairs, hanging from curtains and swinging from chandeliers. Yes, really.",
+                        "cast":["Rutledge Wood"],
+                        "genres":["Competition Reality TV","Family Watch Together TV","Reality TV"],
+                        "feelings":["Exciting"],
+                        "writer":[""],
+                        "director":[""]
+                    }
+                }
+            },
+            {
+                "id":"2",
+                "name":"the boss baby",
+                "small-image":"boss-baby.PNG",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1HXeqxVoP4VfMAIok_y_7fy_cYTnX7x8U",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"",
+                "maturity-rating":"7+",
+                "seasons":"4",
+                "date":{"year":"2020","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"The Boss Baby brings his big brother Tim to the office to teach him the art of business in this animated series sprung from the hit film.",
+                        "cast":["JP karliak","Pierce Gagnon","Kevin Michael","Richardson","more"],
+                        "genres":["Action","Dramas","Romance"],
+                        "feelings":["Exciting"],
+                        "writer":[""],
+                        "director":[""]
+                    }
+                }
+            },
+            {
+                "id":"3",
+                "name":"greezy and the lemmings",
+                "small-image":"greezy-and-the-lemmings.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"151wJBKuQP3kF9GDDtTN8w17Me25YM4Ra",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"",
+                "maturity-rating":"18+",
+                "seasons":"2",
+                "date":{"year":"2018","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"Strong, whip-smart Grizzy rules a Canadian forest, where he has his paws full with a family of frolicsome lemmings.",
+                        "cast":["Josselin Charier","Pierre-Alain de Garrigues"],
+                        "genres":["Kid's TV","TV Cartoons","TV Comedies"],
+                        "feelings":["Goofy"],
+                        "writer":["Antoine Rodelet","Josselin Charier"],
+                        "director":["Antoine Rodelet","Josselin Charier"]
+                    }
+                }
+            },
+            {
+                "id":"4",
+                "name":"catch teenieping",
+                "small-image":"catch-teenieping.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"19GV_3iNbQXo50l9fkFrZLrtyDoMVToo1",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"",
+                "maturity-rating":"18+",
+                "seasons":"",
+                "date":{"year":"2020","month":"9","day":"2"},
+                "episodes":"52",
+                "duration":"",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"Set free on Earth, fairies with magical powers begin influencing people's emotions. Now, it's up to a princess from a faraway kingdom to stop them!",
+                        "cast":["Lee Ji-hyun","Jo Kyoung-i","Moon Nam-sook","more"],
+                        "genres":["Korean","Kid's TV","TV Cartoons"],
+                        "feelings":["play"],
+                        "writer":[""],
+                        "director":[""]
+                    }
+                }
+            },
+            {
+                "id":"5",
+                "name":"total drama action",
+                "small-image":"total-drama-action.png",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1dAVZCZ4Akj-PpnjKW25ecZApxJuGiJ2Q",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"64%",
+                "maturity-rating":"7+",
+                "seasons":"7",
+                "date":{"year":"2015","month":"9","day":"2"},
+                "episodes":"",
+                "duration":"",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"Heartwarming moments are interspersed with backstabbing, scheming, sabotage and broken alliances in this animated spoof of reality show competitions.",
+                        "cast":["Cle Bennett","Christian Potenza","Scott McCord","more"],
+                        "genres":["Canadian","Kid's TV","TV Cartoons"],
+                        "feelings":["Irreverent","goofy"],
+                        "writer":["Tom McGillis","Jennifer","Pertsh"],
+                        "director":["Tom McGillis","Jennifer","Pertsh"]
+                    }
+                }
+            },
+            {
+                "id":"6",
+                "name":"all about the washingtons",
+                "small-image":"the-washingtons.PNG",
+                "large-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUGG1SCj-niJSwMSBys0NfYvb-Nwz3-xsYOjlCGNnuUXd7FQK5QCyyTvuwMBVGsXHHgO3rTJd-l8fVWi15mXfnTj63WidyH5xe4g.webp?r=572",
+                "title-image":"https://occ-0-5543-299.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQ8Or-GWQNWnBqseiWQv91br9cNSDRLcqC6lQpcDlfc2sD85OzwZVeIwrHyw5xRqg5Qb5oWm5Ki4_ONtqmICHfp5MkDRO2YTR9ofAJFEt-tN.webp?r=a36",
+                "trailer":"1mmux-6ZWkdsU_2a2B7dBSBj1UmlfmRwZ",
+                "trailer-duration":"95",
+                "video":" ",
+                "match-score":"98%",
+                "maturity-rating":"7+",
+                "seasons":"",
+                "date":{"year":"2018","month":"9","day":"2"},
+                "episodes":"10",
+                "duration":"",
+                "descriptions":{
+                    "episodes":[],
+                    "more-info":{
+                        "about":"Hip-hop icon MC Joe Speed retires from showbiz and finds a new rhythm balancing business, romance and everyday family chaos.",
+                        "cast":["Joseph Simmons","Justine Simmons","kiana Lede","more"],
+                        "genres":["Sitcoms","Family Watch Together TV","TV Comedies"],
+                        "feelings":["feel-good"],
+                        "writer":["Jeremy Bronson"],
+                        "director":["Jeremy Bronson"]
+                    }
                 }
             }
         ]

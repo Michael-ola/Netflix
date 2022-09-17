@@ -2,10 +2,10 @@ import React from 'react'
 import {StyledMatchScore} from './style/MatchScore.style'
 
 
-const MatchScore = (props) => {
+const MatchScore = ({children}:{children:JSX.Element}) => {
     return (
         <StyledMatchScore>
-            {props.children}
+            {children}
         </StyledMatchScore>
     )
 }

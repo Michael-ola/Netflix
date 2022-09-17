@@ -1,8 +1,8 @@
 import React from 'react'
 import {Container} from './style/SignUpPage.style'
 import {Outlet} from 'react-router-dom'
-import Navbar from './Layout/Navbar'
-import Footer from './Layout/Footer'
+import Navbar from 'features/signUp/Layout/Navbar'
+import Footer from 'features/signUp//Layout/Footer'
 
 const SignUpPage = () => {
     return (

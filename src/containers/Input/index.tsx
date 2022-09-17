@@ -14,7 +14,7 @@ interface InputType{
 }
 
 const Input=({type,placeholder,style,className,submitButtonClicked,onChangeHandler,value:inputValue,error}:InputType)=>{
-    const inputRef = useRef<HTMLInputElement>(null)
+    const inputRef = useRef<HTMLInputElement | null>(null)
     const [labelClicked,setLabelClicked] =useState(false)
 
     useEffect(() => {
@@ -23,7 +23,7 @@ const Input=({type,placeholder,style,className,submitButtonClicked,onChangeHandl
 
     const labelClickedHandler=()=>{
         setLabelClicked(true);
-        inputRef.current.focus()
+        inputRef?.current?.focus()
     }
     const inputBlurHandler=()=>{
         !inputValue && setLabelClicked(false);

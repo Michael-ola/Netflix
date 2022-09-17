@@ -1,8 +1,9 @@
 import {planType} from '../Actions/actionTypes'
+import {planInfoType} from '../types'
 
 interface actionType{
     type: string,
-    payload:{planName:string,planPrice:string}
+    payload:planInfoType
 }
 
 const initialState={
@@ -10,7 +11,7 @@ const initialState={
     planPrice:''
 }
 
-const savePlanInfo=(state,payload) => {
+const savePlanInfo=(state:planInfoType,payload:planInfoType):planInfoType => {
         return {
             ...state,
             planName:payload.planName,
