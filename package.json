@@ -60,6 +60,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-instantsearch": "^6.10.1",
     "@types/react-instantsearch-dom": "^6.12.3",
     "redux-devtools-extension": "^2.13.9"
   }

@@ -1,8 +1,8 @@
 import styled from 'styled-components/macro'
 
 export const Container = styled.div`
-width: 100%;
-min-height: 70%;
+width: 100vw;
+min-height: 70vh;
 background:#141414;
 position:fixed;
 bottom:0;

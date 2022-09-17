@@ -7,7 +7,6 @@ import Footer from 'features/moviesPage/layout/Footer'
 import {MoviesPageContextProvider} from 'features/moviesPage/context/MoviesPageContext'
 import withErrorIndicator from 'HOC/withErrorIndicator'
 import axios  from 'axios'
-import DisplayPage from 'features/Search/components/ResultsDisplayPage/Page'
 
 const moviesData=require('data/movieCategories.json');
 
@@ -21,7 +20,6 @@ const MoviesPage = () => {
 
     return (
         <MoviesPageContextProvider data={contextData}>
-        <DisplayPage/>
         <Container>
             <div id="searchDisplay"></div>
             <div id="reactionOverlay"></div>

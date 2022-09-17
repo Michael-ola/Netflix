@@ -5,9 +5,20 @@ import {SearchComponentContainer,SearchIcon,
 import {createPortal} from 'react-dom'
 import ResultsPage from '../ResultsDisplayPage/Page'
 
-//import {connectSearchBox,SearchBox} from 'react-instantsearch-hooks-web'
+import {InstantSearch,useHits,useSearchBox} from 'react-instantsearch-hooks-web'
 import algoliasearch from 'algoliasearch/lite'
-import {InstantSearch,Hits} from 'react-instantsearch-dom'
+
+interface searchWidgetType{
+    clickState:boolean,
+    setClickState:React.Dispatch<React.SetStateAction<boolean>>,
+}
+
+interface SearchType{
+    currentRefinement?:string,
+    isSearchStalled?:boolean,
+    refine?:Function
+}
+
 
 const searchClient=algoliasearch(
     'G1WAUE41I5',
@@ -23,22 +34,22 @@ const SearchComponent = () => {
     }
     
     return(
-        <>p</>
+            <SearchComponentContainer {...{clickState}}>
+                <SearchIcon onClick={onClickHandler} {...{clickState}}/>
+                <InstantSearch  searchClient={searchClient} indexName="netflix-clone-movies">
+                    <Search clickState={clickState} setClickState={setClickState}/>
+                </InstantSearch>
+            </SearchComponentContainer>
     )
 }
 
-interface searchWidgetType{
-    clickState:boolean,
-    setClickState:React.Dispatch<React.SetStateAction<boolean>>,
-    currentRefinement?:any,
-    isSearchStalled?:any,
-    refine?:any
-}
-
-const Search = ({clickState,setClickState,currentRefinement,isSearchStalled,refine}:searchWidgetType) => {
+const Search = ({clickState,setClickState}:searchWidgetType) => {
+    const {currentRefinement,isSearchStalled,refine}:SearchType=useSearchBox();
     const inputRef = useRef<HTMLInputElement | null>(null);
     const [blurState,setBlurState] =useState(false)
-    const [inputValue,setInputValue] = useState('')
+    const [inputValue,setInputValue] = useState('');
+    const {hits}=useHits();
+
     if(isSearchStalled){
         console.log('stalled')
     }
@@ -70,10 +81,9 @@ const Search = ({clickState,setClickState,currentRefinement,isSearchStalled,refi
              onBlur={onBlurHandler} onClick={(event:React.MouseEvent)=>{event.stopPropagation()}}
              onChange={onChangeHandler}/>
         </SearchContainer>
-        {/*inputValue && createPortal(<ResultsPage Hits={Hits}/>,document.getElementById('searchDisplay') as Element)*/}
+        {inputValue && createPortal(<ResultsPage hits={hits}/>,document.getElementById('searchDisplay') as Element)}
         </>
     )
 }
 
-//const CustomSearchWidget=connectSearchBox(Search);
 export default SearchComponent;
