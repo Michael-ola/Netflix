@@ -3,6 +3,13 @@
 # About
 ## A clone of the videos streaming platform(Netflix) web application
 
+# Rendering Pattern
+  ## CSR(Client Side Rendering)
+
+# Design patterns 
+  ## Compound Components 
+  ## React Facade pattern
+
 # Technologies 
 
 ## -React JS
@@ -14,9 +21,9 @@
 ## -firebase authentication 
 ## -firebase firestore 
 ## -Axios
-## -react Hook forms
+## -react Hook forms for simple forms. Others were built from scratch 
 ## -React Router dom
-## -Google Drive for file storage
+## -Google Drive for files storage
 
 # features in pipeline
 
