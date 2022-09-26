@@ -17,7 +17,7 @@ const SoundControlButton = ({className,onClick}:SoundControlButtonType) => {
     }
     return (
         <StyledButton onClick={clickHandler} className={className}>
-            <StyledIcon src={soundState?muteIcon:soundIcon}/>
+            <StyledIcon src={soundState?soundIcon:muteIcon}/>
         </StyledButton>
     )
 }

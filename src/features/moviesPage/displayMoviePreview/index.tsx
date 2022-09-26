@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState,useEffect,useRef} from 'react'
 import ReactDom from 'react-dom'
 import {Container,MovieVideo,MoviePoster,
     MovieTitle,Controls,MovieDataContainer,MovieDescription,AgeRating,
@@ -17,19 +17,44 @@ const MoviePreview = () => {
     const [showVideo,setShowVideo]=useState(true)
     const [soundState,setSoundState]=useState(false)
     const [showMovieInfoModal,setShowMovieInfoModal]=useState(false)
-    const movieData =useMoviesPageData().moviesData[0].Movies[0];
+    const movieData =useMoviesPageData()?.moviesData?.[0]?.Movies?.[0];
+    const videoRef=useRef<HTMLVideoElement>(null);
+    const [playButtonClicked,setPlayButtonClicked]=useState(false);
+    
+    useEffect(() => {
+        const fullScreenChangeHandler=() => {
+            if(document.fullscreenElement?.nodeName!=="VIDEO"){
+                setPlayButtonClicked(false)
+            }
+        }
+        document.addEventListener("fullscreenchange",fullScreenChangeHandler)
+        return()=>{
+            document.removeEventListener("fullscreenchange",fullScreenChangeHandler)
+        }
+    },[])
+
+    useEffect(() =>{
+        if(showMovieInfoModal){
+            videoRef?.current?.pause();
+        }
+
+        else{
+            videoRef?.current?.play();
+        }
+    },[showMovieInfoModal])
 
     useEffect(() =>{
         const playTime=setTimeout(() =>{
             setShowVideo(false);
-        },+movieData['trailer-duration']*1000)
+        },+movieData?.['trailer-duration']*1000)
         return () =>{
             clearTimeout(playTime);
         }
     },[movieData, showVideo])
 
     const playClicked =()=>{
-        
+        setPlayButtonClicked(true);
+        videoRef?.current?.requestFullscreen();
     }
     const infoButtonClicked =()=>{
         setShowMovieInfoModal(true)
@@ -48,12 +73,12 @@ const MoviePreview = () => {
         {showMovieInfoModal && ReactDom.createPortal(<MovieInfoModal info={movieData}
          showState={showMovieInfoModal} setShowState={setShowMovieInfoModal}/>,document.getElementById("moreInfo") as Element)}
         <MovieDataContainer>
-            <MovieTitle src={movieData["title-image"]} alt={movieData.name}/>
+            <MovieTitle src={movieData?.["title-image"]} alt={movieData?.name}/>
             {!showVideo &&
             <>
                 <TopTen><img src={top10Img} alt='top ten'/> #2 in TV Shows Today</TopTen>
                 <MovieDescription>
-                    {movieData.descriptions["more-info"].about}
+                    {movieData?.descriptions?.["more-info"].about}
                 </MovieDescription>
             </>
             }
@@ -66,14 +91,14 @@ const MoviePreview = () => {
             {!showVideo && <ReplayVideoButton onClick={replayButtonClicked}/>}
             {showVideo && <SoundControlButton onClick={soundControlButtonClicked}/>}
             <AgeRating>
-                {movieData["maturity-rating"]}
+                {movieData?.["maturity-rating"]}
             </AgeRating>
         </ControlsContainer>
         {
-            showVideo?<MovieVideo poster={movieData["large-image"]}  muted={!soundState} autoPlay>
-             <source  src={"https://drive.google.com/uc?export=download&id="+movieData["trailer"]} type='video/mp4'></source>
+            showVideo?<MovieVideo ref={videoRef} poster={movieData?.["large-image"]}  muted={playButtonClicked?false:!soundState} controls={playButtonClicked}  autoPlay>
+             <source  src={"https://drive.google.com/uc?export=download&id="+movieData?.["trailer"]} type='video/mp4'></source>
             </MovieVideo>
-            :<MoviePoster src={movieData["large-image"]}/>
+            :<MoviePoster src={movieData?.["large-image"]}/>
         }</Container>
     )
 }

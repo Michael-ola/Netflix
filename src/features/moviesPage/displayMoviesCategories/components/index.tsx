@@ -9,9 +9,9 @@ export default function MoviesCategory(){
    const {moviesData:categoriesData}=useMoviesPageData(); 
     
    const categoriesIterator=()=>{
-    return categoriesData.map((data)=>{
+    return categoriesData?.map((data,index)=>{
         return (
-            <CategoriesDataProvider key={data.category.id} data={data}>
+            <CategoriesDataProvider key={index} data={data}>
                 <MoviesCarousel />
             </CategoriesDataProvider>
         )

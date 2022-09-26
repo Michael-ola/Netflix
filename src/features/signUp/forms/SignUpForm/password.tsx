@@ -15,7 +15,7 @@ const PasswordInput =()=>{
     const errorValidator=useCallback((value:string)=>{
         if(value){
             if(value.length>=6 && value.length<=60){
-                setFormData('password',value);
+                setFormData('password',value.trim());
                 setError('');
                 setStyleClass('noError-indicator');
             }
@@ -36,8 +36,8 @@ const PasswordInput =()=>{
     },[errorValidator, submitButtonClicked, value]);
 
     const changeHandler=(event:React.ChangeEvent<HTMLInputElement>) => {
-        setValue(event.target.value.trim());
-        errorValidator(event.target.value.trim());
+        setValue(event.target.value);
+        errorValidator(event.target.value);
     }
 
     return(

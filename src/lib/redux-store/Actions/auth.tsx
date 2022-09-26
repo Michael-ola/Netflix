@@ -1,6 +1,7 @@
 import axios from 'axios'
 import {authActionTypes} from './actionTypes'
-
+import {storeEmail} from './membershipForm'
+import { storePlanInfo } from './planInfo'
 
 const authStart=()=>{
     return {
@@ -25,7 +26,7 @@ const authFail=(error: string | null)=>{
     }
 }
 
-const firebaseAuth=(dispatch:Function,url:string,data:{email:string,password:string})=>{
+const firebaseAuth=(dispatch:Function,url:string,data:{email:string,password:string},callback?:() => void)=>{
     const authData={
         email:data.email,
         password:data.password,
@@ -34,20 +35,19 @@ const firebaseAuth=(dispatch:Function,url:string,data:{email:string,password:str
     
     axios.post(url+'key=AIzaSyDSsWg2h4b5aFqSLbtlcp6bnc7e22D1fj4',authData)
     .then((response) => {
-        console.log(response);
         localStorage.setItem('token',response.data.idToken);
         const date=new Date(new Date().getTime() + response.data.expiresIn*1000);
         localStorage.setItem('expiryDate',date.toString());
         localStorage.setItem('userId',response.data.localId);
         dispatch(authSuccess(response.data));
-        dispatch(authLogout(response.data.expiresIn))
+        dispatch(authLogout(response.data.expiresIn));
+        callback?.();
     }).catch((error) => {
-        console.log(error.message);
         dispatch(authFail(error.message));
     })
 }
 
-export const auth=(email:string, password:string,signUp:boolean,checkBox?:boolean) =>{
+export const auth=(email:string, password:string,signUp:boolean,checkBox?:boolean,callback?:() =>void) =>{
     const data={
         email:email,
         password:password
@@ -56,7 +56,7 @@ export const auth=(email:string, password:string,signUp:boolean,checkBox?:boolea
         dispatch(authStart());
         const url=signUp ?"https://identitytoolkit.googleapis.com/v1/accounts:signUp?":
                         "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?";
-        await firebaseAuth(dispatch,url,data)
+        await firebaseAuth(dispatch,url,data,callback)
     }
 }
 
@@ -64,6 +64,9 @@ export const logout=() => {
     localStorage.removeItem('token');
     localStorage.removeItem('userId');
     localStorage.removeItem('expiryDate');
+    localStorage.removeItem('planType');
+    localStorage.removeItem('email');
+    localStorage.removeItem('planPrice');
     return{
         type:authActionTypes.AUTH_LOGOUT
     }
@@ -80,6 +83,10 @@ const authLogout=(expirationTime: number)=>{
 export const authVerify = ()=>{
     const token=localStorage.getItem('token');
     const userId=localStorage.getItem('userId');
+    const planName=localStorage.getItem('planType') as string;
+    const planPrice=localStorage.getItem('planPrice') as string;
+    const email=localStorage.getItem('email') as string;
+
     const data={idToken:token,localId:userId};
     const expiryDate=new Date(localStorage.getItem('expiryDate') as unknown as Date);
     console.log('dispatching');
@@ -92,6 +99,8 @@ export const authVerify = ()=>{
                 const newExpiryDate=(expiryDate.getTime()-new Date().getTime())/1000;
                 dispatch(authSuccess(data));
                 dispatch(authLogout(newExpiryDate));
+                dispatch(storeEmail(email));
+                dispatch(storePlanInfo(planName,planPrice));
             }
         }
         else{

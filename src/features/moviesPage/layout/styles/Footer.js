@@ -5,6 +5,7 @@ export const Container=styled.div`
 display:flex;
 flex-direction:column;
 color:#fff;
+margin-top:auto;
 `
 
 export const StyledFooterStructure=styled(FooterStructure)`

@@ -51,7 +51,7 @@ const ProgressBar = ({totalPages,pageNumber,showProgressBar}:ProgressBarType)=>{
 
 const CarouselTitle=({showSlideArrow}:CarouselTitleType)=>{
     const [slideItem,setSlideItem]=useState(false)
-    const carouselTitle=useCategoriesData().category.title
+    const carouselTitle=useCategoriesData()?.category?.title
 
     const slideItemHoverHandler=(state:boolean)=>{
         setSlideItem(state);

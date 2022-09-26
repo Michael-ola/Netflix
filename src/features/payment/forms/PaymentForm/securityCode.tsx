@@ -24,7 +24,7 @@ const SecurityCode=()=>{
             }
             else if(value.length===4 || value.length===3){
                 setError('');
-                setFormData('securityCode',value);
+                setFormData('securityCode',value.trim());
                 setStyleClass('noError-indicator');
             }
         }
@@ -41,8 +41,8 @@ const SecurityCode=()=>{
 
     const changeHandler=(event:React.ChangeEvent<HTMLInputElement>) => {
        if(event.target.value.length<5){
-            setValue(event.target.value.trim());
-            errorValidator(event.target.value.trim());
+            setValue(event.target.value);
+            errorValidator(event.target.value);
        }
     }
     const onInfoClicked=()=>{

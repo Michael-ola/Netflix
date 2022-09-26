@@ -43,6 +43,7 @@ flex-direction:column;
 justify-content:center;
 background:transparent;
 user-select:none;
+z-index:4;
 `
 
 export const MovieTitle=styled.img`

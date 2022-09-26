@@ -13,7 +13,7 @@ const LastName=()=>{
     const errorValidator=useCallback((value:string)=>{
         const numberInput=/^[0-9]+$/.test(value.substring(0,3));
         if(numberInput===false){
-            setFormData('lastName',value);
+            setFormData('lastName',value.trim());
             setError('')
             setStyleClass('noError-indicator');
         }
@@ -29,8 +29,8 @@ const LastName=()=>{
     },[errorValidator, submitButtonClicked, value]);
 
     const changeHandler=(event:React.ChangeEvent<HTMLInputElement>) => {
-        setValue(event.target.value.trim());
-        errorValidator(event.target.value.trim());
+        setValue(event.target.value);
+        errorValidator(event.target.value);
     }
     
     return(

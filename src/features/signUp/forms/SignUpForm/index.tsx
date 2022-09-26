@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState,useEffect, useCallback} from 'react'
 import FormContextProvider from 'context/formsContext'
 import {Container,StyledForm} from './style/SignUpForm.style.js'
 import Email from './email'
@@ -6,8 +6,8 @@ import Password from './password'
 import Checkbox from './checkBox'
 import SubmitButton from 'components/NextPrevButton'
 import {useSelector,useDispatch} from 'react-redux'
-import {auth} from 'redux-store/Actions/auth'
-import {stateType} from 'redux-store/types'
+import {auth} from 'lib/redux-store/Actions/auth'
+import {stateType} from 'lib/redux-store/types'
 import { AnyAction } from 'redux'
 
 export default function SignUpForm({setPageUnmount}:{setPageUnmount:(state:boolean)=>void}){
@@ -47,12 +47,12 @@ const Form=({setPageUnmount}:{setPageUnmount:(state:boolean)=>void})=>{
         }
     )
 
-    const setFormData=(inputName:string,value:string|boolean) => {
+    const setFormData=useCallback((inputName:string,value:string|boolean) => {
         setFormObject(prevData=>{
             const formCopy={...prevData,[inputName]:value}
             return formCopy
         })
-    }
+    },[])
 
     const buttonClickedHandler=(event:React.MouseEvent<HTMLButtonElement>)=>{
         setSubmitButtonClicked(true)

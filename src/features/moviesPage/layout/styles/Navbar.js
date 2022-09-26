@@ -12,6 +12,12 @@ background:${({changeBackground})=>changeBackground?'rgb(20, 20, 20)':
  ''};
 color:#e5e5e5;
 transition: all 0.4s ease;
+
+${({searchText})=>searchText && `
+position:relative;
+background:rgba(20,20, 20);
+`}
+
 &::before{
     content:'';
     display:block;
@@ -38,11 +44,16 @@ font-size:0.8em;
 font-weight:500;
 width:100%;
 user-select:none;
-& span{
+& span,a{
     padding-left: 0.7em;
     white-space:nowrap;
+    display:flex;
+    align-items:center;
+    gap:1em;
+    text-decoration: none;
+    color:#fcf8f4
 }
-& span:hover{
+& span:hover,a:hover{
     text-decoration: underline;
 }
 `
@@ -81,6 +92,12 @@ list-style-type: none;
 margin: 0 2em 0 0;
 font-size:clamp(0.4rem,1vw,0.9rem);
 overflow:visible;
+
+& a{
+    color:inherit;
+    text-decoration:none;
+}
+
 &:hover{
     color:#B3B3B3;
 }
@@ -116,7 +133,7 @@ ${({users})=>users?`display:none`:`display:flex`};
 export const NavLinksContainer=styled.ul`
 display:flex;
 margin-left: 25px;
-
+align-items:center;
 @media only screen and (max-width:885px){
     visibility:${({showNavLinks})=>showNavLinks?'visible':'hidden'};
     position:fixed;
@@ -165,7 +182,7 @@ justify-content:center;
 padding:1em 0;
 position:absolute;
 align-self:flex-end;
-width:400px;
+width:350px;
 min-height:100px;
 border:1px solid rgba(255,255,255,0.2);
 border-top:3px solid #e5e5e5;
@@ -220,11 +237,11 @@ position:absolute;
 z-index:3;
 right:50%;
 top:51px;
-width:180px;
+width:220px;
 padding-top:1em;
 display:flex;
 flex-direction:column;
-background:rgba(0,0,0,0.93);
+background:rgba(0,0,0,0.73);
 visibility:hidden;
 ${({showUsers})=>showUsers? `
 visibility:visible;
@@ -313,4 +330,9 @@ width:16px;
 height:16px;
 display:block;
 filter:brightness(0) invert(1);
+`
+export const NavIcons=styled.img`
+    width:24px;
+    height:24px;
+    filter:brightness(0) invert(1);
 `

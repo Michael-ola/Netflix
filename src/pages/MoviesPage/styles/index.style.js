@@ -2,10 +2,17 @@ import styled from 'styled-components/macro'
 
 export const Container=styled.div`
 position:relative;
+width:100%;
 min-height:100vh;
 overflow:visible;
 overflow-x:hidden;
 background:#141414;
+display:flex;
+flex-direction:column;
+
+${({isSearchText})=>isSearchText &&`
+height:100vh;
+`}
 `
 
 export const MoreInfo=styled.div`

@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState,useEffect,useRef} from 'react'
 import {Container,InnerContainer,Video,CloseButton,CloseIcon,FirstSectionContainer,InfoText,
     TitleText,InfoTextTitle,VideoSectionContainer,FirstSectionInner1,FirstSectionInner2,
     MovieFiguresContainer,ThirdSectionInner,VideoControlsContainer,PlayButton
@@ -71,16 +71,34 @@ const CloseComponent=({setMount,showComponent,setHoverState}:{setMount:React.Dis
 
 const VideoSection=({info}:{info:MovieType})=>{
     const [sound,setSound]=useState(true);
+    const [playButtonClicked,setPlayButtonClicked]=useState(false);
+    const videoRef=useRef<HTMLVideoElement  | null>(null);
+
+    useEffect(() => {
+        const fullScreenChangeHandler=() => {
+            if(document.fullscreenElement?.nodeName!=="VIDEO"){
+                setPlayButtonClicked(false)
+            }
+        }
+        document.addEventListener("fullscreenchange",fullScreenChangeHandler)
+        return()=>{
+            document.removeEventListener("fullscreenchange",fullScreenChangeHandler)
+        }
+    },[])
     const soundButtonClicked=()=>{
         setSound(prevSound=>!prevSound);
     }
+    const playClicked=()=>{
+        setPlayButtonClicked(true);
+        videoRef?.current?.requestFullscreen();
+    }
     return(
         <VideoSectionContainer>
-            <Video poster={''} muted={sound}  autoPlay loop {...{image:info["small-image"]}}>
+            <Video ref={videoRef} poster={''} muted={playButtonClicked?false:sound} controls={playButtonClicked}  autoPlay loop playsInline {...{image:info["small-image"]}}>
             <source src={"https://drive.google.com/uc?export=download&id="+info["trailer"]} type='video/mp4'></source>
             </Video>
             <VideoControlsContainer>
-                <PlayButton/>
+                <PlayButton onClick={playClicked}/>
                 <AddButton/>
                 <ReactionButton/>
                 <SoundControlButton onClick={soundButtonClicked}/>

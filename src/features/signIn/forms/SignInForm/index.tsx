@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState} from 'react'
 import { useForm, SubmitHandler, Control, UseFormGetValues, UseFormRegister, FieldError } from "react-hook-form";
 import {Container,Title,StyledForm,CheckBoxContainer,
         CheckBox,CheckboxAndHelpContainer,Help,SignUpLink,
@@ -6,9 +6,9 @@ import {Container,Title,StyledForm,CheckBoxContainer,
 import  useInput from 'customHooks/useInput/useInput'
 import {useDispatch,useSelector} from 'react-redux'
 import {useNavigate} from 'react-router-dom'
-import {auth} from 'redux-store/Actions/auth'
+import {auth} from 'lib/redux-store/Actions/auth'
 import SubmitButton from 'components/NextPrevButton'
-import {stateType} from 'redux-store/types'
+import {stateType} from 'lib/redux-store/types'
 import { AnyAction } from 'redux';
 
 interface IFormInput {
@@ -47,13 +47,13 @@ const Form=()=>{
         return state.auth.loading
     })
 
-    const token=useSelector((state:stateType)=>{
-        return state.auth.token
-    })
+    // const token=useSelector((state:stateType)=>{
+    //     return state.auth.token
+    // })
 
-    useEffect(()=>{
-        submitButtonClicked && token && navigate('/browse')
-    },[navigate, submitButtonClicked, token])
+    // useEffect(()=>{
+    //     submitButtonClicked && token && 
+    // },[navigate, submitButtonClicked, token])
     
     const buttonClickedHandler=()=>{
       setSubmitButtonClicked(true)
@@ -63,8 +63,7 @@ const Form=()=>{
         const password=data.password.trim();
         console.log(data);
         if(contact && password){
-            //navigate('/sign-up/planform')
-            dispatch(auth(contact, password, false) as unknown as AnyAction);
+            dispatch(auth(contact, password, false,undefined,()=>navigate('/select-user')) as unknown as AnyAction);
         }
     }
     

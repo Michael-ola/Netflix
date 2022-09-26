@@ -4,7 +4,9 @@ import {MoviesCollectionType} from 'types/moviesDataType'
 interface PropsType{
     children:JSX.Element | JSX.Element[],
     data:{
-        moviesData:MoviesCollectionType[]
+        moviesData:MoviesCollectionType[],
+        setIsSearchText:React.Dispatch<React.SetStateAction<boolean>>
+        isSearchText:boolean
     }
 }
 

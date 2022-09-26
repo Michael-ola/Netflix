@@ -8,7 +8,6 @@
     "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.1",
-    "@types/node": "^16.11.36",
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.4",
     "@types/styled-components": "^5.1.25",
@@ -19,6 +18,7 @@
     "node": "^17.9.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-google-recaptcha": "^2.1.0",
     "react-hook-form": "^7.32.2",
     "react-instantsearch-dom": "^6.32.1",
     "react-instantsearch-hooks-web": "^6.33.0",
@@ -31,6 +31,7 @@
     "redux-thunk": "^2.4.1",
     "styled-components": "^5.3.5",
     "typescript": "^4.6.4",
+    "uuid": "^9.0.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -60,8 +61,11 @@
     ]
   },
   "devDependencies": {
+    "@types/node": "^18.7.19",
+    "@types/react-google-recaptcha": "^2.1.5",
     "@types/react-instantsearch": "^6.10.1",
     "@types/react-instantsearch-dom": "^6.12.3",
+    "@types/uuid": "^8.3.4",
     "redux-devtools-extension": "^2.13.9"
   }
 }

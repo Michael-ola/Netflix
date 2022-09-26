@@ -61,7 +61,7 @@ const ExpirationDate=()=>{
         if(monthOk && yearOk){ 
             setError('');
             setStyleClass('noError-indicator');
-            setFormData('expirationDate',value);
+            setFormData('expirationDate',value.trim());
         }
         else{
             setFormData('expirationDate','');
@@ -82,8 +82,8 @@ const ExpirationDate=()=>{
     }
 
     const changeHandler =(event:React.ChangeEvent<HTMLInputElement>) => {
-        setValue(event.target.value.trim());
-        errorValidator(event.target.value.trim());
+        setValue(event.target.value);
+        errorValidator(event.target.value);
     }
   
 

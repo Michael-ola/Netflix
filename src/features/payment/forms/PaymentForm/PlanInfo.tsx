@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components/macro'
 import {useNavigate} from 'react-router-dom'
 import {useSelector} from 'react-redux'
-import  {stateType} from 'redux-store/types'
+import  {stateType} from 'lib/redux-store/types'
 
 const PlanInfo = () => {
     const navigate=useNavigate();

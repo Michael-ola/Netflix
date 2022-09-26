@@ -2,10 +2,10 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import  {Container,Logo,NavLink,SignOutButton} from './style/Navbar.style'
 import {useSelector,useDispatch} from 'react-redux'
-import {logout} from '../../../../redux-store/Actions/auth'
-import {stateType}  from 'redux-store/types'
+import {logout} from 'lib/redux-store/Actions/auth'
+import {stateType}  from 'lib/redux-store/types'
 
-const logo= require('../../../../assets/images/icons/logo.png')
+const logo= require('assets/images/icons/logo.png')
 const Navbar = ({className}:{className?:string}) => {
     const dispatch = useDispatch();
     const authToken=useSelector((state:stateType)=>{

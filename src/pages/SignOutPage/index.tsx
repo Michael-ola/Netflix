@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import {Container,StyledFooter,AffirmSignOutModal,ButtonContainer,Button,
     StyledNavbar,StyledLink} from './style/SignOutPage.style'
-import {logout} from 'redux-store/Actions/auth'
+import {logout} from 'lib/redux-store/Actions/auth'
 import {useDispatch} from 'react-redux'
 import {useNavigate} from 'react-router-dom'
 

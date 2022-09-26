@@ -4,7 +4,7 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import  useInput from 'customHooks/useInput/useInput'
 import {useNavigate} from 'react-router-dom'
 import {useDispatch} from 'react-redux'
-import {storeEmail} from 'redux-store/Actions/membershipForm'
+import {storeEmail} from 'lib/redux-store/Actions/membershipForm'
 import{Submit,StyledForm,Img,Text} from './style/MembershipForm'
 
 const chevronLogo= require('assets/images/icons/chevron-right.png')
@@ -31,6 +31,7 @@ export default function MembershipForm() {
   }
 
   const onSubmit: SubmitHandler<IFormInput> = (data) =>{
+     localStorage.setItem('email', data.email.trim());
      dispatch(storeEmail(data.email.trim()))
      navigate('/sign-up')
   }

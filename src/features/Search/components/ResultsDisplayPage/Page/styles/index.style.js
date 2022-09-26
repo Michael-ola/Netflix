@@ -1,12 +1,21 @@
 import styled from 'styled-components/macro'
 
 export const Container = styled.div`
-width: 100vw;
-min-height: 70vh;
+width: 100%;
+min-height: 100vh;
 background:#141414;
-position:fixed;
-bottom:0;
+padding:13% 1% 10px 1%;
+`
+
+export const InnerContainer=styled.div`
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+height: 100%;
 color:#fff;
-left:0;
-z-index: 5;
+margin:0 auto;
+
+& .movie-poster{
+    padding:2px;
+}
 `

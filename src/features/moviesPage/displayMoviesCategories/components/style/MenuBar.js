@@ -48,7 +48,7 @@ export const Title=styled.div`
     vertical-align: bottom;
     color: #e5e5e5;
     display: inline-block;
-    font-size:clamp(0.7rem.1.6vw,1.2rem);
+    font-size:clamp(0.7rem,1.6vw,1.4rem);
     font-weight: 700;
     margin-right:6px;
 `
@@ -72,6 +72,10 @@ opacity:0;
 ${({slideItem})=>slideItem? `
 animation:slideLTR 1s linear forwards;
 `:`animation:slideRTL 1s linear forwards;`}
+
+@media only screen and (min-width:1100px){
+    font-size:0.85rem;
+}
 
 @keyframes slideLTR{
     0%{
@@ -125,5 +129,11 @@ visibility:visible;
 ${({slideItem})=>slideItem ?`
     transform:translateX(220%);
 `:`--transition-delay:0.7s;`}
+
+@media only screen and (min-width:1100px){
+    ${({slideItem})=>slideItem ?`
+        transform:translateX(320%);
+    `:`--transition-delay:0.7s;`}
+}
 
 `

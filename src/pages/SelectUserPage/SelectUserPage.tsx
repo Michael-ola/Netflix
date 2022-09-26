@@ -1,35 +1,58 @@
-import React from 'react'
+import React,{useState,useEffect, useCallback} from 'react'
 import {Container,Heading,UsersListContainer,Logo,
         Navbar,StyledProfilesButton,StyledUser,
         Picture,Username
     } from './styles/SelectUserPage'
 import {useNavigate} from 'react-router-dom'
 import userType from 'types/usersDataType'
+import {getUserData} from 'services/firebase/getUsersData'
+import {useSelector} from 'react-redux'
+import { stateType } from 'lib/redux-store/types'
+import Preloader from 'containers/Preloader'
 
-const users=require('data/users.json') as userType[];
 const NetflixLogo = require('assets/images/icons/logo.png')
 
 
 const SelectUserPage = () => {
+    const [usersData,setUsersData]=useState<userType[]>([])
+   
+    const userId=useSelector((state:stateType)=>{
+        return state.auth.userId
+    })
+
+    const users=useCallback(async ()=>{
+        setUsersData(await getUserData(userId as string) as userType[])
+    },[setUsersData, userId])
+
+    useEffect(()=>{
+        users()
+    },[users])
+
     return (
-        <Container>
-            <Navbar>
-                <Logo src={NetflixLogo}/>
-            </Navbar>
-            <Heading>Who's watching?</Heading>
-            <UsersList/>
-            <ProfilesButton/>
-        </Container>
+        <>
+        {usersData.length>0?
+            <Container>
+                <Navbar>
+                    <Logo src={NetflixLogo}/>
+                </Navbar>
+                <Heading>Who's watching?</Heading>
+                <UsersList usersData={usersData}/>
+                <ProfilesButton/>
+            </Container>:
+            <Preloader/>
+        }    
+        </>
     )
 }
 
-const UsersList=()=>{
+const UsersList=({usersData}:{usersData:userType[]})=>{
+
     return(
         <UsersListContainer>{
-           users.map((userData)=>{
-            return <User key={userData.userId} userData={userData}/>
-           })
-        }</UsersListContainer>
+            usersData.map((userData,index)=>{
+             return <User key={index} userData={userData}/>
+            })}
+         </UsersListContainer>
     )
 }
 
@@ -40,7 +63,7 @@ const User=({userData}:{userData:userType})=>{
     }
     return(
         <StyledUser>
-            <Picture src={userData.avatar} onClick={userClickedHandler}/> 
+            <Picture src={require(`assets/images/users/${userData.avatar}`)} onClick={userClickedHandler}/> 
             <Username>{userData.username}</Username>
         </StyledUser>
     )

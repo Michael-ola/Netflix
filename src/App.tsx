@@ -11,16 +11,20 @@ import PlanPage from 'features/signUp/pages/PlanPage'
 import PaymentPicker from 'features/signUp/pages/PaymentPicker'
 import PaymentPage from 'features/signUp/pages/PaymentPage'
 import SignOutPage  from 'pages/SignOutPage'
-import {stateType} from 'redux-store/types'
+import {stateType} from 'lib/redux-store/types'
 
+import withErrorIndicator from 'HOC/withErrorIndicator'
+import axios  from 'axios'
 import {BrowserRouter,Route,Routes,Outlet} from 'react-router-dom'
-import {authVerify} from 'redux-store/Actions/auth'
+import {authVerify} from 'lib/redux-store/Actions/auth'
 import {useDispatch,useSelector} from 'react-redux'
 import { AnyAction } from 'redux';
 
+
+
 const protectedSignUpRoutes=(
   <Route element={<Outlet/>}>
-    
+    <Route path='step3' element={<Step3Page/>}/>
     <Route path='planform' element={<PlanPage/>}/>
     <Route path='paymentPicker' element={<PaymentPicker/>}/>
     <Route path='creditoption' element={<PaymentPage/>}/>
@@ -31,7 +35,7 @@ const protectedSignUpRoutes=(
 const protectedUserRoutes=(
   <Route element={<Outlet/>}>
       <Route path='/select-user' element={<SelectUserPage/>}/>
-      
+      <Route path='/browse' element={<MoviesPage/>}/>
       <Route path='/sign-out' element={<SignOutPage/>}/>
   </Route>
 )
@@ -43,7 +47,6 @@ function App() {
   const isAuthenticated =useSelector((state:stateType)=>{
     return state.auth.token
   })
-  
 
   useEffect(() => {
     isAuthenticated && setAuthState(true);
@@ -61,15 +64,13 @@ function App() {
           <Route path='/sign-up' element={<SignUpPage/>}>
             <Route index element={<Step1Page/>}/>
             <Route path='step2' element={<Step2Page/>}/>
-            <Route path='step3' element={<Step3Page/>}/>
             {authState && protectedSignUpRoutes}
           </Route>
           {authState && protectedUserRoutes}
-          <Route path='/browse' element={<MoviesPage/>}/>
           <Route  path="*" element={<LandingPage/>}/>
       </Routes>
     </BrowserRouter>
   );
 }
 
-export default App;
+export default withErrorIndicator(App,axios);

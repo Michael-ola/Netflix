@@ -19,7 +19,7 @@ const CardNumber=()=>{
         const inputLength = value.length;
         if(inputLength === MAX_CREDIT_CARD_LENGTH || inputLength === MIN_CREDIT_CARD_LENGTH) {
             if(/^[0-9]+$/.test(value)===true){
-                setFormData('cardNumber',value);
+                setFormData('cardNumber',value.trim());
                 setError('');
                 setStyleClass('noError-indicator');
             }
@@ -46,8 +46,8 @@ const CardNumber=()=>{
     },[errorValidator, submitButtonClicked, value]);
     
     const changeHandler=(event:React.ChangeEvent<HTMLInputElement>)=>{
-        setValue(event.target.value.trim());
-        errorValidator(event.target.value.trim());
+        setValue(event.target.value);
+        errorValidator(event.target.value);
     }
     return(
         <Input type='text' value={value} placeholder='Card number' className={'input '+styleClass} onChangeHandler={changeHandler}

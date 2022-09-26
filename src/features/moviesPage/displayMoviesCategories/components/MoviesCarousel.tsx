@@ -15,7 +15,7 @@ const Carousel = () => {
     const data=useCategoriesData();
 
     useEffect(() => {
-        setTotalMovies(data.Movies.length)
+        setTotalMovies(data?.Movies?.length)
     },[data])
 
     const totalPagesHandler=useCallback(()=>{

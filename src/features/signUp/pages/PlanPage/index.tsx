@@ -6,7 +6,7 @@ import {Container,CardsContainer,PlanButtonsContainer,PlanButton,PropertiesWrapp
 import Card from 'components/checkCard'
 import NextPrevButton from 'components/NextPrevButton'
 import {useDispatch} from 'react-redux'
-import {storePlanInfo} from 'redux-store/Actions/planInfo'
+import {storePlanInfo} from 'lib/redux-store/Actions/planInfo'
 import {planInfoType,devicesType} from './types'
 
 const checkImage=require('assets/images/icons/check.png');
@@ -23,6 +23,8 @@ const PlanPage = () => {
         planInfo.plans.forEach((plan)=>{
             if(plan.type===selectedPlan){
                 const price=plan.properties['monthly-price'];
+                localStorage.setItem('planType',selectedPlan);
+                localStorage.setItem('planPrice',price);
                 dispatch(storePlanInfo(selectedPlan,price))
                 navigate('/sign-up/paymentPicker')
             }

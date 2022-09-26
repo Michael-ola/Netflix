@@ -2,11 +2,13 @@ import React,{useState,useEffect,useRef,useCallback} from 'react'
 import {SearchComponentContainer,SearchIcon,
             SearchContainer,SearchInput
         } from './styles/Search.js'
-import {createPortal} from 'react-dom'
-import ResultsPage from '../ResultsDisplayPage/Page'
 
+import {createPortal} from 'react-dom'
 import {InstantSearch,useHits,useSearchBox} from 'react-instantsearch-hooks-web'
 import algoliasearch from 'algoliasearch/lite'
+import ResultsPage from '../ResultsDisplayPage/Page'
+import useMoviesPageData from 'features/moviesPage/hooks/useMoviesPageData'
+import { MoviesCollectionType } from 'types/moviesDataType.js'
 
 interface searchWidgetType{
     clickState:boolean,
@@ -49,6 +51,7 @@ const Search = ({clickState,setClickState}:searchWidgetType) => {
     const [blurState,setBlurState] =useState(false)
     const [inputValue,setInputValue] = useState('');
     const {hits}=useHits();
+    const moviesPageData=useMoviesPageData();
 
     if(isSearchStalled){
         console.log('stalled')
@@ -69,9 +72,9 @@ const Search = ({clickState,setClickState}:searchWidgetType) => {
         setBlurState(true)
     }
     const onChangeHandler=(event:React.ChangeEvent<HTMLInputElement>) =>{
-        console.log(currentRefinement)
         setInputValue(event.target.value);
-        refine(event.target.value)
+        refine(event.target.value);
+        event.target.value ? moviesPageData.setIsSearchText(true): moviesPageData.setIsSearchText(false);
     }
     return(
         <>
@@ -81,7 +84,7 @@ const Search = ({clickState,setClickState}:searchWidgetType) => {
              onBlur={onBlurHandler} onClick={(event:React.MouseEvent)=>{event.stopPropagation()}}
              onChange={onChangeHandler}/>
         </SearchContainer>
-        {inputValue && createPortal(<ResultsPage hits={hits}/>,document.getElementById('searchDisplay') as Element)}
+        {inputValue && createPortal(<ResultsPage value={inputValue} hits={hits as unknown as MoviesCollectionType[]}/>,document.getElementById('searchDisplay') as Element)}
         </>
     )
 }

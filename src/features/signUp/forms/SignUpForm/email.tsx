@@ -2,7 +2,7 @@ import React,{useState,useEffect,useCallback} from 'react'
 import useFormContext from 'customHooks/useFormContext'
 import Input from 'containers/Input'
 import {useSelector} from 'react-redux'
-import { stateType } from 'redux-store/types'
+import { stateType } from 'lib/redux-store/types'
 
 const EmailInput=()=>{
     const storedEmail=useSelector((state:stateType)=>{
@@ -18,7 +18,7 @@ const EmailInput=()=>{
 
     const errorValidator=useCallback((value:string)=>{
         if(validateEmail(value)){
-            setFormData('email',value);
+            setFormData('email',value.trim());
             setError('');
             setStyleClass('noError-indicator');
         }
@@ -38,8 +38,8 @@ const EmailInput=()=>{
     email);
 
     const changeHandler=(event:React.ChangeEvent<HTMLInputElement>) => {
-        setValue(event.target.value.trim());
-        errorValidator(event.target.value.trim());
+        setValue(event.target.value);
+        errorValidator(event.target.value);
     }
 
     return(

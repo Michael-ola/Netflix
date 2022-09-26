@@ -1,13 +1,13 @@
 import React from 'react'
 import MembershipForm from '../../forms/MembershipForm'
 import {useSelector,useDispatch} from 'react-redux'
-import {logout} from 'redux-store/Actions/auth'
+import {logout} from 'lib/redux-store/Actions/auth'
 
 import {Container,Body,HeaderImage,Nav,NavButton,
         TextContainer,TextTitle,TextSubtitle,SignOutButton
       } from './styles/Header'
 
-import {stateType} from 'redux-store/types'
+import {stateType} from 'lib/redux-store/types'
 
 export interface HeaderProps{
     children?:JSX.Element|JSX.Element[]
