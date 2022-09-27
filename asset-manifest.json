@@ -1,7 +1,12 @@
 {
   "files": {
     "main.css": "/Netflix/static/css/main.97e5f7ea.css",
-    "main.js": "/Netflix/static/js/main.04bf3a11.js",
+    "main.js": "/Netflix/static/js/main.47487499.js",
+    "static/media/joker1.jpg": "/Netflix/static/media/joker1.706eefd0d07194d565bc.jpg",
+    "static/media/home-bg.jpg": "/Netflix/static/media/home-bg.e85ef9d3e583db75072a.jpg",
+    "static/media/kids.png": "/Netflix/static/media/kids.7e9c0c2fccea936cef07.png",
+    "static/media/kidsValueProp.png": "/Netflix/static/media/kidsValueProp.7e9c0c2fccea936cef07.png",
+    "static/media/home-tv.jpg": "/Netflix/static/media/home-tv.f5135082fccc14d9d166.jpg",
     "static/media/HeaderPicture.jpg": "/Netflix/static/media/HeaderPicture.123f3b018a8456e0879b.jpg",
     "static/media/sex-education.png": "/Netflix/static/media/sex-education.28677f84c08188295155.png",
     "static/media/baywatch.png": "/Netflix/static/media/baywatch.91f34533968af4085115.png",
@@ -87,9 +92,14 @@
     "static/media/blacklist.png": "/Netflix/static/media/blacklist.e4d51d068088eaa10e8a.png",
     "static/media/tamborine-chris-rock.png": "/Netflix/static/media/tamborine-chris-rock.cd18b47df89be99e4715.png",
     "static/media/greezy-and-the-lemmings.png": "/Netflix/static/media/greezy-and-the-lemmings.787740321d72614967fe.png",
+    "static/media/mobile-0819.jpg": "/Netflix/static/media/mobile-0819.063578d5b6d5ab4155ec.jpg",
     "static/media/how-to-get-away-with-murder.png": "/Netflix/static/media/how-to-get-away-with-murder.6c6a785a37891c2b4ae2.png",
+    "static/media/loading.gif": "/Netflix/static/media/loading.95117db4286ffa802638.gif",
+    "static/media/home-imac.jpg": "/Netflix/static/media/home-imac.6ee6f16a8ad5b36a07d1.jpg",
     "static/media/total-drama-action.png": "/Netflix/static/media/total-drama-action.1d62d58e2c22aced70b6.png",
+    "static/media/home-mobile.jpg": "/Netflix/static/media/home-mobile.88ccdb2abd0f1b20427a.jpg",
     "static/media/change-up.png": "/Netflix/static/media/change-up.72e1f5c76e71e46832f2.png",
+    "static/media/boxshot.png": "/Netflix/static/media/boxshot.347f4ee3bafbdfe71112.png",
     "static/media/doubleThumbsUp.png": "/Netflix/static/media/doubleThumbsUp.27581710af6cb2e21f2d.png",
     "static/media/3.png": "/Netflix/static/media/3.37f157bd3f934bc5bd3b.png",
     "static/media/2.png": "/Netflix/static/media/2.071aeed79482161ac818.png",
@@ -97,14 +107,15 @@
     "static/media/logo.png": "/Netflix/static/media/logo.eee334a51df296661edd.png",
     "static/media/info.png": "/Netflix/static/media/info.59be45241a406a50c314.png",
     "static/media/notification.png": "/Netflix/static/media/notification.b6e1be4108a318e88bd9.png",
+    "static/media/tv.png": "/Netflix/static/media/tv.0049bc70babc1f94cf88.png",
     "static/media/chevron-right2.svg": "/Netflix/static/media/chevron-right2.f1459136a3d413b7a2a1.svg",
     "index.html": "/Netflix/index.html",
     "static/media/desktop.ini": "/Netflix/static/media/desktop.65a1e0669db5c91f4944.ini",
     "main.97e5f7ea.css.map": "/Netflix/static/css/main.97e5f7ea.css.map",
-    "main.04bf3a11.js.map": "/Netflix/static/js/main.04bf3a11.js.map"
+    "main.47487499.js.map": "/Netflix/static/js/main.47487499.js.map"
   },
   "entrypoints": [
     "static/css/main.97e5f7ea.css",
-    "static/js/main.04bf3a11.js"
+    "static/js/main.47487499.js"
   ]
 }
