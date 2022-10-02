@@ -35,11 +35,13 @@ const MoviePreview = () => {
 
     useEffect(() =>{
         if(showMovieInfoModal){
-            videoRef?.current?.pause();
+           // videoRef?.current?.pause();
+           setShowVideo(false)
         }
 
         else{
-            videoRef?.current?.play();
+           // videoRef?.current?.play();
+           setShowVideo(true)
         }
     },[showMovieInfoModal])
 
@@ -99,7 +101,7 @@ const MoviePreview = () => {
                 {movieData?.["maturity-rating"]}
             </AgeRating>
         </ControlsContainer>
-        <MovieVideo ref={videoRef} poster={movieData?.["large-image"]} {...{showVideo}}  muted={playButtonClicked?false:!soundState} controls={playButtonClicked}  autoPlay playsInline>
+        <MovieVideo ref={videoRef} poster={movieData?.["large-image"]} {...{showVideo}}  muted={playButtonClicked?false:!soundState} controls={playButtonClicked}  autoPlay playsInline={!playButtonClicked}>
             <source  src={"https://drive.google.com/uc?export=download&id="+movieData?.["trailer"]} type='video/mp4'></source>
         </MovieVideo>
         <MoviePoster src={movieData?.["large-image"]} {...{showVideo}}/>

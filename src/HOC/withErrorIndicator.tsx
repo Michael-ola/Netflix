@@ -50,6 +50,9 @@ padding:0.5em 0.8em;
     margin-right:3px;
     display:inline-block;
 }
+@media only screen and (max-width:600px){
+    width:60%;
+}
 `
 
 
