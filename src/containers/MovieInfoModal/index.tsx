@@ -32,7 +32,6 @@ const MovieInfoModal = ({info,showState,setShowState,setHoverState,transformOrig
         const body=document.querySelector('body') as HTMLElement;
         body.style.overflow='hidden';
         setMount(true)
-        console.log(transformOrigin)
         return(()=>{
             body.style.overflow='auto';
         })
@@ -44,7 +43,7 @@ const MovieInfoModal = ({info,showState,setShowState,setHoverState,transformOrig
         <Container {...{transformOrigin}} {...{mount}} {...{showState}}>
             <InnerContainer>
                    <CloseComponent setMount={setMount}  showComponent={setShowState} setHoverState={setHoverState!} />
-                   <VideoSection info={info}/>
+                   <VideoSection info={info} showComponent={showState}/>
                    <FirstSection info={info}/>
                    <ThirdSection info={info}/>
             </InnerContainer>
@@ -69,12 +68,16 @@ const CloseComponent=({setMount,showComponent,setHoverState}:{setMount:React.Dis
     )
 }
 
-const VideoSection=({info}:{info:MovieType})=>{
+const VideoSection=({info,showComponent}:{info:MovieType,showComponent:boolean})=>{
     const [sound,setSound]=useState(true);
     const [playButtonClicked,setPlayButtonClicked]=useState(false);
     const videoRef=useRef<HTMLVideoElement  | null>(null);
 
     useEffect(() => {
+        if(showComponent===false){
+            setPlayButtonClicked(false);
+            videoRef?.current?.pause();
+        }
         const fullScreenChangeHandler=() => {
             if(document.fullscreenElement?.nodeName!=="VIDEO"){
                 setPlayButtonClicked(false)
@@ -84,7 +87,8 @@ const VideoSection=({info}:{info:MovieType})=>{
         return()=>{
             document.removeEventListener("fullscreenchange",fullScreenChangeHandler)
         }
-    },[])
+    },[showComponent])
+
     const soundButtonClicked=()=>{
         setSound(prevSound=>!prevSound);
     }

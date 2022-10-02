@@ -1,18 +1,18 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 import  {Container,Logo,NavLink,SignOutButton} from './style/Navbar.style'
-import {useSelector,useDispatch} from 'react-redux'
-import {logout} from 'lib/redux-store/Actions/auth'
+import {useSelector} from 'react-redux'
+
 import {stateType}  from 'lib/redux-store/types'
 
 const logo= require('assets/images/icons/logo.png')
 const Navbar = ({className}:{className?:string}) => {
-    const dispatch = useDispatch();
+    const navigate=useNavigate();
     const authToken=useSelector((state:stateType)=>{
         return state.auth.token;
     })
     const signOutHandler=()=>{
-        dispatch(logout());
+        navigate('/sign-out')
     }
     return (
         <Container className={className}>

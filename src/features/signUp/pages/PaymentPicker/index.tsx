@@ -1,5 +1,5 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
+import React, { useEffect, useState } from 'react'
+import {useNavigate} from 'react-router-dom'
 import {Container,LockImage,ButtonContainer,Button} from './style/PaymentPicker.style'
 
 
@@ -12,8 +12,27 @@ const chevronRight=require('assets/images/icons/chevron-right2.png')
 
 
 const PaymentPicker = () => {
+    const navigate=useNavigate();
+    const [mount,setMount]=useState(false);
+    const [unmount,setUnmount] =useState(false);
+
+    useEffect(() => {
+        let time:ReturnType<typeof setTimeout>;
+        const timerFunc=(callback:()=>void,duration:number)=>{
+            time=setTimeout(() => {  
+                callback();
+            },duration)
+        }
+        timerFunc(()=>setMount(true),100);
+        unmount && timerFunc(()=>navigate('/sign-up/creditoption'),250);
+
+        return()=> {
+            clearTimeout(time)
+        } 
+    },[navigate, unmount])
+
     return (
-        <Container>
+        <Container {...{mount,unmount}}>
             <LockImage src={lockImage}/>
             <p style={{fontSize: '0.8rem'}}>STEP <strong>3</strong> OF <strong>3</strong></p>
             <p style={{fontWeight: 'bold',fontSize:'2rem',margin:'0.2em 0'}}>Choose how to pay</p>
@@ -23,7 +42,7 @@ const PaymentPicker = () => {
             <p style={{fontWeight: 'bold',maxWidth:'18ch'}}>Secure for peace of <br/>mind.<br/>Cancel easily online.</p>
             <ButtonContainer>
                 <p><span>End-to-end encrypted</span><img src={secureIcon} alt="secure"/></p>
-                <Link to="/sign-up/creditoption"><Button>
+                <Button onClick={()=>setUnmount(true)}>
                     <div>
                         <span>Credit or Debit Card</span>
                         <span>
@@ -33,7 +52,7 @@ const PaymentPicker = () => {
                         </span>
                     </div>
                     <div><img src={chevronRight} alt='chevron right'/></div>
-                </Button></Link>
+                </Button>
             </ButtonContainer>
         </Container>
     )

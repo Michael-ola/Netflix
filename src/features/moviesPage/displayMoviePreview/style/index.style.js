@@ -20,11 +20,25 @@ overflow:visible;
 `
 
 export const MovieVideo=styled.video`
+top:0;
+left:0;
+position:absolute;
+z-index:2;
+${({showVideo})=>!showVideo && `
+z-index:0;
+`}
 width:100%;
 height:100%;
 object-fit:cover;
 `
 export const MoviePoster=styled.img`
+position:absolute;
+top:0;
+left:0;
+z-index:1;
+${({showVideo})=>showVideo && `
+z-index:0;
+`}
 width:100%;
 height:100%;
 background-repeat:no-repeat;
@@ -73,6 +87,7 @@ margin-top:4%;
 `
 export const AgeRating= styled.div`
 position:relative;
+z-index:3;
 padding:0.2em 2.5em 0.2em 1em;
 color:#fff;
 background:rgba(51,51,51,.6);
@@ -91,6 +106,7 @@ font-size:clamp(0.5em,1.5vw,1.1em);
 
 export const SoundControlButton= styled(SoundButton)`
 --size:clamp(0.7cm,5vw,1cm);
+z-index:5;
 width:var(--size);
 height:var(--size);
 `

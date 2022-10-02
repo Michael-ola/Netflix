@@ -64,21 +64,12 @@ display:block;
 background-size: cover;
 background-repeat: no-repeat;
 width:100%;
-height:60%;
+height:100%;
 object-fit:cover;
 border-top-left-radius:8px;
 border-top-right-radius:8px;
 background-color:transparent;
-background-image:${({image})=>image && `url(${require('assets/images/netflix/smallImages/'+image)})`};
-&::before{
-    display:block;
-    content:'';
-    position:absolute;
-    top:0;
-    width:100%;
-    height:100%;
-    background:linear-gradient(45deg,rgba(0,0,0,0.6), rgba(0,0,0,0.4) 15%,transparent 40%);
-}
+background-image:${({image})=>image && `url(${require('assets/images/netflix/smallImages/'+image)})`}
 `
 export const MovieMetaContainer=styled.div`
 width:100%;
@@ -100,4 +91,21 @@ display:flex;
 align-items:center;
 gap:5%;
 padding:0.3em 1.4em;
+`
+
+export const VideoContainer=styled.div`
+position:relative;
+width:100%;
+height:60%;
+&::before{
+    display:block;
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 5;
+    width:100%;
+    height:100%;
+    background:linear-gradient(45deg,rgba(0,0,0,0.6), rgba(0,0,0,0.4) 15%,transparent 40%);
+}
 `

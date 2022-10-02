@@ -10,7 +10,6 @@ export const setUser=async (user:usersType,id:string,callback:() => void) => {
     usersArr.push(user);
     const usersDataCollectionRef=doc(db,'users-data',id)
     setDoc(usersDataCollectionRef,{users:usersArr}).then((data) => {
-        console.log(data);
         callback();
     }).catch((error) => {
         throw new Error(error)

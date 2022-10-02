@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useEffect, useState} from 'react'
 import {useNavigate} from 'react-router-dom'
 import {Container,CardsContainer,PlanButtonsContainer,PlanButton,PropertiesWrapper,
     PropertiesContainer,PropertyName,PropertyItem,PropertyItemsContainer,
@@ -19,6 +19,24 @@ const PlanPage = () => {
     const setSelectedPlanState=(plan:string)=>{
         setSelectedPlan(plan);
     }
+    const [mount,setMount]=useState(false);
+    const [unmount,setUnmount] =useState(false);
+
+    useEffect(() => {
+        let time:ReturnType<typeof setTimeout>;
+        const timerFunc=(callback:()=>void,duration:number)=>{
+            time=setTimeout(() => {  
+                callback();
+            },duration)
+        }
+        timerFunc(()=>setMount(true),100);
+        unmount && timerFunc(()=>navigate('/sign-up/paymentPicker'),250);
+
+        return()=> {
+            clearTimeout(time)
+        } 
+    },[navigate, unmount])
+
     const buttonClickedHandler =()=>{
         planInfo.plans.forEach((plan)=>{
             if(plan.type===selectedPlan){
@@ -26,12 +44,12 @@ const PlanPage = () => {
                 localStorage.setItem('planType',selectedPlan);
                 localStorage.setItem('planPrice',price);
                 dispatch(storePlanInfo(selectedPlan,price))
-                navigate('/sign-up/paymentPicker')
+                setUnmount(true)
             }
         })
     }
     return (
-        <Container>
+        <Container {...{mount,unmount}}>
             <div style={{alignSelf:'flex-start'}}>
                 <p>STEP <strong>1</strong> OF <strong>3</strong></p>
                 <p style={{fontWeight:'bold',fontSize:'1.9rem',color:'#333'}}>Choose the plan that's right for you</p>

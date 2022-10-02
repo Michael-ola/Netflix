@@ -8,6 +8,8 @@ import {MoviesPageContextProvider} from 'features/moviesPage/context/MoviesPageC
 import { MoviesCollectionType } from 'types/moviesDataType'
 import { getMoviesData } from 'services/firebase/getMoviesData'
 import Preloader from 'containers/Preloader'
+import withErrorIndicator from 'HOC/withErrorIndicator'
+import axios  from 'axios'
 
 const MoviesPage = () => {
     const [isSearchText,setIsSearchText] =useState(false);
@@ -50,4 +52,4 @@ const MoviesPage = () => {
         </MoviesPageContextProvider>
     )
 }
-export default MoviesPage
+export default withErrorIndicator(MoviesPage,axios);

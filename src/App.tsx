@@ -13,8 +13,7 @@ import PaymentPage from 'features/signUp/pages/PaymentPage'
 import SignOutPage  from 'pages/SignOutPage'
 import {stateType} from 'lib/redux-store/types'
 
-import withErrorIndicator from 'HOC/withErrorIndicator'
-import axios  from 'axios'
+
 import {BrowserRouter,Route,Routes,Outlet} from 'react-router-dom'
 import {authVerify} from 'lib/redux-store/Actions/auth'
 import {useDispatch,useSelector} from 'react-redux'
@@ -57,9 +56,9 @@ function App() {
   },[dispatch])
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Netflix">
       <Routes>
-          <Route path="/" element={<LandingPage/>}/>   
+          <Route path="/" element={<LandingPage/>}/>  
           <Route path='/sign-in' element={<SignInPage/>} /> 
           <Route path='/sign-up' element={<SignUpPage/>}>
             <Route index element={<Step1Page/>}/>
@@ -73,4 +72,4 @@ function App() {
   );
 }
 
-export default withErrorIndicator(App,axios);
+export default App;

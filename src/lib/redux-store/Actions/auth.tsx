@@ -1,7 +1,7 @@
-import axios from 'axios'
 import {authActionTypes} from './actionTypes'
 import {storeEmail} from './membershipForm'
 import { storePlanInfo } from './planInfo'
+import axiosRequest from 'lib/axios/axiosRequest'
 
 const authStart=()=>{
     return {
@@ -31,19 +31,25 @@ const firebaseAuth=(dispatch:Function,url:string,data:{email:string,password:str
         email:data.email,
         password:data.password,
         returnSecureToken:true
-     }
+    }
     
-    axios.post(url+'key=AIzaSyDSsWg2h4b5aFqSLbtlcp6bnc7e22D1fj4',authData)
-    .then((response) => {
-        localStorage.setItem('token',response.data.idToken);
-        const date=new Date(new Date().getTime() + response.data.expiresIn*1000);
-        localStorage.setItem('expiryDate',date.toString());
-        localStorage.setItem('userId',response.data.localId);
-        dispatch(authSuccess(response.data));
-        dispatch(authLogout(response.data.expiresIn));
-        callback?.();
-    }).catch((error) => {
-        dispatch(authFail(error.message));
+    const success=(response: { data: { idToken: any; expiresIn?: any; localId: any } }) => {
+            localStorage.setItem('token',response.data.idToken);
+            const date=new Date(new Date().getTime() + response.data.expiresIn*1000);
+            localStorage.setItem('expiryDate',date.toString());
+            localStorage.setItem('userId',response.data.localId);
+            dispatch(authSuccess(response.data));
+            dispatch(authLogout(response.data.expiresIn));
+            callback?.();
+    }
+
+    axiosRequest('post',url,authData,{
+        success:success,
+        failure:(error) => {
+            dispatch(authFail(error.message));
+        }
+   },{
+        searchString:`key=${process.env.REACT_APP_FIREBASE_API_KEY}`
     })
 }
 
@@ -89,7 +95,7 @@ export const authVerify = ()=>{
 
     const data={idToken:token,localId:userId};
     const expiryDate=new Date(localStorage.getItem('expiryDate') as unknown as Date);
-    console.log('dispatching');
+    
     return (dispatch:Function)=>{
         if(token != null){
             if(new Date().getTime() >= expiryDate.getTime()){

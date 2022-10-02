@@ -10,6 +10,8 @@ import ResultsPage from '../ResultsDisplayPage/Page'
 import useMoviesPageData from 'features/moviesPage/hooks/useMoviesPageData'
 import { MoviesCollectionType } from 'types/moviesDataType.js'
 
+const  searchImage=require('assets/images/icons/search.png');
+
 interface searchWidgetType{
     clickState:boolean,
     setClickState:React.Dispatch<React.SetStateAction<boolean>>,
@@ -23,8 +25,8 @@ interface SearchType{
 
 
 const searchClient=algoliasearch(
-    'G1WAUE41I5',
-    '4d0148459c06e52c23e7f7d1f0e18777'
+    process.env.REACT_APP_ALGOLIA_PRIMARY_KEY as string,
+    process.env.REACT_APP_ALGOLIA_APP_ID as string
 )
 
 
@@ -37,7 +39,7 @@ const SearchComponent = () => {
     
     return(
             <SearchComponentContainer {...{clickState}}>
-                <SearchIcon onClick={onClickHandler} {...{clickState}}/>
+                <SearchIcon src={searchImage}  onClick={onClickHandler} {...{clickState}}/>
                 <InstantSearch  searchClient={searchClient} indexName="netflix-clone-movies">
                     <Search clickState={clickState} setClickState={setClickState}/>
                 </InstantSearch>
@@ -46,17 +48,13 @@ const SearchComponent = () => {
 }
 
 const Search = ({clickState,setClickState}:searchWidgetType) => {
-    const {currentRefinement,isSearchStalled,refine}:SearchType=useSearchBox();
+    const {currentRefinement,refine}:SearchType=useSearchBox();
     const inputRef = useRef<HTMLInputElement | null>(null);
     const [blurState,setBlurState] =useState(false)
     const [inputValue,setInputValue] = useState('');
     const {hits}=useHits();
     const moviesPageData=useMoviesPageData();
 
-    if(isSearchStalled){
-        console.log('stalled')
-    }
-    
     useEffect(() => {
         if(clickState){
             inputRef?.current?.focus();
@@ -79,7 +77,7 @@ const Search = ({clickState,setClickState}:searchWidgetType) => {
     return(
         <>
         <SearchContainer {...{clickState,blurState}}>
-            <SearchIcon style={{position: 'relative'}}/>
+            <SearchIcon src={searchImage} style={{position: 'relative'}}/>
             <SearchInput type="search" value={currentRefinement} ref={focusHandler} placeholder='Titles, people, genres' 
              onBlur={onBlurHandler} onClick={(event:React.MouseEvent)=>{event.stopPropagation()}}
              onChange={onChangeHandler}/>

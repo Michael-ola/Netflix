@@ -10,6 +10,8 @@ import {auth} from 'lib/redux-store/Actions/auth'
 import SubmitButton from 'components/NextPrevButton'
 import {stateType} from 'lib/redux-store/types'
 import { AnyAction } from 'redux';
+import withErrorIndicator from 'HOC/withErrorIndicator'
+import axios  from 'axios'
 
 interface IFormInput {
     signInContact: string,
@@ -28,7 +30,7 @@ interface inputType{
 }
 
 
-export default function SignInForm(){
+function SignInForm(){
     return (
         <Container>
             <Title>Sign In</Title>
@@ -61,7 +63,6 @@ const Form=()=>{
     const onSubmit: SubmitHandler<IFormInput> = (data) =>{
         const contact=data.signInContact.trim();
         const password=data.password.trim();
-        console.log(data);
         if(contact && password){
             dispatch(auth(contact, password, false,undefined,()=>navigate('/select-user')) as unknown as AnyAction);
         }
@@ -134,3 +135,5 @@ const MetaText=()=>{
         </MetaTextContainer>
     )
 }
+
+export default withErrorIndicator(SignInForm,axios)

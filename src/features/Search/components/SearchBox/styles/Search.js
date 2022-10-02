@@ -18,9 +18,7 @@ transition:width 0.2s linear;
 }
 `
 
-export const SearchIcon=styled.img.attrs(props=>({
-    src:'assets/images/icons/search.png'
-}))`
+export const SearchIcon=styled.img`
 position:relative;
 right:0;
 width:21px;

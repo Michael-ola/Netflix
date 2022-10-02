@@ -4,23 +4,27 @@ import styled from 'styled-components/macro'
 
 const withErrorIndicator=(Component:React.FC,axios?:AxiosStatic)=>{
    return ()=>{
-       const [error,setError]=useState<string | null>(null);
+       const [error,setError]=useState('');
         useEffect(()=>{
-            axios?.interceptors.request.use((req:AxiosRequestConfig):AxiosRequestConfig=>{
+            const myInterceptorReq=axios?.interceptors.request.use((req:AxiosRequestConfig):AxiosRequestConfig=>{
                 return req;
             },(error)=>{
-                setError(error);
+                setError(error.message);
             })
-            axios?.interceptors.response.use((res:AxiosResponse):AxiosResponse=>{
+            const myInterceptorRes=axios?.interceptors.response.use((res:AxiosResponse):AxiosResponse=>{
                 return res;
             },(error)=>{
-                setError(error);
+                setError(error.message);
             })
-        },[])
+            return()=>{
+                axios?.interceptors.request.eject(myInterceptorReq as number)
+                axios?.interceptors.response.eject(myInterceptorRes as number)
+            }
+        },[])  
 
         return(
             <div>
-                {error &&<Error>You are not connected to the internet.</Error>}
+                {error? error.toLocaleLowerCase()==='network error'? <Error>Network Error</Error>:<Error>something went wrong</Error>:<></>}
                 <Component/>
             </div>
         )

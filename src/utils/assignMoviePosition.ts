@@ -13,5 +13,5 @@ const assignMoviePosition=(carouselChildren:HTMLCollection) => {
         }
     }
 }
-//right-10  left-6
+
 export default assignMoviePosition

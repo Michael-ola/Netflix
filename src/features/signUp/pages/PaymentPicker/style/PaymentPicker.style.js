@@ -17,6 +17,37 @@ align-items:center;
 @media only screen and (max-width:600px){
     align-items:flex-start;
 }
+
+transform:translateX(100vw);
+opacity:0;
+${({mount,unmount})=>{
+    return unmount ? `
+        opacity:1;
+        animation:unmountAnimation 0.4s ease-in-out forwards;
+    `: mount &&`animation:mountAnimation 0.4s ease-in-out forwards;`
+}}
+
+
+@keyframes mountAnimation{
+    from{
+        opacity:0;
+        transform:translateX(100vw);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+@keyframes unmountAnimation{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        opacity:0;
+        transform:translateX(-30%);
+    }
+}
 `
 
 export const LockImage = styled.img`

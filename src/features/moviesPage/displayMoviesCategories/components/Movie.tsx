@@ -3,7 +3,7 @@ import ReactDom from 'react-dom'
 
 import {MoviePoster,MovieDetailContainer,MovieContainer,
     MovieDetailVideo,MovieMetaContainer,ActionBarContainer,
-    RatingsContainer} from './style/Movie.style.js'
+    RatingsContainer,VideoContainer} from './style/Movie.style.js'
 
 import MatchScore from 'components/MatchScore'
 import MaturityRating from 'components/MaturityRating'
@@ -77,6 +77,12 @@ export const MovieDetail=({movieData,hoverState,setHoverState}:{movieData:MovieT
         root.style.overflow='auto';
     },[showMoreInfoState])
 
+    const playButtonClickedHandler=(event:React.MouseEvent)=>{
+        event.stopPropagation();
+        setPlayButtonClicked(true);
+        videoRef?.current?.requestFullscreen();
+    }
+
     const videoClicked=(event:React.MouseEvent) =>{
         event.stopPropagation();
         setPlayButtonClicked(true);
@@ -86,18 +92,23 @@ export const MovieDetail=({movieData,hoverState,setHoverState}:{movieData:MovieT
     return(
         <MovieDetailContainer ref={containerRef} {...{showMoreInfoState}} {...{hoverState}}>
            {showMoreInfoState?null:
-           <><MovieDetailVideo ref={videoRef} autoPlay muted={playButtonClicked?false:true} playsInline loop poster="" {...{image:movieData['small-image']}} onClick={videoClicked} controls={playButtonClicked}>
-            {hoverState && <source src={"https://drive.google.com/uc?export=download&id="+movieData.trailer} type='video/mp4'></source>}
-           </MovieDetailVideo>
-                {hoverState && <MovieMetaContainer onClick={()=>setShowMoreInfoState(true)}>
-                    <ActionBar setShowMoreInfoState={setShowMoreInfoState} setHoverState={setHoverState} />
+           <>
+                <VideoContainer onClick={videoClicked} >
+                    <MovieDetailVideo ref={videoRef} autoPlay muted={playButtonClicked?false:true} playsInline loop poster="" {...{image:movieData['small-image']}} controls={playButtonClicked}>
+                        {hoverState && <source src={"https://drive.google.com/uc?export=download&id="+movieData.trailer} type='video/mp4'></source>}
+                    </MovieDetailVideo>
+                </VideoContainer>
+                {hoverState && 
+                <MovieMetaContainer onClick={()=>setShowMoreInfoState(true)}>
+                    <ActionBar setShowMoreInfoState={setShowMoreInfoState} setHoverState={setHoverState} playButtonClickedHandler={playButtonClickedHandler}/>
                     <RatingsContainer>
                         {movieData['match-score'] && <MatchScore><>{movieData['match-score']} Match</></MatchScore>}
                         <MaturityRating><>{movieData['maturity-rating']}</></MaturityRating>
                         {movieData.seasons && <Season><>{movieData.seasons} {+movieData.seasons>1?'seasons':'season'}</></Season>}
                         {movieData.duration && <Duration><>{movieData.duration && movieData.duration}</></Duration>}
                     </RatingsContainer>
-                </MovieMetaContainer>}
+                </MovieMetaContainer>
+                }
             </>}
             {showMoreInfoState && ReactDom.createPortal(<MovieInfoModal transformOrigin={transformOrigin}
              info={movieData} setHoverState={setHoverState} showState={showMoreInfoState}
@@ -106,10 +117,8 @@ export const MovieDetail=({movieData,hoverState,setHoverState}:{movieData:MovieT
     )
 }
 
-const ActionBar=({setShowMoreInfoState,setHoverState}:{setShowMoreInfoState:React.Dispatch<React.SetStateAction<boolean>>,setHoverState:React.Dispatch<React.SetStateAction<boolean>>})=>{
-    const playButtonClickedHandler=()=>{
-
-    }
+const ActionBar=({setShowMoreInfoState,setHoverState,playButtonClickedHandler}:{setShowMoreInfoState:React.Dispatch<React.SetStateAction<boolean>>,setHoverState:React.Dispatch<React.SetStateAction<boolean>>,playButtonClickedHandler:(event:React.MouseEvent)=>void})=>{
+    
     return(
         <ActionBarContainer>
             <PlayButton onClick={playButtonClickedHandler} round/>

@@ -4,7 +4,7 @@ export const Container= styled.div`
     position:relative;
     width:100%;
     //min-width:337px;
-    padding:10% 5%;
+    padding:10% 5% 10% 12%;
     height:auto;
     margin:0 auto;
     background:#000;
@@ -90,4 +90,57 @@ export const TextContainer= styled.div`
     @media only screen and (max-width:500px){
         height:${(props:{image:string,flexDirection:string,children:JSX.Element[]})=>props.image?'45%':'100%'};
      }
+`
+
+export const AnimatedImageContainer= styled.div`
+position:relative;
+display:flex;
+justify-content:center;
+`
+export const FirstVideo= styled.video`
+position:absolute;
+left:0;
+bottom:25%;
+width:100%;
+height:54%;
+z-index:2;
+`
+export const SecondImageComponent= styled.div`
+position:absolute;
+bottom:7%;
+z-index:2;
+width:120%;
+height:20%;
+display: flex;
+align-items: center;
+gap:5%;
+background:#000;
+border:2px solid #404040;
+border-radius:11px;
+padding:2% 5%;
+& img {
+    height:100%;
+    width:16%;
+}
+
+& div:first-of-type{
+    display: flex;
+    flex-direction:column;
+    & span:first-of-type {
+        font-weight:bold;
+        font-size: 1.2rem;
+    }
+    & span:last-of-type{
+        color:#0071eb;
+        font-size: 0.9rem;
+    }
+}
+
+& div:last-of-type{
+    width:48px;
+    height:48px;
+    margin-left:auto;
+    background-repeat:no-repeat !important;
+    background-size:cover !important;
+}
 `

@@ -55,6 +55,7 @@ const MoviePreview = () => {
     const playClicked =()=>{
         setPlayButtonClicked(true);
         videoRef?.current?.requestFullscreen();
+        videoRef?.current?.play();
     }
     const infoButtonClicked =()=>{
         setShowMovieInfoModal(true)
@@ -66,6 +67,10 @@ const MoviePreview = () => {
 
     const replayButtonClicked =()=>{
         setShowVideo(true);
+        const current=videoRef?.current!;
+        current.pause();
+        current.currentTime = 0;
+        current.load();
     }
 
     return (
@@ -94,12 +99,11 @@ const MoviePreview = () => {
                 {movieData?.["maturity-rating"]}
             </AgeRating>
         </ControlsContainer>
-        {
-            showVideo?<MovieVideo ref={videoRef} poster={movieData?.["large-image"]}  muted={playButtonClicked?false:!soundState} controls={playButtonClicked}  autoPlay>
-             <source  src={"https://drive.google.com/uc?export=download&id="+movieData?.["trailer"]} type='video/mp4'></source>
-            </MovieVideo>
-            :<MoviePoster src={movieData?.["large-image"]}/>
-        }</Container>
+        <MovieVideo ref={videoRef} poster={movieData?.["large-image"]} {...{showVideo}}  muted={playButtonClicked?false:!soundState} controls={playButtonClicked}  autoPlay>
+            <source  src={"https://drive.google.com/uc?export=download&id="+movieData?.["trailer"]} type='video/mp4'></source>
+        </MovieVideo>
+        <MoviePoster src={movieData?.["large-image"]} {...{showVideo}}/>
+        </Container>
     )
 }
 

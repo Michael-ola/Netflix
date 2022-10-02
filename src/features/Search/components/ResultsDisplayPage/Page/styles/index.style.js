@@ -4,7 +4,7 @@ export const Container = styled.div`
 width: 100%;
 min-height: 100vh;
 background:#141414;
-padding:13% 1% 10px 1%;
+padding:5% 1% 10px 1%;
 `
 
 export const InnerContainer=styled.div`
@@ -16,6 +16,6 @@ color:#fff;
 margin:0 auto;
 
 & .movie-poster{
-    padding:2px;
+    padding:5%;
 }
 `

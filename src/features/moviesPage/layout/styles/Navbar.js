@@ -3,7 +3,7 @@ import caret from 'assets/images/icons/carettt.png'
 
 export const StyledNav=styled.div`
 position:fixed;
-z-index:5;
+z-index:12;
 width:100%;
 display:flex;
 align-items:center;
@@ -187,7 +187,7 @@ min-height:100px;
 border:1px solid rgba(255,255,255,0.2);
 border-top:3px solid #e5e5e5;
 top:43px;
-z-index:2;
+z-index:6;
 visibility:hidden;
 background:rgba(0,0,0,0.8);
 ${({showNotifications})=>showNotifications? `

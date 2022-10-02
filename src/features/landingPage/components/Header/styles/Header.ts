@@ -66,13 +66,14 @@ export const SignOutButton=styled.button`
 
 
 export const HeaderImage=styled.img.attrs((props)=>({
-    src:"https://assets.nflxext.com/ffe/siteui/vlv3/970e664f-2df4-47ce-b4fa-446082f5abc1/1a40ef0e-0488-4258-8ea1-da0527eb2b01/NG-en-20220523-popsignuptwoweeks-perspective_alpha_website_small.jpg",
-    srcset:`https://assets.nflxext.com/ffe/siteui/vlv3/970e664f-2df4-47ce-b4fa-446082f5abc1/1a40ef0e-0488-4258-8ea1-da0527eb2b01/NG-en-20220523-popsignuptwoweeks-perspective_alpha_website_small.jpg 1000w, 
-    https://assets.nflxext.com/ffe/siteui/vlv3/970e664f-2df4-47ce-b4fa-446082f5abc1/1a40ef0e-0488-4258-8ea1-da0527eb2b01/NG-en-20220523-popsignuptwoweeks-perspective_alpha_website_medium.jpg 1500w,
-    https://assets.nflxext.com/ffe/siteui/vlv3/970e664f-2df4-47ce-b4fa-446082f5abc1/1a40ef0e-0488-4258-8ea1-da0527eb2b01/NG-en-20220523-popsignuptwoweeks-perspective_alpha_website_large.jpg 1800w`
+    src:"https://assets.nflxext.com/ffe/siteui/vlv3/b321426e-35ae-4661-b899-d63bca17648a/af8dd31b-8026-4681-bcb0-6b421a8316e6/NG-en-20220926-popsignuptwoweeks-perspective_alpha_website_small.jpg",
+    srcset:`https://assets.nflxext.com/ffe/siteui/vlv3/b321426e-35ae-4661-b899-d63bca17648a/af8dd31b-8026-4681-bcb0-6b421a8316e6/NG-en-20220926-popsignuptwoweeks-perspective_alpha_website_small.jpg 1000w, 
+    https://assets.nflxext.com/ffe/siteui/vlv3/b321426e-35ae-4661-b899-d63bca17648a/af8dd31b-8026-4681-bcb0-6b421a8316e6/NG-en-20220926-popsignuptwoweeks-perspective_alpha_website_medium.jpg 1500w, 
+    https://assets.nflxext.com/ffe/siteui/vlv3/b321426e-35ae-4661-b899-d63bca17648a/af8dd31b-8026-4681-bcb0-6b421a8316e6/NG-en-20220926-popsignuptwoweeks-perspective_alpha_website_large.jpg 1800w" alt=""`
 }))`
     height:106%;
     transform:translateY(-5%);
+    width:100%;
     display:block;
     background-repeat:no-repeat;
     background-size:cover;

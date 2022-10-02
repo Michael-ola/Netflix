@@ -3,7 +3,7 @@ import {PlayButtonContainer,PlayIcon} from './style/PlayButton'
 const playIcon=require('../../assets/images/icons/play.png');
 
 interface PlayButtonType{
-    onClick:()=>void,
+    onClick:(event:React.MouseEvent)=>void,
     round?:boolean,
     className?:string
 }

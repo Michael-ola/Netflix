@@ -92,7 +92,7 @@ const PaymentForm = () => {
                 <PlanInfo/>
                 <Agreement/>
                 <CheckBox/>
-                <SubmitButton onClick={buttonClickedHandler}>Start Membership</SubmitButton>
+                <SubmitButton onClick={buttonClickedHandler} spinner={submitButtonClicked}>Start Membership</SubmitButton>
             </Form>
         </FormContextProvider>
     )

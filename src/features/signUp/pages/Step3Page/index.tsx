@@ -35,7 +35,7 @@ const Step3Page = () => {
     return (
         <Container {...{mount,unmount}}>
             <Image src={checkmarkImage}/>
-            <StepText>STEP <strong>1</strong> OF <strong>3</strong></StepText>
+            <StepText>STEP <strong>3</strong> OF <strong>3</strong></StepText>
             <p style={{fontWeight:'bold',fontSize:'2rem',color:'#333'}}>Choose your plan.</p>
             <CardsContainer>
                 <Card image={checkImage} text="No commitments, cancel anytime."/>

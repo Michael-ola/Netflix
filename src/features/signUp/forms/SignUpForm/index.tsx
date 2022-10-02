@@ -27,9 +27,10 @@ const Form=({setPageUnmount}:{setPageUnmount:(state:boolean)=>void})=>{
     const loadingState=useSelector((state:stateType)=>{
         return state.auth.loading
     })
-    const error=useSelector((state:stateType)=>{
-        return state.auth.error
-    })
+
+    // const error=useSelector((state:stateType)=>{
+    //     return state.auth.error
+    // })
 
     const token=useSelector((state:stateType)=>{
         return state.auth.token

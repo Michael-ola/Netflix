@@ -1,6 +1,7 @@
 import styled from 'styled-components/macro'
 import  Footer from 'Layout/Footer/Footer'
 import Navbar from 'features/signUp/Layout/Navbar'
+const pageBackground=require('assets/images/films/children/up/large.jpg');
 
 export const Container=styled.div`
 position:relative;
@@ -8,7 +9,7 @@ width:100%;
 height:100vh;
 display:flex;
 flex-direction:column;
-background:url('assets/images/films/children/up/large.jpg');
+background:url(${pageBackground});
 background-repeat:no-repeat;
 background-size:cover;
 background-position:center;
