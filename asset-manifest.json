@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Netflix/static/css/main.97e5f7ea.css",
-    "main.js": "/Netflix/static/js/main.81ae4a50.js",
+    "main.js": "/Netflix/static/js/main.c32afef6.js",
     "static/media/joker1.jpg": "/Netflix/static/media/joker1.706eefd0d07194d565bc.jpg",
     "static/media/home-bg.jpg": "/Netflix/static/media/home-bg.e85ef9d3e583db75072a.jpg",
+    "static/media/large.jpg": "/Netflix/static/media/large.42de17ed8195c02be94f.jpg",
     "static/media/kids.png": "/Netflix/static/media/kids.7e9c0c2fccea936cef07.png",
     "static/media/kidsValueProp.png": "/Netflix/static/media/kidsValueProp.7e9c0c2fccea936cef07.png",
     "static/media/home-tv.jpg": "/Netflix/static/media/home-tv.f5135082fccc14d9d166.jpg",
     "static/media/HeaderPicture.jpg": "/Netflix/static/media/HeaderPicture.123f3b018a8456e0879b.jpg",
     "static/media/sex-education.png": "/Netflix/static/media/sex-education.28677f84c08188295155.png",
     "static/media/baywatch.png": "/Netflix/static/media/baywatch.91f34533968af4085115.png",
-    "static/media/top-gun.png": "/Netflix/static/media/top-gun.97c6f6bed25de4c9abf7.png",
     "static/media/dated-and-related.png": "/Netflix/static/media/dated-and-related.c2f1193e635198c40d3d.png",
     "static/media/rick-and-morty.png": "/Netflix/static/media/rick-and-morty.1287b3cfe0ced7271e5e.png",
     "static/media/day-shift.png": "/Netflix/static/media/day-shift.5c7c78fd9556b7f8e48a.png",
@@ -38,6 +38,7 @@
     "static/media/super-bro.png": "/Netflix/static/media/super-bro.cb81d559dfcaa79cd912.png",
     "static/media/man-from-toronto.png": "/Netflix/static/media/man-from-toronto.69de1bc8501d2fbc6fa0.png",
     "static/media/prophetess.png": "/Netflix/static/media/prophetess.a2bd61c1d7da4596821d.png",
+    "static/media/top-gun.png": "/Netflix/static/media/top-gun.0079dbbe153f3beeef99.png",
     "static/media/boss-baby.PNG": "/Netflix/static/media/boss-baby.5f625c9482e38c09ba77.PNG",
     "static/media/the-big-show-show.png": "/Netflix/static/media/the-big-show-show.3719f6e5322c76bb4965.png",
     "static/media/beats.png": "/Netflix/static/media/beats.4788754fab79f0e5b41e.png",
@@ -99,6 +100,7 @@
     "static/media/total-drama-action.png": "/Netflix/static/media/total-drama-action.1d62d58e2c22aced70b6.png",
     "static/media/home-mobile.jpg": "/Netflix/static/media/home-mobile.88ccdb2abd0f1b20427a.jpg",
     "static/media/change-up.png": "/Netflix/static/media/change-up.72e1f5c76e71e46832f2.png",
+    "static/media/downloading.gif": "/Netflix/static/media/downloading.1ce72c891b52e6f68f2f.gif",
     "static/media/boxshot.png": "/Netflix/static/media/boxshot.347f4ee3bafbdfe71112.png",
     "static/media/doubleThumbsUp.png": "/Netflix/static/media/doubleThumbsUp.27581710af6cb2e21f2d.png",
     "static/media/3.png": "/Netflix/static/media/3.37f157bd3f934bc5bd3b.png",
@@ -108,14 +110,15 @@
     "static/media/info.png": "/Netflix/static/media/info.59be45241a406a50c314.png",
     "static/media/notification.png": "/Netflix/static/media/notification.b6e1be4108a318e88bd9.png",
     "static/media/tv.png": "/Netflix/static/media/tv.0049bc70babc1f94cf88.png",
+    "static/media/tvStructure.png": "/Netflix/static/media/tvStructure.0049bc70babc1f94cf88.png",
     "static/media/chevron-right2.svg": "/Netflix/static/media/chevron-right2.f1459136a3d413b7a2a1.svg",
     "index.html": "/Netflix/index.html",
     "static/media/desktop.ini": "/Netflix/static/media/desktop.65a1e0669db5c91f4944.ini",
     "main.97e5f7ea.css.map": "/Netflix/static/css/main.97e5f7ea.css.map",
-    "main.81ae4a50.js.map": "/Netflix/static/js/main.81ae4a50.js.map"
+    "main.c32afef6.js.map": "/Netflix/static/js/main.c32afef6.js.map"
   },
   "entrypoints": [
     "static/css/main.97e5f7ea.css",
-    "static/js/main.81ae4a50.js"
+    "static/js/main.c32afef6.js"
   ]
 }
