@@ -1,25 +1,6 @@
 import styled from 'styled-components/macro'
 import Play from '../../../components/PlayButton'
 
-export const VideoControlsContainer=styled.div`
-display:flex;
-align-items:center;
-gap:0.4em;
-width:100%;
-position:absolute;
-bottom:10%;
-padding-left:5%;
-padding-right:5%;
-z-index:4;
-button:last-child{
-    margin-left:auto;
-}
-`
-export const PlayButton=styled(Play)`
-&:hover {
-    outline:none;
-}
-`
 export const Container=styled.div`
 max-width:100%;
 width:180vw;
@@ -50,12 +31,32 @@ margin-top:2%;
     margin-top:0;
 }
 `
+export const VideoControlsContainer=styled.div`
+display:flex;
+align-items:center;
+gap:0.4em;
+width:100%;
+position:absolute;
+bottom:10%;
+padding-left:5%;
+padding-right:5%;
+z-index:4;
+button:last-child{
+    margin-left:auto;
+}
+`
+export const PlayButton=styled(Play)`
+&:hover {
+    outline:none;
+}
+`
+
 export const Video=styled.video`
 display:block;
 background-repeat:no-repeat;
 background-size:cover;
 background-color:blue;
-background-image:${({image})=>`url(${require('../../../assets/images/netflix/smallImages/'+image)})`};
+background-image:${({image})=>`url(${require('assets/images/netflix/smallImages/'+image)})`};
 border-top-left-radius:8px;
 border-top-right-radius:8px;
 width:100%;
@@ -114,14 +115,13 @@ min-height:60%;
 export const FirstSectionContainer=styled.section`
 width:100%;
 display:flex;
-padding:4% 7% 0 7%;
+padding:4% 5% 0 5%;
 `
 
 export const FirstSectionInner1=styled.div`
 display:flex;
 flex-direction:column;
 width:60%;
-padding-right:5%;
 `
 export const FirstSectionInner2=styled(FirstSectionInner1)`
 width:40%;
@@ -130,6 +130,7 @@ width:40%;
 export const MovieFiguresContainer=styled.div`
 width:100%;
 display:flex;
+flex-wrap: wrap;
 align-items:center;
 gap:2%;
 `

@@ -19,7 +19,7 @@ export const MoreInfo=styled.div`
 position:fixed;
 top:0;
 left:0;
-z-index:12;
+z-index:14;
 overflow-y:auto;
 overflow-x:hidden;
 height:100vh;
