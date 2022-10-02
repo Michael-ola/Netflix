@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Netflix/static/css/main.97e5f7ea.css",
-    "main.js": "/Netflix/static/js/main.c32afef6.js",
+    "main.js": "/Netflix/static/js/main.917838e6.js",
     "static/media/joker1.jpg": "/Netflix/static/media/joker1.706eefd0d07194d565bc.jpg",
     "static/media/home-bg.jpg": "/Netflix/static/media/home-bg.e85ef9d3e583db75072a.jpg",
     "static/media/large.jpg": "/Netflix/static/media/large.42de17ed8195c02be94f.jpg",
@@ -92,8 +92,10 @@
     "static/media/the-sand-man.png": "/Netflix/static/media/the-sand-man.75b8a5c1011d34c12740.png",
     "static/media/blacklist.png": "/Netflix/static/media/blacklist.e4d51d068088eaa10e8a.png",
     "static/media/tamborine-chris-rock.png": "/Netflix/static/media/tamborine-chris-rock.cd18b47df89be99e4715.png",
+    "static/media/NetflixSans-Bold.woff2": "/Netflix/static/media/NetflixSans-Bold.95a94997132161906ea8.woff2",
     "static/media/greezy-and-the-lemmings.png": "/Netflix/static/media/greezy-and-the-lemmings.787740321d72614967fe.png",
     "static/media/mobile-0819.jpg": "/Netflix/static/media/mobile-0819.063578d5b6d5ab4155ec.jpg",
+    "static/media/NetflixSans-Regular.woff2": "/Netflix/static/media/NetflixSans-Regular.80119a3c6e4f2ebdfa63.woff2",
     "static/media/how-to-get-away-with-murder.png": "/Netflix/static/media/how-to-get-away-with-murder.6c6a785a37891c2b4ae2.png",
     "static/media/loading.gif": "/Netflix/static/media/loading.95117db4286ffa802638.gif",
     "static/media/home-imac.jpg": "/Netflix/static/media/home-imac.6ee6f16a8ad5b36a07d1.jpg",
@@ -115,10 +117,10 @@
     "index.html": "/Netflix/index.html",
     "static/media/desktop.ini": "/Netflix/static/media/desktop.65a1e0669db5c91f4944.ini",
     "main.97e5f7ea.css.map": "/Netflix/static/css/main.97e5f7ea.css.map",
-    "main.c32afef6.js.map": "/Netflix/static/js/main.c32afef6.js.map"
+    "main.917838e6.js.map": "/Netflix/static/js/main.917838e6.js.map"
   },
   "entrypoints": [
     "static/css/main.97e5f7ea.css",
-    "static/js/main.c32afef6.js"
+    "static/js/main.917838e6.js"
   ]
 }
