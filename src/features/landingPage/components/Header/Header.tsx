@@ -1,7 +1,7 @@
 import React from 'react'
 import MembershipForm from '../../forms/MembershipForm'
-import {useSelector,useDispatch} from 'react-redux'
-import {logout} from 'lib/redux-store/Actions/auth'
+import {useSelector} from 'react-redux'
+import {useNavigate} from 'react-router-dom'
 
 import {Container,Body,HeaderImage,Nav,NavButton,
         TextContainer,TextTitle,TextSubtitle,SignOutButton
@@ -31,12 +31,12 @@ export const HeaderContainer= (props:HeaderProps):JSX.Element=>{
 }
 
 const HeaderNav= ():JSX.Element => {
-    const dispatch = useDispatch();
+    const navigate=useNavigate();
     const authToken=useSelector((state:stateType)=>{
         return state.auth.token;
     })
     const signOutHandler=()=>{
-        dispatch(logout());
+        navigate('/sign-out')
     }
     return(
         <Nav>

@@ -99,7 +99,7 @@ const MoviePreview = () => {
                 {movieData?.["maturity-rating"]}
             </AgeRating>
         </ControlsContainer>
-        <MovieVideo ref={videoRef} poster={movieData?.["large-image"]} {...{showVideo}}  muted={playButtonClicked?false:!soundState} controls={playButtonClicked}  autoPlay>
+        <MovieVideo ref={videoRef} poster={movieData?.["large-image"]} {...{showVideo}}  muted={playButtonClicked?false:!soundState} controls={playButtonClicked}  autoPlay playsInline>
             <source  src={"https://drive.google.com/uc?export=download&id="+movieData?.["trailer"]} type='video/mp4'></source>
         </MovieVideo>
         <MoviePoster src={movieData?.["large-image"]} {...{showVideo}}/>
