@@ -1,50 +1,50 @@
 [
     {
         "name":"Audio Description",
-        "link":"https://www.netflix.com/browse/audio-description"
+        "link":""
     },
     {
         "name":"Help Center",
-        "link":"https://help.netflix.com/"
+        "link":""
     },
     {
         "name":"Gift Cards",
-        "link":"https://www.netflix.com/redeem"
+        "link":""
     },
     {
         "name":"Media Center",
-        "link":"https://media.netflix.com/"
+        "link":""
     },
     {
         "name":"Investor Relations",
-        "link":"http://ir.netflix.com/"
+        "link":""
     },
     {
         "name":"Jobs",
-        "link":"https://jobs.netflix.com/jobs"
+        "link":""
     },
     {
         "name":"Terms of Use",
-        "link":"https://help.netflix.com/legal/termsofuse"
+        "link":""
     },
     {
         "name":"Privacy",
-        "link":"https://help.netflix.com/legal/privacy"
+        "link":""
     },
     {
         "name":"Legal Notices",
-        "link":"https://help.netflix.com/legal/notices"
+        "link":""
     },
     {
         "name":"Cookie Preferences",
-        "link":"https://www.netflix.com/ng/#"
+        "link":""
     },
     {
         "name":"Cooperate Information",
-        "link":"https://help.netflix.com/legal/corpinfo"
+        "link":""
     },
     {
         "name":"Contact Us",
-        "link":"https://help.netflix.com/contactus"
+        "link":""
     }
 ]

@@ -9,8 +9,8 @@ const youTubeIcon=require('assets/images/icons/youTubeIcon.png');
 const Footer = () => {
     const Socials=(
         <SocialsContainer>
-            <AnchorTag href='https://www.facebook.com/Netflix/'><Icon src={facebookIcon}/></AnchorTag>
-            <AnchorTag href='https://www.instagram.com/Netflix'><Icon src={instagramIcon}/></AnchorTag>
+            <AnchorTag href=''><Icon src={facebookIcon}/></AnchorTag>
+            <AnchorTag href=''><Icon src={instagramIcon}/></AnchorTag>
             <AnchorTag href='https://www.youtube.com/channel/UCNG0bMYut0wL3C9BS5ffQXw'><Icon src={youTubeIcon}/></AnchorTag>
         </SocialsContainer>
     )

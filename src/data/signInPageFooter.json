@@ -1,26 +1,26 @@
 [
     {
         "name":"FAQ",
-        "link":"https://help.netflix.com/support/412"
+        "link":""
     },
     {
         "name":"Help Center",
-        "link":"https://help.netflix.com/"
+        "link":""
     },
     {
         "name":"Terms of Use",
-        "link":"https://help.netflix.com/legal/termsofuse"
+        "link":""
     },
     {
         "name":"Privacy",
-        "link":"https://help.netflix.com/legal/privacy"
+        "link":""
     },
     {
         "name":"Cookie Preferences",
-        "link":"https://www.netflix.com/ng/#"
+        "link":""
     },
     {
         "name":"Cooperate Information",
-        "link":"https://help.netflix.com/legal/corpinfo"
+        "link":""
     }
 ]

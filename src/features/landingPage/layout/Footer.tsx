@@ -6,7 +6,7 @@ const footerItems=require('data/landingPageFooter.json');
 const Footer = () => {
     const footerTitle=( 
         <FooterTitle>
-            <AnchorTag  href={"https://help.netflix.com/contactus"}>Questions? Contact Us</AnchorTag>
+            <AnchorTag  href={""}>Questions? Contact Us</AnchorTag>
         </FooterTitle>)
 
     const countryText=<CountryText>Netflix Nigeria</CountryText>

@@ -4,7 +4,7 @@ const footerItems=require('../../../../data/signInPageFooter.json')
 
 const Footer = () => {
     return (
-        <StyledFooter footerItems={footerItems} prepend={<StyledLink href="https://help.netflix.com/contactus">Questions? Contact Us</StyledLink>}/>
+        <StyledFooter footerItems={footerItems} prepend={<StyledLink href="">Questions? Contact Us</StyledLink>}/>
     )
 }
 

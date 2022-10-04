@@ -56,7 +56,7 @@ function App() {
   },[dispatch])
 
   return (
-    <BrowserRouter basename="/Netflix-clone">
+    <BrowserRouter basename="/my-stream">
       <Routes>
           <Route path="/" element={<LandingPage/>}/>  
           <Route path='/sign-in' element={<SignInPage/>} /> 

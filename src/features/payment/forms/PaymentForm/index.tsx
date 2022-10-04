@@ -117,8 +117,8 @@ const Agreement=()=>{
     return(
     <AgreementContainer>
         <p>Your payments will be processed internationally. Additional bank fees may apply</p>
-        <p>By checking the checkbox below, you agree to our <Link to="https://help.netflix.com/legal/termsofuse">Terms of Use</Link>,
-           <Link to="https://help.netflix.com/legal/privacy">Privacy Statement</Link>,
+        <p>By checking the checkbox below, you agree to our <Link to="">Terms of Use</Link>,
+           <Link to="">Privacy Statement</Link>,
            and that you are over 18. Netflix will automatically continue your membership and
            charge the membership fee{` (currently ${planInfo.planPrice}/month) `}to your payment method until you
            cancel. You may cancel at any time to avoid future charges.

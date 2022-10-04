@@ -1,8 +1,8 @@
 {
-  "name": "netflix",
+  "name": "mystream",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://michael-ola.github.io/Netflix-clone",
+  "homepage": "https://michael-ibitoye.github.io/my-stream",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",

@@ -40,7 +40,7 @@ const SignOutPage = () => {
                 <Button onClick={() => setSignOut(true)}>Go Now</Button>
             </ButtonContainer>
         </AffirmSignOutModal>
-        <StyledFooter footerItems={footerItems} prepend={<StyledLink href="https://help.netflix.com/contactus">Questions? Contact Us</StyledLink>}/>
+        <StyledFooter footerItems={footerItems} prepend={<StyledLink href="">Questions? Contact Us</StyledLink>}/>
        </Container>
     )
 }
