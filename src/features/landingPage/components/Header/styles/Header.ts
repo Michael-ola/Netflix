@@ -1,6 +1,9 @@
 import  styled,{css} from 'styled-components/macro'
 import {Link} from 'react-router-dom'
 
+const headerImage =require('assets/images/extras/landingHeader1.jpg')
+
+
 export  const Container= styled.header`
     width:100%;
     height:110vh;
@@ -66,10 +69,10 @@ export const SignOutButton=styled.button`
 
 
 export const HeaderImage=styled.img.attrs((props)=>({
-    src:"https://assets.nflxext.com/ffe/siteui/vlv3/b321426e-35ae-4661-b899-d63bca17648a/af8dd31b-8026-4681-bcb0-6b421a8316e6/NG-en-20220926-popsignuptwoweeks-perspective_alpha_website_small.jpg",
-    srcset:`https://assets.nflxext.com/ffe/siteui/vlv3/b321426e-35ae-4661-b899-d63bca17648a/af8dd31b-8026-4681-bcb0-6b421a8316e6/NG-en-20220926-popsignuptwoweeks-perspective_alpha_website_small.jpg 1000w, 
-    https://assets.nflxext.com/ffe/siteui/vlv3/b321426e-35ae-4661-b899-d63bca17648a/af8dd31b-8026-4681-bcb0-6b421a8316e6/NG-en-20220926-popsignuptwoweeks-perspective_alpha_website_medium.jpg 1500w, 
-    https://assets.nflxext.com/ffe/siteui/vlv3/b321426e-35ae-4661-b899-d63bca17648a/af8dd31b-8026-4681-bcb0-6b421a8316e6/NG-en-20220926-popsignuptwoweeks-perspective_alpha_website_large.jpg 1800w" alt=""`
+    src:`${headerImage}`,
+    srcset:`${headerImage} 1000w, 
+    ${headerImage} 1500w, 
+    ${headerImage} 1800w" alt=""`
 }))`
     height:106%;
     transform:translateY(-5%);

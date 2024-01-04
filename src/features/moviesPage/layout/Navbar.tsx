@@ -188,7 +188,7 @@ const Users= ({showState,showHandler,changeNavTab}:NavTabType) => {
                 <ManageProfiles><span><NavIcons src={pencilIcon} alt="ManageProfiles"/>Manage Profiles</span></ManageProfiles>
                 <Mode {...{users:true}}><span>kids</span></Mode>
                 <Account><span><NavIcons src={accountIcon} alt="Account"/>Account</span></Account>
-                <HelpCenter><a  href="https://help.netflix.com/"><NavIcons src={helpIcon} alt="help"/>Help Center</a></HelpCenter>
+                <HelpCenter><a  href=""><NavIcons src={helpIcon} alt="help"/>Help Center</a></HelpCenter>
                 <StyledSignOut onClick={signOutHandler}><span>Sign out of Netflix</span></StyledSignOut>
             </UsersContainer>}
         </div>

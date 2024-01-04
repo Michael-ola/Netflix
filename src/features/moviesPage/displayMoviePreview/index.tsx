@@ -11,7 +11,8 @@ import MovieInfoModal from 'containers/MovieInfoModal'
 import useMoviesPageData from 'features/moviesPage/hooks/useMoviesPageData'
 
 const top10Img=require('assets/images/icons/top10.png')
-
+const posterImage=require('assets/images/extras/posterImage.jpg')
+const movieTitle=require('assets/images/extras/movieTitle.jpg')
 
 const MoviePreview = () => {
     const [showVideo,setShowVideo]=useState(true)
@@ -80,7 +81,7 @@ const MoviePreview = () => {
         {showMovieInfoModal && ReactDom.createPortal(<MovieInfoModal info={movieData}
          showState={showMovieInfoModal} setShowState={setShowMovieInfoModal}/>,document.getElementById("moreInfo") as Element)}
         <MovieDataContainer>
-            <MovieTitle src={movieData?.["title-image"]} alt={movieData?.name}/>
+            <MovieTitle src={movieTitle} alt={movieData?.name}/>
             {!showVideo &&
             <>
                 <TopTen><img src={top10Img} alt='top ten'/> #2 in TV Shows Today</TopTen>
@@ -101,7 +102,7 @@ const MoviePreview = () => {
                 {movieData?.["maturity-rating"]}
             </AgeRating>
         </ControlsContainer>
-        <MovieVideo ref={videoRef} poster={movieData?.["large-image"]} {...{showVideo}}  muted={playButtonClicked?false:!soundState} controls={playButtonClicked}  autoPlay playsInline>
+        <MovieVideo ref={videoRef} poster={posterImage} {...{showVideo}}  muted={playButtonClicked?false:!soundState} controls={playButtonClicked}  autoPlay playsInline>
             <source  src={"https://drive.google.com/uc?export=download&id="+movieData?.["trailer"]} type='video/mp4'></source>
         </MovieVideo>
         <MoviePoster src={movieData?.["large-image"]} {...{showVideo}}/>

@@ -11,7 +11,7 @@ const Footer = () => {
         <SocialsContainer>
             <AnchorTag href=''><Icon src={facebookIcon}/></AnchorTag>
             <AnchorTag href=''><Icon src={instagramIcon}/></AnchorTag>
-            <AnchorTag href='https://www.youtube.com/channel/UCNG0bMYut0wL3C9BS5ffQXw'><Icon src={youTubeIcon}/></AnchorTag>
+            <AnchorTag href=''><Icon src={youTubeIcon}/></AnchorTag>
         </SocialsContainer>
     )
     const appendItem=(
@@ -20,7 +20,7 @@ const Footer = () => {
                 Service Code
             </ServiceCode>
             <Copyright>
-                {"© 1997-2022 Netflix, Inc. 4658d11b-3351-4641-a84b-241d7121e135"}
+                {"© 2022 code-like-mike"}
             </Copyright>
         </AppendContainer>
     )

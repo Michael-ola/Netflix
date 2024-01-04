@@ -62,7 +62,7 @@ const PlanPage = () => {
             <Plans selectedPlan={selectedPlan} setSelectedPlan={setSelectedPlanState}/>
             <Properties selectedPlan={selectedPlan} setSelectedPlan={setSelectedPlanState}/>
             <TermsText>HD (720p), Full HD (1080p), Ultra HD (4K) and HDR availability subject to your internet service and device capabilities.
-                 Not all content is available in all resolutions. See our <a href="https://help.netflix.com/legal/termsofuse">Terms of Use</a> for more details
+                 Not all content is available in all resolutions. See our <a href="">Terms of Use</a> for more details
                  <br/>
                  <br/>
                  Only people who live with you may use your account. Watch on 4 different devices at the same time with Premium, 2 with Standard,

@@ -5,6 +5,7 @@ import {Container, Title, Subtitle,Image,
 const jumbotronData=require('data/jumbotron.json')
 const boxshot= require('assets/images/misc/boxshot.png')
 const downloadingGif=require('assets/images/misc/downloading.gif')
+const video= require('assets/images/extras/video-tv-0819.mp4')
 
 interface jumbotronProps{
     id:number,
@@ -66,7 +67,7 @@ export const JumbotronGenerator=():JSX.Element =>{
         <AnimatedImageContainer>
             <JumbotronImage  style={{position:'relative',maxWidth:'85%'}} image={data.image as string} alt={data.alt as string}/>
             <FirstVideo autoPlay playsInline muted loop>
-                <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type="video/mp4"/>
+                <source src={video} type="video/mp4"/>
             </FirstVideo>
         </AnimatedImageContainer>
     )
